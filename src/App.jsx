@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import ErrorPage from "./Pages/ErrorPage";
-import About from "./Home/AboutComponents/About";
 function App() {
   return (
     <BrowserRouter>
@@ -9,7 +8,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <About/>
+      
     </BrowserRouter>
   );
 }

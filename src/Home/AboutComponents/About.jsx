@@ -2,10 +2,10 @@ import AboutBack from "../../../public/assets/Home/AboutSection/AboutSectionBack
 
 function About() {
   return (
-    <div className="relative flex justify-center items-center min-h-screen bg-white  bg-gradient-to-r from-white to-transparent overflow-hidden">
+    <div className="relative flex justify-center items-center min-h-screen bg-white  bg-gradient-to-r from-white">
       <div className="relative w-full max-w-2xl mx-4">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute  bg-cover "
           style={{
             backgroundImage: `url(${AboutBack})`,
             filter: "brightness(0.6)",
@@ -14,8 +14,8 @@ function About() {
         ></div>
         <div className="absolute top-0 right-0 w-48 h-48 bg-[#ebdfcf] rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 z-0"></div>
 
-        <div className="relative bg-[#223A39] bg-opacity-90 text-white p-8 rounded-3xl shadow-lg max-w-2xl flex flex-col justify-center items-center text-center">
-          <h1 className="text-[#9D6636] text-xl mb-4 relative z-10">
+        <div className="relative bg-[#223A39] bg-opacity-90 text-white p-8 rounded-3xl max-w-2xl flex flex-col justify-center items-center text-center">
+          <h1 className="text-[#9D6636] text-xl mb-4 relative">
             عن دار الرحمة
           </h1>
           <p className="mb-6 leading-relaxed relative z-10">
