@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import NavBarLogo from "/public/assets/NavBarSection/NavBarLogo.svg";
-import NavBarWords from "/public/assets/NavBarSection/NavBarWords.svg";
+import NavBarLogo from "/assets/NavBarSection/NavBarLogo.svg";
+import NavBarWords from "/assets/NavBarSection/NavBarWords.svg";
 
 import React, { useState } from "react";
 import LinesIcon from "../Icons/LinesIcon";
