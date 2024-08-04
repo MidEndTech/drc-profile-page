@@ -10,6 +10,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      
     </BrowserRouter>
   );
 }
