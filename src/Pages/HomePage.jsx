@@ -1,5 +1,10 @@
+import Entites from '../../src/Home/EntittesComponents/Entites'
+
+
 function HomePage() {
-  return <div>HomePage</div>;
+  return <div>
+    <Entites/>
+  </div>;
 }
 
 export default HomePage;
