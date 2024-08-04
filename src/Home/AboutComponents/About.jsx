@@ -1,4 +1,4 @@
-import AboutBack from "./AboutSectionBackground.png";
+import AboutBack from "../../../public/assets/Home/AboutSection/AboutSectionBack.svg";
 
 function About() {
   return (
