@@ -1,5 +1,9 @@
+import Projects from '../Home/ProjectsComponents/Porjects'
+
 function HomePage() {
-  return <div>HomePage</div>;
+  return <div>
+    <Projects/>
+  </div>;
 }
 
 export default HomePage;
