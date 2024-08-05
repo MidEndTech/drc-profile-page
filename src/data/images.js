@@ -17,7 +17,7 @@ export const Images = [
         "/assets/Home/Logos/image 44.svg",
         "/assets/Home/Logos/image 45.svg",
         "/assets/Home/Logos/Layer_2.svg",
-        "/assets/Home/Logos/pngegg.svg",
+        "/assets/Home/Logos/pngegg 1.svg",
         "/assets/Home/Logos/الصحة 1.svg",
         "/assets/Home/Logos/شعار الخطوط السعودية الحديدية  – SVG 1.svg",
         "/assets/Home/Logos/شعار الدفاع المدني – SVG 1.svg",
