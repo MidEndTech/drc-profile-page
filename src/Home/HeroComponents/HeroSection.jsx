@@ -6,11 +6,12 @@ import { useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Heading from "../../SharedComponents/Heading";
 import Paragraph from "../../SharedComponents/Paragraph";
-
+import { AnimatePresence, motion } from "framer-motion";
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timerRef = useRef(null);
   const [key, setKey] = useState(0); // Key to force re-render for animation
+  const textVariants = {};
 
   const nextSlide = () => {
     const isLastSlide = currentIndex === data.length - 1;
@@ -67,15 +68,18 @@ function HeroSection() {
             } `}
           />
           {/*Content Section*/}
+
           <div className="flex flex-col lg:flex-row justify-between items-center w-full">
-            <section className="flex flex-col z-10 gap-2 w-full xl:w-1/2 overflow-hidden">
-              <Heading className="bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mr-8 lg:mr-20">
-                {data[currentIndex].title}
-              </Heading>
-              <Paragraph className="text-white text-justify m-2 md:m-4 md:mr-8 lg:mr-20">
-                {data[currentIndex].description}
-              </Paragraph>
-            </section>
+            <AnimatePresence>
+              <motion.section className="flex flex-col z-10 gap-2 w-full xl:w-1/2 overflow-hidden">
+                <Heading className="bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mr-8 lg:mr-20">
+                  {data[currentIndex].title}
+                </Heading>
+                <Paragraph className="text-white text-justify m-2 md:m-4 md:mr-8 lg:mr-20">
+                  {data[currentIndex].description}
+                </Paragraph>
+              </motion.section>
+            </AnimatePresence>
 
             <section className="flex justify-center gap-8 z-10 relative -left-[1%] 2xl:-left-[5%] overflow-hidden">
               <img
