@@ -68,7 +68,7 @@ function HeroSection() {
           />
           {/*Content Section*/}
           <div className="flex flex-col lg:flex-row justify-between items-center w-full">
-            <section className="flex flex-col z-10 gap-2 w-full xl:w-1/2">
+            <section className="flex flex-col z-10 gap-2 w-full xl:w-1/2 overflow-hidden">
               <Heading className="bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mr-8 lg:mr-20">
                 {data[currentIndex].title}
               </Heading>
@@ -77,7 +77,7 @@ function HeroSection() {
               </Paragraph>
             </section>
 
-            <section className="flex justify-center gap-8 z-10 relative -left-[1%] 2xl:-left-[5%]">
+            <section className="flex justify-center gap-8 z-10 relative -left-[1%] 2xl:-left-[5%] overflow-hidden">
               <img
                 src={data[(currentIndex + 1) % data.length].smallPicture}
                 className="h-11/12 w-1/4 xl:w-[30%] 2xl:w-full"
