@@ -1,5 +1,6 @@
-import '../../styles/autoSlider.css'
-import { Images } from '../../data/images';
+import './autoSlider.css'
+import { Images } from "./images.json";
+
 
 
 function Entites() {
@@ -15,7 +16,7 @@ function Entites() {
                 key={index} 
                 src={src} 
                 alt={`img ${index + 1}`} 
-                className="h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 object-contain mx-4 sm:mx-6 md:mx-8 lg:mx-10 "
+                className="h-10 sm:h-11 md:h-13 lg:h-15 xl:h-17 object-contain px-4 sm:px-6 md:px-8 lg:px-10 "
               />
             ))}
           </div>
