@@ -1,5 +1,5 @@
-import '../../styles/autoSlider.css';
-import Images from '../../data/images.json'; 
+import './autoSlider.css';
+import Images from './images.json'
 
 function Entites() {
     const allImages = Images.Images.flatMap(img => img.src); 
