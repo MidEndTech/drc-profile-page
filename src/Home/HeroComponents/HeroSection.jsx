@@ -4,21 +4,32 @@ import { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Heading from "../../SharedComponents/Heading";
+import Paragraph from "../../SharedComponents/Paragraph";
 
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timerRef = useRef(null);
   const [key, setKey] = useState(0); // Key to force re-render for animation
 
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === data.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+    setKey(newIndex);
+  };
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? data.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+    setKey(newIndex);
+  };
   useEffect(() => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
     }
     timerRef.current = setTimeout(() => {
-      const isLastSlide = currentIndex === data.length - 1;
-      const newIndex = isLastSlide ? 0 : currentIndex + 1;
-      setCurrentIndex(newIndex);
-      setKey(newIndex);
+      nextSlide();
     }, 4000);
     return () => clearTimeout(timerRef.current);
   });
@@ -35,14 +46,16 @@ function HeroSection() {
               style={{
                 backgroundImage: `url('${slide.bigPicture}')`,
               }}
-            ></div>
+            >
+              <img src={slide.smallPicture} />
+            </div>
           );
         })}
       </div>
 
       {/*Actual Hero*/}
       <main className="overflow-hidden">
-        <div className="relative h-screen w-screen flex items-center pr-8 lg:pr-20">
+        <div className="relative h-screen w-screen flex flex-col items-center justify-center ">
           {/* Image with Ken Burns effect */}
           <img
             key={key}
@@ -53,20 +66,44 @@ function HeroSection() {
                 : "kenburns-top-right-reverse"
             } `}
           />
-          <section className="flex flex-col z-10 gap-2 w-1/2 2xl:w-1/3">
-            <h1 className="bg-gradient-to-l from-primary to-secondary text-4xl font-bold text-transparent bg-clip-text p-4">
-              {data[currentIndex].title}
-            </h1>
-            <p className="text-white text-justify text-lg p-4">
-              {data[currentIndex].description}
-            </p>
-          </section>
-          <div className="flex gap-4 z-10">
-            <button className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary">
-              <FaArrowRight size={24} className="" />
+          {/*Content Section*/}
+          <div className="flex flex-col lg:flex-row justify-between items-center w-full">
+            <section className="flex flex-col z-10 gap-2 w-full xl:w-1/2">
+              <Heading className="bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mr-8 lg:mr-20">
+                {data[currentIndex].title}
+              </Heading>
+              <Paragraph className="text-white text-justify m-2 md:m-4 md:mr-8 lg:mr-20">
+                {data[currentIndex].description}
+              </Paragraph>
+            </section>
+
+            <section className="flex justify-center gap-8 z-10 relative -left-[1%] 2xl:-left-[5%]">
+              <img
+                src={data[(currentIndex + 1) % data.length].smallPicture}
+                className="h-11/12 w-1/4 xl:w-[30%] 2xl:w-full"
+              />
+              <img
+                src={data[(currentIndex + 2) % data.length].smallPicture}
+                className="h-11/12 w-1/4 xl:w-[30%] 2xl:w-full"
+              />
+              <img
+                src={data[(currentIndex + 3) % data.length].smallPicture}
+                className="h-11/12 w-1/4 xl:w-[30%] 2xl:w-full"
+              />
+            </section>
+          </div>
+          <div className="flex w-full justify-center items-center relative top-24 gap-4 z-10">
+            <button
+              className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary"
+              onClick={prevSlide}
+            >
+              <FaArrowRight size={24} />
             </button>
-            <button className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary">
-              <FaArrowLeft size={24} className="" />
+            <button
+              className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary"
+              onClick={nextSlide}
+            >
+              <FaArrowLeft size={24} />
             </button>
           </div>
         </div>
