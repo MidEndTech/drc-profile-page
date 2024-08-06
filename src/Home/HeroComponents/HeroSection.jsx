@@ -71,14 +71,20 @@ function HeroSection() {
 
           <div className="flex flex-col lg:flex-row justify-between items-center w-full">
             <AnimatePresence>
-              <motion.section className="flex flex-col z-10 gap-2 w-full xl:w-1/2 overflow-hidden">
-                <Heading className="bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mr-8 lg:mr-20">
+              <section className="flex flex-col z-10 gap-2 w-full xl:w-1/2 overflow-y-hidden">
+                <Heading
+                  key={data[currentIndex].title}
+                  className="animated-text bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mr-8 lg:mr-20"
+                >
                   {data[currentIndex].title}
                 </Heading>
-                <Paragraph className="text-white text-justify m-2 md:m-4 md:mr-8 lg:mr-20">
+                <Paragraph
+                  key={data[currentIndex].description}
+                  className="animated-text text-white text-justify m-2 md:m-4 md:mr-8 lg:mr-20"
+                >
                   {data[currentIndex].description}
                 </Paragraph>
-              </motion.section>
+              </section>
             </AnimatePresence>
 
             <section className="flex justify-center gap-8 z-10 relative -left-[1%] 2xl:-left-[5%] overflow-hidden">
