@@ -37,7 +37,7 @@ function NavBar() {
   //this functions for updateing the background color whine the burger icon open or close
   const backgroundOpenNavBar = () => {
     if (minu && size.width < 1026) {
-      return "bg-dark-green md:bg-[#FFFFFF]/10";
+      return "bg-dark-green lg:bg-[#FFFFFF]/10";
     } else {
       return "bg-[#FFFFFF]/10";
     }
