@@ -18,7 +18,7 @@ const PrevArrow = ({ onClick }) => (
   </div>
 );
 
-const AssociationCarousel = () => {
+function AssociationCarousel()  {
   const allImages = Images.flatMap((img) => img.src);
 
   const settings = {
