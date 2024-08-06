@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import { Images } from "./images.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import left from "../../../public/assets/Home/AssociatationImages/Variant5.svg";
-import right from "../../../public/assets/Home/AssociatationImages/Variant6.svg";
+import left from "/assets/Home/AssociatationImages/Variant5.svg";
+import right from "/assets/Home/AssociatationImages/Variant6.svg";
 
 const NextArrow = ({ onClick }) => (
   <div onClick={onClick} className="custom-arrow next-arrow p-2">
