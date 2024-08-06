@@ -1,8 +1,10 @@
 import './autoSlider.css';
-import Images from './images.json'
+import { Images } from "./images.json";
 
 function Entites() {
-    const allImages = Images.Images.flatMap(img => img.src); 
+    
+    const allImages = Images[0].src;
+
     return (
       <div className="container mx-auto px-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#9D6636] font-bold text-center my-4 pb-10">جهات معتمدة لديها دار الرحمة للاستشارات</h1>
