@@ -1,5 +1,8 @@
-import './autoSlider.css';
-import Images from './images.json'
+import './autoSlider.css'
+import { Images } from "./images.json";
+
+
+
 
 function Entites() {
     const allImages = Images.Images.flatMap(img => img.src); 
@@ -13,6 +16,7 @@ function Entites() {
                 key={index} 
                 src={src} 
                 alt={`img ${index + 1}`} 
+
                 className="h-10 sm:h-11 md:h-13 lg:h-15 xl:h-17 object-contain px-4 sm:px-6 md:px-8 lg:px-10"
               />
             ))}
