@@ -1,34 +1,33 @@
 {
-    "Images": [
-      {
-        "src": [
-          "/assets/Home/Logos/logo-1.svg",
-          "/assets/Home/Logos/logo-2.svg",
-          "/assets/Home/Logos/logo-3.svg",
-          "/assets/Home/Logos/logo-4.svg",
-          "/assets/Home/Logos/logo-5.svg",
-          "/assets/Home/Logos/logo-6.svg",
-          "/assets/Home/Logos/logo-7.svg",
-          "/assets/Home/Logos/logo-8.svg",
-          "/assets/Home/Logos/logo-9.svg",
-          "/assets/Home/Logos/logo-10.svg",
-          "/assets/Home/Logos/logo-11.svg",
-          "/assets/Home/Logos/logo-12.svg",
-          "/assets/Home/Logos/logo-13.svg",
-          "/assets/Home/Logos/logo-14.svg",
-          "/assets/Home/Logos/logo-15.svg",
-          "/assets/Home/Logos/logo-16.svg",
-          "/assets/Home/Logos/logo-17.svg",
-          "/assets/Home/Logos/logo-18.svg",
-          "/assets/Home/Logos/logo-19.svg",
-          "/assets/Home/Logos/logo-20.svg",
-          "/assets/Home/Logos/logo-21.svg",
-          "/assets/Home/Logos/logo-22.svg",
-          "/assets/Home/Logos/logo-23.svg",
-          "/assets/Home/Logos/logo-24.svg",
-          "/assets/Home/Logos/logo-25.svg"
-          
-        ]
-      }
-    ]
-  }
+  "Images": [
+    {
+      "src": [
+        "/assets/Home/EntitiedAndAssociatationSection/1.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/2.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/3.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/4.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/5.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/6.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/7.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/8.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/9.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/10.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/11.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/12.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/13.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/14.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/15.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/16.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/17.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/18.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/19.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/20.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/21.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/22.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/23.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/24.svg",
+        "/assets/Home/EntitiedAndAssociatationSection/25.svg"
+      ]
+    }
+  ]
+}
