@@ -37,7 +37,7 @@ const PrevArrow = ({ onClick, disabled }) => (
   </div>
 );
 
-function AssociationCarousel() {
+function Association() {
   const allImages = Images.flatMap((img) => img.src);
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -114,4 +114,4 @@ function AssociationCarousel() {
   );
 }
 
-export default AssociationCarousel;
+export default Association;
