@@ -3,7 +3,7 @@
     "text": "الهوية",
     "rotation": "4.4deg",
     "textColor": "#2C4D51",
-    "backGroundColor": "#2C4D51",
+    "backGroundColor": "#2C4D511A",
     "top": "202.22px",
     "left": "3.45px"
   },
@@ -11,7 +11,7 @@
     "text": "فئة العميل",
     "rotation": "6.35deg",
     "textColor": "#BE894A",
-    "backGroundColor": "#BE894A",
+    "backGroundColor": "#BE894A1A",
     "top": "283px",
     "left": "144.55px"
   },
@@ -19,7 +19,7 @@
     "text": "الأنظمة والقوانين",
     "rotation": "-7.58deg",
     "textColor": "#2C4D51",
-    "backGroundColor": "#2C4D51",
+    "backGroundColor": "#2C4D511A",
     "top": "427.14px",
     "left": "31.04px"
   },
@@ -27,7 +27,7 @@
     "text": "تجربة العميل",
     "rotation": "3.5deg",
     "textColor": "#BE894A",
-    "backGroundColor": "#BE894A",
+    "backGroundColor": "#BE894A1A",
     "top": "557.65px",
     "left": "199.36px"
   },
@@ -35,7 +35,7 @@
     "text": "إحتياجات سوق العمل",
     "rotation": "-7.06deg",
     "textColor": "#BE894A",
-    "backGroundColor": "#BE894A",
+    "backGroundColor": "#BE894A1A",
     "top": "673.86px",
     "left": "368.57px"
   },
@@ -43,7 +43,7 @@
     "text": "الأحكام الشرعية",
     "rotation": "6.3deg",
     "textColor": "#2C4D51",
-    "backGroundColor": "#2C4D51",
+    "backGroundColor": "#2C4D511A",
     "top": "635px",
     "left": "683.19px"
   },
@@ -51,7 +51,7 @@
     "text": "القدرة والإمكانيات",
     "rotation": "7.68deg",
     "textColor": "#2C4D51",
-    "backGroundColor": "#2C4D51",
+    "backGroundColor": "#2C4D511A",
     "top": "512px",
     "left": "855.58px"
   },
@@ -59,7 +59,7 @@
     "text": "العائد / التكلفة",
     "rotation": "-4.89deg",
     "textColor": "#BE894A",
-    "backGroundColor": "#BE894A",
+    "backGroundColor": "#BE894A1A",
     "top":"408.01px",
     "left":"998.57px"
   },
@@ -67,7 +67,7 @@
     "text": "القيم الداخلية",
     "rotation": "-6.89deg",
     "textColor": "#2C4D51",
-    "backGroundColor": "#2C4D51",
+    "backGroundColor": "#2C4D511A",
     "top": "266.8px",
     "left": "888.68px"
   }
