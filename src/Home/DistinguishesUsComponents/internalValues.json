@@ -1,0 +1,66 @@
+[
+  {
+    "text": "الإتقان",
+    "rotation": "-4.63deg",
+    "textColor": "#BE894A",
+    "backGroundColor": "#BE894A",
+    "top": "243.77px",
+    "left": "122.61px"
+  },
+  {
+    "text": "التطوير المستمر",
+    "rotation": "-7.58deg",
+    "textColor": "#2C4D51",
+    "backGroundColor": "#2C4D51",
+    "top": "421.9px",
+    "left": "31.04px"
+  },
+  {
+    "text": "النزاهة",
+    "rotation": "4.4 deg",
+    "textColor": "#2C4D51",
+    "backGroundColor": "#2C4D51",
+    "top": "515px",
+    "left": "236.45px"
+  },
+  {
+    "text": "الدعم المعنوي",
+    "rotation": "-7.06 deg",
+    "textColor": "#BE894A",
+    "backGroundColor": "#BE894A",
+    "top": "665.57px",
+    "left": "368.57px"
+  },
+  {
+    "text": "تعظيم قدر الصلاة",
+    "rotation": "6.3 deg",
+    "textColor": "#2C4D51",
+    "backGroundColor": "#2C4D51",
+    "top": "638px",
+    "left": "683.19px"
+  },
+  {
+    "text": "المساندة المالية الطارئة",
+    "rotation": "7.68 deg",
+    "textColor": "#2C4D51",
+    "backGroundColor": "#2C4D51",
+    "top": "509px",
+    "left": "855.58px"
+  },
+  {
+    "text": "الإخلاص",
+    "rotation": "-4.89 deg",
+    "textColor": "#BE894A",
+    "backGroundColor": "#BE894A",
+    "top": "406.66px",
+    "left": "998.57px"
+  },
+  {
+    "text": "الإحترام",
+    "rotation": "-6.89 deg",
+    "textColor": "#2C4D51",
+    "backGroundColor": "#2C4D51",
+    "top": "255.53px",
+    "left": "888.68px"
+  }
+]
