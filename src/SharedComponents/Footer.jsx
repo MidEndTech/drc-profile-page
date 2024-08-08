@@ -21,7 +21,7 @@ function Footer() {
           className="w-full h-full absolute opacity-[13%] bg-contain"
         ></div>
 
-        <div className="bg-[#836651]/20 z-10 font-Bolds mx-auto w-full pt-5 bg-contain h-full lg:grid lg:grid-cols-4 lg:gap-10 lg:justify-items-center">
+        <div className="bg-[#836651]/20 z-10 mx-auto w-full pt-5 bg-contain h-full lg:grid lg:grid-cols-4 lg:gap-10 lg:justify-items-center">
           <div className="flex justify-center mt-6 lg:flex-col">
             <img src={FooterLogo} alt="" className="w-[267px] h-[47px]" />
           </div>

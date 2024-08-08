@@ -6,3 +6,7 @@
 body.no-scroll {
     overflow: hidden;
 }
+
+body{
+    font-family:'TheYearofTheCamel-Bold';
+}
