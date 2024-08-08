@@ -7,8 +7,8 @@ function HomePage() {
   return <div>
     <About/>
     <Projects/>
-    <Entites/>
     <Association/>
+    <Entites/>
   </div>;
 }
 
