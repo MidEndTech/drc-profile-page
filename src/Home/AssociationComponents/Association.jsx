@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import { Images } from "./images.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import left from "/assets/Home/AssociatationImages/Variant5.svg";
-import right from "/assets/Home/AssociatationImages/Variant6.svg";
+import left from "/assets/Home/AssociationSection/Variant5.svg";
+import right from "/assets/Home/AssociationSection/Variant6.svg";
 import "./style.css"; 
 
 const NextArrow = ({ onClick, disabled }) => (
@@ -81,7 +81,7 @@ function Association() {
   };
 
   return (
-    <div className="container mx-auto px-1">
+    <div className="container mx-auto px-1 py-20">
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#9D6636] font-bold text-center my-4">
         شركاء النجاح
       </h1>

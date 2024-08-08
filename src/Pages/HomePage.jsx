@@ -5,8 +5,8 @@ import Association from "../../src/Home/AssociationComponents/Association"
 function HomePage() {
   return <div>
     <About/>
-    <Entites/>
     <Association/>
+    <Entites/>
   </div>;
 }
 

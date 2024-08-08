@@ -2,31 +2,16 @@
   "Images": [
     {
       "src": [
-        "/assets/Home/EntitiedAndAssociatationSection/1.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/2.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/3.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/4.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/5.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/6.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/7.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/8.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/9.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/10.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/11.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/12.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/13.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/14.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/15.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/16.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/17.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/18.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/19.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/20.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/21.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/22.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/23.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/24.svg",
-        "/assets/Home/EntitiedAndAssociatationSection/25.svg"
+        "/assets/Home/EntitiesSection/1.svg",
+        "/assets/Home/EntitiesSection/2.svg",
+        "/assets/Home/EntitiesSection/3.svg",
+        "/assets/Home/EntitiesSection/4.svg",
+        "/assets/Home/EntitiesSection/5.svg",
+        "/assets/Home/EntitiesSection/6.svg",
+        "/assets/Home/EntitiesSection/7.svg",
+        "/assets/Home/EntitiesSection/8.svg",
+        "/assets/Home/EntitiesSection/9.svg",
+        "/assets/Home/EntitiesSection/10.svg"
       ]
     }
   ]
