@@ -1,14 +1,10 @@
 .kenburns-top-right {
-  -webkit-animation: kenburns-top-right 0.5s ease-out both;
-  animation: kenburns-top-right 0.5s ease-out both;
+  -webkit-animation: kenburns-top-right 1.5s ease-out both;
+  animation: kenburns-top-right 1.5s ease-out both;
 }
 .kenburns-top-right-reverse {
-  -webkit-animation: kenburns-top-right 0.5s ease-out reverse both;
-  animation: kenburns-top-right 0.5s ease-out reverse both;
-}
-
-.animated-text {
-  animation: slideInFromBottom 1s forwards;
+  -webkit-animation: kenburns-top-right 1.5s ease-out reverse both;
+  animation: kenburns-top-right 1.5s ease-out reverse both;
 }
 
 @-webkit-keyframes kenburns-top-right {
@@ -37,20 +33,5 @@
     transform: scale(1.1) translate(20px, -15px);
     -webkit-transform-origin: right top;
     transform-origin: right top;
-  }
-}
-/* Text Slider */
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(1000px);
-    opacity: 0;
-  }
-  95% {
-    transform: translateY(-40px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }

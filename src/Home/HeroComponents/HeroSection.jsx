@@ -11,15 +11,25 @@ function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timerRef = useRef(null);
   const [key, setKey] = useState(0); // Key to force re-render for animation
-  const textVariants = {};
+  const nextVariants = {
+    animate: { opacity: 1, y: [200, -15, 15, 0] },
+    exit: { opacity: 0, y: -200 },
+  };
+  const prevVariants = {
+    animate: { opacity: 1, y: [-200, 15, -15, 0] },
+    exit: { opacity: 0, y: 200 },
+  };
+  const [textVariants, setTextVariants] = useState({ nextVariants });
 
   const nextSlide = () => {
+    setTextVariants(nextVariants);
     const isLastSlide = currentIndex === data.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
     setKey(newIndex);
   };
   const prevSlide = () => {
+    setTextVariants(prevVariants);
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? data.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
@@ -69,52 +79,66 @@ function HeroSection() {
           />
           {/*Content Section*/}
 
-          <div className="flex flex-col lg:flex-row justify-between items-center w-full">
-            <AnimatePresence>
-              <section className="flex flex-col z-10 gap-2 w-full xl:w-1/2 overflow-y-hidden">
-                <Heading
-                  key={data[currentIndex].title}
-                  className="animated-text bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mr-8 lg:mr-20"
+          <div className="flex flex-col lg:flex-row gap-4 xl:gap-0 justify-between items-center w-full">
+            <section className="flex flex-col z-10 gap-2 w-full lg:w-3/5 xl:w-1/2 overflow-y-hidden">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`title-${currentIndex}`}
+                  animate="animate"
+                  exit="exit"
+                  variants={textVariants}
+                  transition={{ duration: 1, delay: 0.005 }}
                 >
-                  {data[currentIndex].title}
-                </Heading>
-                <Paragraph
-                  key={data[currentIndex].description}
-                  className="animated-text text-white text-justify m-2 md:m-4 md:mr-8 lg:mr-20"
+                  <Heading className=" bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mb-0 md:mr-8 lg:mr-20">
+                    {data[currentIndex].title}
+                  </Heading>
+                </motion.div>
+              </AnimatePresence>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`description-${currentIndex}`}
+                  animate="animate"
+                  exit="exit"
+                  variants={textVariants}
+                  transition={{ duration: 1, delay: 0.005 }}
                 >
-                  {data[currentIndex].description}
-                </Paragraph>
-              </section>
-            </AnimatePresence>
-
-            <section className="flex justify-center gap-8 z-10 relative -left-[1%] 2xl:-left-[5%] overflow-hidden">
-              <img
-                src={data[(currentIndex + 1) % data.length].smallPicture}
-                className="h-11/12 w-1/4 xl:w-[30%] 2xl:w-full"
-              />
-              <img
-                src={data[(currentIndex + 2) % data.length].smallPicture}
-                className="h-11/12 w-1/4 xl:w-[30%] 2xl:w-full"
-              />
-              <img
-                src={data[(currentIndex + 3) % data.length].smallPicture}
-                className="h-11/12 w-1/4 xl:w-[30%] 2xl:w-full"
-              />
+                  <Paragraph className=" text-white text-justify m-2 md:m-4 md:mr-8 lg:mr-20">
+                    {data[currentIndex].description}
+                  </Paragraph>
+                </motion.div>
+              </AnimatePresence>
             </section>
-          </div>
-          <div className="flex w-full justify-center items-center relative top-24 gap-4 z-10">
-            <button
-              className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary"
-              onClick={prevSlide}
-            >
-              <FaArrowRight size={24} />
-            </button>
-            <button
-              className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary"
-              onClick={nextSlide}
-            >
-              <FaArrowLeft size={24} />
-            </button>
+
+            <div className="flex flex-col">
+              <section className="flex justify-center gap-8 z-10 relative -left-[1%] lg:-left-[8%] 2xl:-left-[5%] overflow-hidden">
+                <img
+                  src={data[(currentIndex + 1) % data.length].smallPicture}
+                  className="h-11/12 w-1/4 md:w-[30%] xl:w-[30%] 2xl:w-full"
+                />
+                <img
+                  src={data[(currentIndex + 2) % data.length].smallPicture}
+                  className="h-11/12 w-1/4 md:w-[30%] xl:w-[30%] 2xl:w-full"
+                />
+                <img
+                  src={data[(currentIndex + 3) % data.length].smallPicture}
+                  className="h-11/12 w-1/4 md:w-[30%] xl:w-[30%] 2xl:w-full"
+                />
+              </section>
+              <div className="flex w-full items-center justify-center lg:justify-normal relative top-14 -left-[1%] 2xl:-left-[5%] gap-4 z-10">
+                <button
+                  className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary"
+                  onClick={prevSlide}
+                >
+                  <FaArrowRight size={24} />
+                </button>
+                <button
+                  className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary"
+                  onClick={nextSlide}
+                >
+                  <FaArrowLeft size={24} />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </main>
