@@ -4,63 +4,103 @@
     "rotation": "-4.63deg",
     "textColor": "#BE894A",
     "backGroundColor": "#BE894A1A",
-    "top": "243.77px",
-    "left": "122.61px"
+    "lgTop": "",
+    "lgLeft": "",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4"
   },
   {
     "text": "التطوير المستمر",
     "rotation": "-7.58deg",
     "textColor": "#2C4D51",
     "backGroundColor": "#2C4D511A",
-    "top": "421.9px",
-    "left": "31.04px"
+    "lgTop": "421.9",
+    "lgLeft": "31.04",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4"
   },
   {
     "text": "النزاهة",
     "rotation": "4.4deg",
     "textColor": "#2C4D51",
     "backGroundColor": "#2C4D511A",
-    "top": "515px",
-    "left": "236.45px"
+    "lgTop": "515",
+    "lgLeft": "236.45",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4"
   },
   {
     "text": "الدعم المعنوي",
     "rotation": "-7.06deg",
     "textColor": "#BE894A",
     "backGroundColor": "#BE894A1A",
-    "top": "665.57px",
-    "left": "368.57px"
+    "lgTop": "665.57",
+    "lgLeft": "368.57",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4"
   },
   {
     "text": "تعظيم قدر الصلاة",
     "rotation": "6.3deg",
     "textColor": "#2C4D51",
     "backGroundColor": "#2C4D511A",
-    "top": "638px",
-    "left": "683.19px"
+    "lgTop": "638",
+    "lgLeft": "683.19",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4"
   },
   {
     "text": "المساندة المالية الطارئة",
     "rotation": "7.68deg",
     "textColor": "#2C4D51",
     "backGroundColor": "#2C4D511A",
-    "top": "509px",
-    "left": "855.58px"
+    "lgTop": "509",
+    "lgLeft": "855.58",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4"
   },
   {
     "text": "الإخلاص",
     "rotation": "-4.89deg",
     "textColor": "#BE894A",
     "backGroundColor": "#BE894A1A",
-    "top": "406.66px",
-    "left": "998.57px"
+    "lgTop": "406.66",
+    "lgLeft": "998.57",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4"
   },
   {
     "text": "الإحترام",
     "rotation": "-6.89deg",
     "textColor": "#2C4D51",
     "backGroundColor": "#2C4D511A",
-    "top":"255.53px",
-    "left":"888.68px"
+    "lgTop":"255.53",
+    "lgLeft":"888.68",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4"
   }
 ]

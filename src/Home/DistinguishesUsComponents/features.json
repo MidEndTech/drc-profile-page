@@ -4,39 +4,69 @@
     "rotation": "-6.47deg",
     "textColor": "#BE894A",
     "backGroundColor": "#BE894A1A",
-    "top": "303.72px",
-    "left": "62px"
+    "lgTop": "303.72",
+    "lgLeft": "62",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"5",
+    "delay":"1"
   },
   {
     "text": "تعظيم أثر المخرجات (خدمات إضافية للعميل)",
     "rotation": "2.43deg",
     "textColor": "#2C4D51",
     "backGroundColor": "#2C4D511A",
-    "top": "470px",
-    "left": "14.91px"
+    "lgTop": "470",
+    "lgLeft": "14.91",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4",
+    "delay":"2"
   },
   {
     "text": "خبرة نوعية تراكمية",
     "rotation": "7.68deg",
     "textColor": "#2C4D51",
     "backGroundColor": "#2C4D511A",
-    "top": "555px",
-    "left": "783.58px"
+    "lgTop": "555",
+    "lgLeft": "783.58",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"5",
+    "delay":"1"
   },
   {
     "text": "العناية بالتفاصيل لصناعة الجودة",
     "rotation": "-4.89deg",
     "textColor": "#BE894A",
     "backGroundColor": "#BE894A1A",
-    "top": "421.23px",
-    "left": "867.57px"
+    "lgTop": "421.23",
+    "lgLeft": "867.67",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"5",
+    "delay":"2"
   },
   {
     "text": "التوازن (بين الأبعاد المختلفة)",
     "rotation": "-1.41deg",
     "textColor": "#2C4D51",
     "backGroundColor": "#2C4D511A",
-    "top": "243.2px",
-    "left": "862.01px"
+    "lgTop": "243.2",
+    "lgLeft": "862.01",
+    "mdTop": "",
+    "mdLeft": "",
+    "top": "",
+    "left": "",
+    "duration":"4",
+    "delay":"1"
   }
 ]
