@@ -4,6 +4,7 @@ import ErrorPage from "./Pages/ErrorPage";
 import NavBar from "./SharedComponents/NavBar";
 import Footer from "./SharedComponents/Footer";
 import AboutUsPage from "./Pages/AboutUsPage";
+
 function App() {
   return (
     <BrowserRouter>

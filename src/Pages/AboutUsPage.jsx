@@ -1,3 +1,4 @@
+
 import AboutSection from "../AboutUs/HeroComponents/AboutSection";
 
 function AboutUsPage() {
