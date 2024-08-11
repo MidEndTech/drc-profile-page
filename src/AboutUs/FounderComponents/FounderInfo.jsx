@@ -7,7 +7,7 @@ import Heading from "../../SharedComponents/Heading";
 
 function FounderInfo() {
   return (
-    <div className="relative -mx-20">
+    <div className="relative mx-auto px-4 md:px-8 lg:px-20">
       <div className="relative w-full max-w-6xl mx-auto">
         <div className="absolute top-0 right-0 z-0">
           <img
