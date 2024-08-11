@@ -32,7 +32,7 @@ function HeroCarousel({ sliderRef }) {
       <Carousel
         ref={sliderRef}
         rtl
-        itemClass="px-1 md:px-2 xl:px-4"
+        itemClass="md:px-2 xl:px-4"
         infinite
         autoPlay
         autoPlaySpeed={4000}
@@ -49,7 +49,7 @@ function HeroCarousel({ sliderRef }) {
           <img
             key={index}
             src={arr[(index + 1) % arr.length].smallPicture}
-            className="h-11/12 lg:h-full"
+            className="h-full"
           />
         ))}
       </Carousel>
