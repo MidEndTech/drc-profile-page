@@ -5,6 +5,7 @@ import FounderInfo from "./FounderInfo";
 import orange from "../../../public/assets/AboutUs/FounderSection/orange.svg";
 import TopCorner from "../../../public/assets/AboutUs/FounderSection/topcorner1.png";
 import blue from "../../../public/assets/AboutUs/FounderSection/blue.svg";
+import arrow from "../../../public/assets/AboutUs/FounderSection/arrow.svg";
 import Paragraph from "../../SharedComponents/Paragraph";
 
 function Founder() {
@@ -83,10 +84,12 @@ function Founder() {
                   والعملي.
                 </Paragraph>
                 <button
-                  className="px-4 py-2 text-[#BE894A] rounded-full"
+                  className="flex items-center justify-end px-4 py-2 text-[#BE894A] rounded-full"
                   onClick={handleExpand}
                 >
-                  تعرف على المزيد
+                  <span className="text-2xl">تعرف على المزيد</span>
+                  <img src={arrow} className="mr-10" alt="Arrow Icon" />
+
                 </button>
               </div>
             </div>

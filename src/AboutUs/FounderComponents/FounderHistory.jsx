@@ -52,7 +52,7 @@ function FounderHistory() {
             <CustomTimelineDot />
             {index < historyItems.length - 1 && <CustomTimelineConnector />}
           </TimelineSeparator>
-          <TimelineContent sx={{ py: "30px", px: 4, mt: "-10px" }}>
+          <TimelineContent sx={{ py: "30px", px: 4, mt: "-30px" }}>
             <Box sx={{ textAlign: "right" }}>
               <Typography variant="body2" color="text.secondary" sx={{}}>
                 {item.date}
