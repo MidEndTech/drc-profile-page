@@ -4,9 +4,9 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import { styled } from "@mui/system";
+import resumeData from "./Resume.json";
 
 const CustomTimelineDot = styled("div")({
   display: "flex",
@@ -32,51 +32,40 @@ const CustomTimelineConnector = styled(TimelineConnector)(({ theme }) => ({
   backgroundColor: "#2C4D51",
 }));
 
-function FounderHistory() {
-  const historyItems = [
-    {
-      date: "عام 1965م/1385هـ",
-      content:
-        "حصل على البكالوريوس الهندسة المعمارية من جامعة عين شمس بجمهورية مصر العربية",
+const ItemsAlignedToRight = styled(Timeline)({
+  paddingRight: 0,
+  "& .MuiTimelineItem-root": {
+    "&::before": {
+      flex: 0,
+      padding: 0,
     },
-    {
-      date: "عام 1971م/1390هـ",
-      content:
-        "حصل على ماجستير تخطيط المدن من جامعة جنوب كاليفورنيا لوس أنجلوس أمريكا",
-    },
-    {
-      date: "عام 1980م/1400هـ",
-      content: "أسس مكتب التخطيط المعماري والهندسي",
-    },
-    {
-      date: "عام 1985م/1405هـ",
-      content: "عمل كمستشار في مشاريع التنمية الحضرية في المنطقة",
-    },
-    // Add more items as needed
-  ];
+  },
+});
 
+function FounderHistory() {
+  const { historyItems } = resumeData;
   return (
-    <Timeline position="right">
+    <ItemsAlignedToRight position="right">
       {historyItems.map((item, index) => (
         <TimelineItem key={index}>
-          <TimelineOppositeContent
-            style={{ flex: 0.2, paddingLeft: 16 }}
-            align="left"
-            variant="body2"
-            color="text.secondary"
-          >
-            {item.date}
-          </TimelineOppositeContent>
           <TimelineSeparator>
-            <CustomTimelineDot />   
+            <CustomTimelineDot />
             {index < historyItems.length - 1 && <CustomTimelineConnector />}
           </TimelineSeparator>
-          <TimelineContent style={{ paddingRight: 16 }}>
-            <Typography variant="body1">{item.content}</Typography>
+          <TimelineContent sx={{ py: "30px", px: 4, mt: "-10px" }}>
+            <Box sx={{ textAlign: "right" }}>
+              <Typography variant="body2" color="text.secondary" sx={{}}>
+                {item.date}
+              </Typography>
+              <Typography variant="body1" sx={{ marginTop: "10px" }}>
+                {item.content}
+              </Typography>
+            </Box>
           </TimelineContent>
         </TimelineItem>
       ))}
-    </Timeline>
+    </ItemsAlignedToRight>
   );
 }
+
 export default FounderHistory;
