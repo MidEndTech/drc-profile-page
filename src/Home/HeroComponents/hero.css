@@ -1,10 +1,10 @@
 .kenburns-top-right {
-  -webkit-animation: kenburns-top-right 1.5s ease-out both;
-  animation: kenburns-top-right 1.5s ease-out both;
+  -webkit-animation: kenburns-top-right 1.3s ease-out both;
+  animation: kenburns-top-right 1.3s ease-out both;
 }
 .kenburns-top-right-reverse {
-  -webkit-animation: kenburns-top-right 1.5s ease-out reverse both;
-  animation: kenburns-top-right 1.5s ease-out reverse both;
+  -webkit-animation: kenburns-top-right 1.3s ease-out reverse both;
+  animation: kenburns-top-right 1.3s ease-out reverse both;
 }
 
 @-webkit-keyframes kenburns-top-right {

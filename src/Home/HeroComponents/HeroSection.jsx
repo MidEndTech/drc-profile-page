@@ -1,40 +1,54 @@
-import "./hero.css";
 import data from "./field.json";
-import { useRef } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import Heading from "../../SharedComponents/Heading";
-import Paragraph from "../../SharedComponents/Paragraph";
-import { AnimatePresence, motion } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import HeroContainer from "./HeroContainer";
+import HeroInfo from "./HeroInfo";
+import HeroCarousel from "./HeroCarousel";
+import Arrows from "./Arrows";
+
+const preloadImages = (imageUrls) => {
+  return Promise.all(
+    imageUrls.map((url) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    })
+  );
+};
+
 function HeroSection() {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isNext, setIsNext] = useState(true);
+
+  const sliderRef = useRef(null);
   const timerRef = useRef(null);
-  const [key, setKey] = useState(0); // Key to force re-render for animation
-  const nextVariants = {
-    animate: { opacity: 1, y: [200, -15, 15, 0] },
-    exit: { opacity: 0, y: -200 },
-  };
-  const prevVariants = {
-    animate: { opacity: 1, y: [-200, 15, -15, 0] },
-    exit: { opacity: 0, y: 200 },
-  };
-  const [textVariants, setTextVariants] = useState({ nextVariants });
 
   const nextSlide = () => {
-    setTextVariants(nextVariants);
+    setIsNext(true);
     const isLastSlide = currentIndex === data.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-    setKey(newIndex);
   };
   const prevSlide = () => {
-    setTextVariants(prevVariants);
+    setIsNext(false);
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? data.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
-    setKey(newIndex);
   };
+
+  useEffect(() => {
+    const imageUrls = data.flatMap((item) => [
+      item.smallPicture,
+      item.bigPicture,
+    ]);
+    preloadImages(imageUrls).then(() => {
+      setImagesLoaded(true);
+    });
+  });
+
   useEffect(() => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
@@ -45,105 +59,26 @@ function HeroSection() {
     return () => clearTimeout(timerRef.current);
   });
 
+  if (!imagesLoaded) {
+    return; // Display a loading indicator while images are being preloaded
+  }
+
   return (
-    <>
-      {/*Load the images in advanced so the animation works */}
-      <div>
-        {data.map((slide, index) => {
-          return (
-            <div
-              key={index}
-              className="w-0"
-              style={{
-                backgroundImage: `url('${slide.bigPicture}')`,
-              }}
-            >
-              <img src={slide.smallPicture} />
-            </div>
-          );
-        })}
-      </div>
-
-      {/*Actual Hero*/}
-      <main className="overflow-hidden">
-        <div className="relative h-screen w-screen flex flex-col items-center justify-center ">
-          {/* Image with Ken Burns effect */}
-          <img
-            key={key}
-            src={data[currentIndex].bigPicture}
-            className={`absolute inset-0 w-full h-full object-cover object-center ${
-              currentIndex % 2 === 0
-                ? "kenburns-top-right"
-                : "kenburns-top-right-reverse"
-            } `}
-          />
-          {/*Content Section*/}
-
-          <div className="flex flex-col lg:flex-row gap-4 xl:gap-0 justify-between items-center w-full">
-            <section className="flex flex-col z-10 gap-2 w-full lg:w-3/5 xl:w-1/2 overflow-y-hidden">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={`title-${currentIndex}`}
-                  animate="animate"
-                  exit="exit"
-                  variants={textVariants}
-                  transition={{ duration: 1, delay: 0.005 }}
-                >
-                  <Heading className=" bg-gradient-to-l from-primary to-secondary text-transparent bg-clip-text m-2 md:m-4 md:mb-0 md:mr-8 lg:mr-20">
-                    {data[currentIndex].title}
-                  </Heading>
-                </motion.div>
-              </AnimatePresence>
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={`description-${currentIndex}`}
-                  animate="animate"
-                  exit="exit"
-                  variants={textVariants}
-                  transition={{ duration: 1, delay: 0.005 }}
-                >
-                  <Paragraph className=" text-white text-justify m-2 md:m-4 md:mr-8 lg:mr-20">
-                    {data[currentIndex].description}
-                  </Paragraph>
-                </motion.div>
-              </AnimatePresence>
-            </section>
-
-            <div className="flex flex-col">
-              <section className="flex justify-center gap-8 z-10 relative -left-[1%] lg:-left-[8%] 2xl:-left-[5%] overflow-hidden">
-                <img
-                  src={data[(currentIndex + 1) % data.length].smallPicture}
-                  className="h-11/12 w-1/4 md:w-[30%] xl:w-[30%] 2xl:w-full"
-                />
-                <img
-                  src={data[(currentIndex + 2) % data.length].smallPicture}
-                  className="h-11/12 w-1/4 md:w-[30%] xl:w-[30%] 2xl:w-full"
-                />
-                <img
-                  src={data[(currentIndex + 3) % data.length].smallPicture}
-                  className="h-11/12 w-1/4 md:w-[30%] xl:w-[30%] 2xl:w-full"
-                />
-              </section>
-              <div className="flex w-full items-center justify-center lg:justify-normal relative top-14 -left-[1%] 2xl:-left-[5%] gap-4 z-10">
-                <button
-                  className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary"
-                  onClick={prevSlide}
-                >
-                  <FaArrowRight size={24} />
-                </button>
-                <button
-                  className="p-4 text-white border-2 border-white rounded-full hover:border-primary hover:text-primary"
-                  onClick={nextSlide}
-                >
-                  <FaArrowLeft size={24} />
-                </button>
-              </div>
-            </div>
+    <main className="overflow-hidden">
+      <HeroContainer currentIndex={currentIndex}>
+        <div className="flex flex-col lg:flex-row gap-4 xl:gap-0 justify-between items-center w-full">
+          <HeroInfo currentIndex={currentIndex} isNext={isNext} />
+          <div className="flex flex-col w-1/3">
+            <HeroCarousel sliderRef={sliderRef} />
+            <Arrows
+              sliderRef={sliderRef}
+              nextSlide={nextSlide}
+              prevSlide={prevSlide}
+            />
           </div>
         </div>
-      </main>
-    </>
+      </HeroContainer>
+    </main>
   );
 }
-
 export default HeroSection;
