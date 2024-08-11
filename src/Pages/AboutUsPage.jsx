@@ -1,12 +1,12 @@
-import React from 'react'
+
+import AboutSection from "../AboutUs/HeroComponents/AboutSection";
 
 function AboutUsPage() {
   return (
-    <div>
-        <Founder/>
+    <div className="bg-[#F5F5F5]">
+      <AboutSection />
     </div>
-  )
+  );
 }
 
-
-export default AboutUsPage
+export default AboutUsPage;
