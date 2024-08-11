@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import backgroundImage from "../../../public/assets/AboutUs/FounderSection/Backgournd.svg";
-import FounderImage from "../../../public/assets/AboutUs/FounderSection/Self.svg";
+import backgroundImage from "/assets/AboutUs/FounderSection/Backgournd.svg";
+import FounderImage from "/assets/AboutUs/FounderSection/Self.svg";
 import FounderInfo from "./FounderInfo";
-import orange from "../../../public/assets/AboutUs/FounderSection/orange.svg";
-import TopCorner from "../../../public/assets/AboutUs/FounderSection/topcorner1.png";
-import blue from "../../../public/assets/AboutUs/FounderSection/blue.svg";
-import arrow from "../../../public/assets/AboutUs/FounderSection/arrow.svg";
+import orange from "/assets/AboutUs/FounderSection/orange.svg";
+import TopCorner from "/assets/AboutUs/FounderSection/topcorner1.png";
+import blue from "/assets/AboutUs/FounderSection/blue.svg";
+import arrow from "/assets/AboutUs/FounderSection/arrow.svg";
 import Paragraph from "../../SharedComponents/Paragraph";
 
 function Founder() {
