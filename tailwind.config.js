@@ -13,11 +13,13 @@ export default {
         green: "#2C4D51",
         "dark-green": "#223A39",
       },
-      fontFamily:{
-        Bolds:['TheYearofTheCamel-Bold']
-      }
+      fontFamily: {
+        Bolds: ["TheYearofTheCamel-Bold"],
+      },
+      transitionProperty: {
+        width: "width",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
 };
-
