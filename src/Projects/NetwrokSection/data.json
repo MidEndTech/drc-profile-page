@@ -1,0 +1,27 @@
+[
+  {
+    "image": "/assets/Projects/NetworkSection/TopRight.svg"
+  },
+  {
+    "image": "/assets/Projects/NetworkSection/TopMiddle.svg"
+  },
+  {
+    "title": "مجمعات الخدمات الحكومية",
+    "image": "/assets/Projects/NetworkSection/TopLeft.svg"
+  },
+  {
+    "image": "/assets/Projects/NetworkSection/Center.svg"
+  },
+  {
+    "image": "/assets/Projects/NetworkSection/MiddleLeft.svg"
+  },
+  {
+    "image": "/assets/Projects/NetworkSection/BottomRight.svg"
+  },
+  {
+    "image": "/assets/Projects/NetworkSection/BottomCenter.svg"
+  },
+  {
+    "image": "/assets/Projects/NetworkSection/BottomLeft.svg"
+  }
+]
