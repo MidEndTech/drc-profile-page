@@ -4,12 +4,13 @@
     "rotation": "-4.63deg",
     "textColor": "#BE894A",
     "backGroundColor": "#BE894A1A",
-    "lgTop": "",
-    "lgLeft": "",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
-    "left": "",
+    "lgTop": "243.77",
+    "lgLeft": "122.61",
+    "mdTop": "150",
+    "mdLeft": "40",
+    "top": "80",
+    "left": "0",
+    "right":"",
     "duration":"4"
   },
   {
@@ -19,10 +20,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "421.9",
     "lgLeft": "31.04",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
-    "left": "",
+    "mdTop": "270",
+    "mdLeft": "60",
+    "top": "140",
+    "left": "0",
+    "right":"",
     "duration":"4"
   },
   {
@@ -32,10 +34,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "515",
     "lgLeft": "236.45",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
-    "left": "",
+    "mdTop": "370",
+    "mdLeft": "150",
+    "top": "200",
+    "left": "0",
+    "right":"",
     "duration":"4"
   },
   {
@@ -45,10 +48,11 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": "665.57",
     "lgLeft": "368.57",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
-    "left": "",
+    "mdTop": "480",
+    "mdLeft": "200",
+    "top": "260",
+    "left": "0",
+    "right":"",
     "duration":"4"
   },
   {
@@ -58,10 +62,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "638",
     "lgLeft": "683.19",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "500",
+    "mdLeft": "400",
+    "top": "80",
     "left": "",
+    "right":"0",
     "duration":"4"
   },
   {
@@ -71,10 +76,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "509",
     "lgLeft": "855.58",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "440",
+    "mdLeft": "580",
+    "top": "140",
     "left": "",
+    "right":"0",
     "duration":"4"
   },
   {
@@ -84,10 +90,11 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": "406.66",
     "lgLeft": "998.57",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "330",
+    "mdLeft": "630",
+    "top": "200",
     "left": "",
+    "right":"0",
     "duration":"4"
   },
   {
@@ -97,10 +104,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop":"255.53",
     "lgLeft":"888.68",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "200",
+    "mdLeft": "660",
+    "top": "260",
     "left": "",
+    "right":"0",
     "duration":"4"
   }
 ]

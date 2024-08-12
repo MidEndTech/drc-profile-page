@@ -6,10 +6,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "202.22",
     "lgLeft": "3.45",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
-    "left": "",
+    "mdTop": "150",
+    "mdLeft": "40",
+    "top": "80",
+    "left": "0",
+    "right":"",
     "duration":"4"
   },
   {
@@ -19,10 +20,11 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": "283",
     "lgLeft": "144.55",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
-    "left": "",
+    "mdTop": "270",
+    "mdLeft": "110",
+    "top": "140",
+    "left": "0",
+    "right":"",
     "duration":"4"
   },
   {
@@ -32,10 +34,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "427.14",
     "lgLeft": "31.04",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
-    "left": "",
+    "mdTop": "370",
+    "mdLeft": "50",
+    "top": "200",
+    "left": "0",
+    "right":"",
     "duration":"4"
   },
   {
@@ -45,10 +48,11 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": "557.65",
     "lgLeft": "199.36",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
-    "left": "",
+    "mdTop": "460",
+    "mdLeft": "180",
+    "top": "260",
+    "left": "0",
+    "right":"",
     "duration":"4"
   },
   {
@@ -58,10 +62,11 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": "673.86",
     "lgLeft": "368.57",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "520",
+    "mdLeft": "320",
+    "top": "300",
     "left": "",
+    "right":"",
     "duration":"4"
   },
   {
@@ -71,10 +76,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "635",
     "lgLeft": "683.19",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "450",
+    "mdLeft": "500",
+    "top": "80",
     "left": "",
+    "right":"0",
     "duration":"4"
   },
   {
@@ -84,10 +90,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "512",
     "lgLeft": "855.58",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "330",
+    "mdLeft": "580",
+    "top": "140",
     "left": "",
+    "right":"0",
     "duration":"4"
   },
   {
@@ -97,10 +104,11 @@
     "backGroundColor": "#BE894A1A",
     "lgTop":"408.01",
     "lgLeft":"998.57",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "230",
+    "mdLeft": "660",
+    "top": "200",
     "left": "",
+    "right":"0",
     "duration":"4"
   },
   {
@@ -110,10 +118,11 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": "266.8",
     "lgLeft": "888.68",
-    "mdTop": "",
-    "mdLeft": "",
-    "top": "",
+    "mdTop": "140",
+    "mdLeft": "570",
+    "top": "260",
     "left": "",
+    "right":"0",
     "duration":"4"
   }
 ]
