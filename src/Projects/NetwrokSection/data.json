@@ -1,27 +1,46 @@
-[
-  {
-    "image": "/assets/Projects/NetworkSection/TopRight.svg"
+{
+  "TopLeft.svg": {
+    "heading": "مجمعات الخدمات الحكومية بمحافظة الجموم",
+    "text": "يهدف المشروع إلى تحسين أسلوب إدارة التنمية العمرانية بمنطقة مكة المكرمة، من خلال تحقيق اللامركزية في توزيع وإقامة مراكز الخدمات الحكومية..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/TopMiddle.svg"
+  "TopMiddle.svg": {
+    "heading": "عنوان المشروع الثاني",
+    "text": "نص المشروع الثاني..."
   },
-  {
-    "title": "مجمعات الخدمات الحكومية",
-    "image": "/assets/Projects/NetworkSection/TopLeft.svg"
+  "TopRight.svg": {
+    "heading": "عنوان المشروع الثالث",
+    "text": "نص المشروع الثالث..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/Center.svg"
+  "MiddleLeft.svg": {
+    "heading": "عنوان المشروع الرابع",
+    "text": "نص المشروع الرابع..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/MiddleLeft.svg"
+  "Center.svg": {
+    "heading": "عنوان المشروع الخامس",
+    "text": "نص المشروع الخامس..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/BottomRight.svg"
+  "BottomLeft.svg": {
+    "heading": "عنوان المشروع السادس",
+    "text": "نص المشروع السادس..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/BottomCenter.svg"
+  "BottomCenter.svg": {
+    "heading": "عنوان المشروع السابع",
+    "text": "نص المشروع السابع..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/BottomLeft.svg"
+  "BottomRight.svg": {
+    "heading": "عنوان المشروع الثامن",
+    "text": "نص المشروع الثامن..."
+  },
+  "Extra1.svg": {
+    "heading": "عنوان المشروع التاسع",
+    "text": "نص المشروع التاسع..."
+  },
+  "Extra2.svg": {
+    "heading": "عنوان المشروع العاشر",
+    "text": "نص المشروع العاشر..."
+  },
+  "Extra3.svg": {
+    "heading": "عنوان المشروع الحادي عشر",
+    "text": "نص المشروع الحادي عشر..."
   }
-]
+}
