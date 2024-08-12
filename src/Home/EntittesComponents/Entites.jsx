@@ -6,7 +6,7 @@ function Entites() {
     const allImages = Images[0].src;
 
     return (
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 py-15 pb-[100px] pt-[100px]"  >
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#9D6636] font-bold text-center my-4 pb-10">جهات معتمدة لديها دار الرحمة للاستشارات</h1>
         <div className="overflow-hidden">
           <div className="flex animate-scroll">
