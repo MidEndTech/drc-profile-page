@@ -1,7 +1,7 @@
 import React from "react";
 import Paragraph from "../../SharedComponents/Paragraph";
 import Heading from "../../SharedComponents/Heading";
-import BackHero from "/assets/ProjectsSection/BackHero.svg";
+import BackHero from "/assets/Projects/HeroSection/BackHero.svg";
 
 function HeroSection() {
   return (
