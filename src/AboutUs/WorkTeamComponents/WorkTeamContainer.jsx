@@ -1,201 +1,102 @@
-// import React, { useState } from "react";
-// import Slider from "react-slick";
-
-// import teamObj from "./team.json";
-
-// function WorkTeamContainer() {
-//   const [team, setTeam] = useState([...teamObj]);
-
-//   const settings = {
-//     className: "center",
-//     centerMode: true,
-//     dots: true,
-//     infinite: false,
-//     speed: 500,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     initialSlide: 0,
-//     arrows: false,
-//     dots: false,
-//     rtl: true,
-//     responsive: [
-//       {
-//         breakpoint: 1024,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//           dots: false,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           initialSlide: 2,
-//           dots: false,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           dots: false,
-//         },
-//       },
-//     ],
-//   };
-
-
-//   return (
-//     <div>
-//       <h1 className="font-[700] text-[36px] text-[#9D6636] flex justify-center">
-//         فريق العمل
-//       </h1>
-
-//       <div className="slider-container z-10 relative ">
-//         <Slider {...settings}>
-//           {team.map((el, index) => {
-//             return (
-//               <div key={index} className="">
-//                 <div className="flex-col justify-center items-center text-center w-[276.57px] h-[499.5px]">
-//                   <div className="flex justify-center">
-//                     <img
-//                       src={el.avatarImage}
-//                       alt="pic"
-//                       className="w-[276.57px] h-[258.07px]"
-//                     />
-//                   </div>
-//                   <p className="font-[400] text-[20px] mt-5">
-//                     {el.nameOfWorker}
-//                   </p>
-
-//                   <p className="font-[400] text-[16px] text-[#BE894A]">
-//                     {el.workerTitile}
-//                   </p>
-
-//                   <div className="flex justify-center items-center z-10 relative ">
-//                     <div className="border-2 rounded-full p-1 border-[#BE894A] absolute top-5">
-//                       <div className="p-4 bg-[#BE894A] rounded-full"></div>
-//                     </div>
-//                   </div>
-
-//                   <p className="text-[16px] font-[400] mt-10 text-center w-[] h-[]">
-//                     {el.workerDescripe}
-//                   </p>
-//                 </div>
-//               </div>
-//             );
-//           })}
-//         </Slider>{" "}
-//       </div>
-
-//       <hr className="bg-[#B9B9B9] h-[3px] mt-10 mb-10 relative lg:bottom-[62px] bottom-[87px] px z-0" />
-
-//     </div>
-//   );
-// }
-
-// export default WorkTeamContainer;
-
-
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
+import { SettingsSlider } from "./SettingsSlider";
+import left from "/assets/Home/AssociationSection/Variant5.svg";
+import right from "/assets/Home/AssociationSection/Variant6.svg";
+import "./Slider.css"
+import BackgroundBlue from "/assets/AboutUs/WorkTeamSection/BackgroundBlue.svg"
 
 import teamObj from "./team.json";
+import TeamCards from "./TeamCards";
 
 function WorkTeamContainer() {
   const [team, setTeam] = useState([...teamObj]);
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [c, setC] = useState(null);
 
-  const settings = {
-    className: "center",
-    centerMode: true,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    arrows: false,
-    dots: false,
-    rtl: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false,
-        },
-      },
-    ],
-  };
+  useEffect(() => {
+    setC(currentSlide);
+  }, []);
 
+  // console.log(currentSlide)
+
+
+  const NextArrow = ({ onClick, disabled }) => (
+    <div
+      onClick={onClick}
+      className={`custom-arrow next-arrow p-2 z-10 ${
+        disabled ? "opacity-50 cursor-not-allowed" : ""
+      }`}
+    >
+      <img
+        src={left}
+        alt="Next"
+        className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 cursor-pointer opacity-60 hover:opacity-100"
+      />
+    </div>
+  );
+
+  const PrevArrow = ({ onClick, disabled }) => (
+    <div
+      onClick={onClick}
+      className={`custom-arrow prev-arrow p-2 ${
+        disabled ? "opacity-50 cursor-not-allowed" : ""
+      }`}
+    >
+      <img
+        src={right}
+        alt="Previous"
+        className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 cursor-pointer opacity-60 hover:opacity-100"
+      />
+    </div>
+  );
+
+  SettingsSlider(setCurrentSlide);
+
+  
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center" dir="rtl">
+      
+      {/* done */}
       <h1 className="font-[700] text-[36px] text-[#9D6636] text-center mb-8">
         فريق العمل
       </h1>
 
-      <div className="slider-container z-10 relative w-full">
-        <Slider {...settings}>
-          {team.map((el, index) => (
-            <div key={index} className="flex justify-center">
-              <div className="flex-col justify-center items-center text-center">
-                <div className="flex justify-center">
-                  <img
-                    src={el.avatarImage}
-                    alt="pic"
-                    className="w-[276.57px] h-[258.07px]"
-                  />
-                </div>
-                <p className="font-[400] text-[20px] mt-5">
-                  {el.nameOfWorker}
-                </p>
 
-                <p className="font-[400] text-[16px] text-[#BE894A]">
-                  {el.workerTitile}
-                </p>
-
-                <div className="flex justify-center items-center z-10 relative ">
-                  <div className="border-2 rounded-full p-1 border-[#BE894A] absolute top-1">
-                    <div className="p-4 bg-[#BE894A] rounded-full"></div>
-                  </div>
-                </div>
-
-                <div className="flex justify-center items-end">
-                                  <p className="text-[16px] font-[400] mt-10 w-[276.57px]">
-                  {el.workerDescripe}
-                </p>
-                </div>
-
+      <div className="slider-container relative w-full z-10">
+        <Slider ref={sliderRef} {...SettingsSlider()}>
+          {team.map((el, index) => {
+            return (
+              <div className="z-20">
+                <TeamCards
+                  index={index}
+                  avatarImage={el.avatarImage}
+                  nameOfWorker={el.nameOfWorker}
+                  workerTitile={el.workerTitile}
+                  workerDescripe={el.workerDescripe}
+                />
               </div>
-            </div>
-          ))}
+            );
+          })}
         </Slider>
-      </div>
 
-      <hr className="bg-[#B9B9B9] h-[3px] mt-10 mb-10 w-full relative bottom-[104px]" />
+        <div className="flex justify-between relative bottom-[390px]">
+          <div className=""> 
+            <NextArrow
+              onClick={() => {
+                sliderRef.current.slickNext();
+              }}
+            />
+          </div>
+
+          <div>
+            <PrevArrow onClick={() => sliderRef.current.slickPrev()} />
+          </div>
+        </div>
+              
+              <div className="absolute right-0 bottom-[160px] z-0"><img src={BackgroundBlue} alt="" /></div>
+      </div>
     </div>
   );
 }
