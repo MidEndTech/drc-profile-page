@@ -11,7 +11,7 @@ function ContentCard({ activeSection }) {
     else setIndex(2);
   }, [activeSection]);
   return (
-    <div className="w-9/12 bg-white flex justify-between items-center gap-12 p-8 rounded-2xl mt-8">
+    <div className="w-[70%] md:w-[80%] lg:w-[60%] 2xl:w-[53%] bg-white flex justify-between items-center gap-12 p-8 rounded-2xl mt-8">
       <section className="flex-col gap-4">
         <AnimatePresence mode="popLayout">
           <motion.div
