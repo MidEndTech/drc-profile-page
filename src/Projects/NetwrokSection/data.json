@@ -1,27 +1,42 @@
-[
-  {
-    "image": "/assets/Projects/NetworkSection/TopRight.svg"
+{
+  "TopRight": {
+    "image": "/assets/Projects/NetworkSection/TopRight.svg",
+    "heading": "مجمعات الخدمات الحكومية بمحافظة الجموم",
+    "text": "يهدف المشروع إلى تحسين أسلوب إدارة التنمية العمرانية بمنطقة مكة المكرمة، من خلال تحقيق اللامركزية في توزيع وإقامة مراكز الخدمات الحكومية..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/TopMiddle.svg"
+  "TopMiddle.svg": {
+    "image": "/assets/Projects/NetworkSection/TopMiddle.svg",
+    "heading": "عنوان المشروع الثاني",
+    "text": "نص المشروع الثاني..."
   },
-  {
-    "title": "مجمعات الخدمات الحكومية",
-    "image": "/assets/Projects/NetworkSection/TopLeft.svg"
+  "TopLeft.svg": {
+    "image": "/assets/Projects/NetworkSection/TopLeft.svg",
+    "heading": "عنوان المشروع الثالث",
+    "text": "نص المشروع الثالث..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/Center.svg"
+  "Center": {
+    "image": "/assets/Projects/NetworkSection/Center.svg",
+    "heading": "عنوان المشروع الرابع",
+    "text": "نص المشروع الرابع..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/MiddleLeft.svg"
+  "MiddLeft": {
+    "image": "/assets/Projects/NetworkSection/MiddleLeft.svg",
+    "heading": "عنوان المشروع الخامس",
+    "text": "نص المشروع الخامس..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/BottomRight.svg"
+  "BottomRight": {
+    "image": "/assets/Projects/NetworkSection/BottomRight.svg",
+    "heading": "عنوان المشروع السادس",
+    "text": "نص المشروع السادس..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/BottomCenter.svg"
+  "BottomCenter": {
+    "image": "/assets/Projects/NetworkSection/BottomCenter.svg",
+    "heading": "عنوان المشروع السابع",
+    "text": "نص المشروع السابع..."
   },
-  {
-    "image": "/assets/Projects/NetworkSection/BottomLeft.svg"
+  "BottomLeft": {
+    "image": "/assets/Projects/NetworkSection/BottomLeft.svg",
+    "heading": "عنوان المشروع الثامن",
+    "text": "نص المشروع الثامن..."
   }
-]
+}
