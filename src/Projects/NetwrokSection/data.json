@@ -1,46 +1,58 @@
 {
-  "TopLeft.svg": {
-    "heading": "مجمعات الخدمات الحكومية بمحافظة الجموم",
-    "text": "يهدف المشروع إلى تحسين أسلوب إدارة التنمية العمرانية بمنطقة مكة المكرمة، من خلال تحقيق اللامركزية في توزيع وإقامة مراكز الخدمات الحكومية..."
-  },
-  "TopMiddle.svg": {
-    "heading": "عنوان المشروع الثاني",
-    "text": "نص المشروع الثاني..."
-  },
-  "TopRight.svg": {
-    "heading": "عنوان المشروع الثالث",
-    "text": "نص المشروع الثالث..."
-  },
-  "MiddleLeft.svg": {
-    "heading": "عنوان المشروع الرابع",
-    "text": "نص المشروع الرابع..."
-  },
-  "Center.svg": {
-    "heading": "عنوان المشروع الخامس",
-    "text": "نص المشروع الخامس..."
-  },
-  "BottomLeft.svg": {
-    "heading": "عنوان المشروع السادس",
-    "text": "نص المشروع السادس..."
-  },
-  "BottomCenter.svg": {
-    "heading": "عنوان المشروع السابع",
-    "text": "نص المشروع السابع..."
-  },
-  "BottomRight.svg": {
-    "heading": "عنوان المشروع الثامن",
-    "text": "نص المشروع الثامن..."
-  },
-  "Extra1.svg": {
-    "heading": "عنوان المشروع التاسع",
-    "text": "نص المشروع التاسع..."
-  },
-  "Extra2.svg": {
-    "heading": "عنوان المشروع العاشر",
-    "text": "نص المشروع العاشر..."
-  },
-  "Extra3.svg": {
-    "heading": "عنوان المشروع الحادي عشر",
-    "text": "نص المشروع الحادي عشر..."
+    "TopLeft.svg": {
+      "image": "/assets/Projects/NetworkSection/TopLeft.svg",
+      "heading": "مجمعات الخدمات الحكومية بمحافظة الجموم",
+      "text": "يهدف المشروع إلى تحسين أسلوب إدارة التنمية العمرانية بمنطقة مكة المكرمة، من خلال تحقيق اللامركزية في توزيع وإقامة مراكز الخدمات الحكومية..."
+    },
+    "TopMiddle.svg": {
+      "image": "/assets/Projects/NetworkSection/TopMiddle.svg",
+      "heading": "عنوان المشروع الثاني",
+      "text": "نص المشروع الثاني..."
+    },
+    "TopRight.svg": {
+      "image": "/assets/Projects/NetworkSection/TopRight.svg",
+      "heading": "عنوان المشروع الثالث",
+      "text": "نص المشروع الثالث..."
+    },
+    "MiddleLeft.svg": {
+      "image": "/assets/Projects/NetworkSection/MiddleLeft.svg",
+      "heading": "عنوان المشروع الرابع",
+      "text": "نص المشروع الرابع..."
+    },
+    "Center.svg": {
+      "image": "/assets/Projects/NetworkSection/Center.svg",
+      "heading": "عنوان المشروع الخامس",
+      "text": "نص المشروع الخامس..."
+    },
+    "BottomLeft.svg": {
+      "image": "/assets/Projects/NetworkSection/BottomLeft.svg",
+      "heading": "عنوان المشروع السادس",
+      "text": "نص المشروع السادس..."
+    },
+    "BottomCenter.svg": {
+      "image": "/assets/Projects/NetworkSection/BottomCenter.svg",
+      "heading": "عنوان المشروع السابع",
+      "text": "نص المشروع السابع..."
+    },
+    "BottomRight.svg": {
+      "image": "/assets/Projects/NetworkSection/BottomRight.svg",
+      "heading": "عنوان المشروع الثامن",
+      "text": "نص المشروع الثامن..."
+    },
+    "Extra1.svg": {
+      "image": "/assets/Projects/NetworkSection/Extra1.svg",
+      "heading": "عنوان المشروع التاسع",
+      "text": "نص المشروع التاسع..."
+    },
+    "Extra2.svg": {
+      "image": "/assets/Projects/NetworkSection/Extra2.svg",
+      "heading": "عنوان المشروع العاشر",
+      "text": "نص المشروع العاشر..."
+    },
+    "Extra3.svg": {
+      "image": "/assets/Projects/NetworkSection/Extra3.svg",
+      "heading": "عنوان المشروع الحادي عشر",
+      "text": "نص المشروع الحادي عشر..."
+    }
   }
-}
+  

@@ -13,7 +13,7 @@ function ProjectGrid() {
     <div>
       {selectedProject ? (
         <ProjectDetail
-          image={`/assets/Projects/NetworkSection/${selectedProject.heading}.svg`}
+          image={selectedProject.image}
           heading={selectedProject.heading}
           text={selectedProject.text}
         />
@@ -26,7 +26,7 @@ function ProjectGrid() {
               onClick={() => handleClick(key)}
             >
               <img
-                src={`/assets/Projects/NetworkSection/${key}`}
+                src={projectData[key].image}
                 alt={key}
                 className="w-full h-auto object-cover"
               />

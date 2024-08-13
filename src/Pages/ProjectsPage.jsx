@@ -5,6 +5,7 @@ import Network from '../Projects/NetwrokSection/Network'
 function ProjectsPage() {
   return (
     <div>
+      <HeroSection/>
       <Network/>
     </div>
   )
