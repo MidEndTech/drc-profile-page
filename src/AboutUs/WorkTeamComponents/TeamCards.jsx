@@ -1,14 +1,16 @@
+import "./Slider.css"
+
 function TeamCards(props) {
 
   return (
     <div>
       <div key={props.index} className="z-10">
         <div  className="flex-col justify-center items-center text-center">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mt-10 mb-10">
             <img
               src={props.avatarImage}
               alt="pic"
-              className="w-[276.57px] h-[258.07px]"
+              className="w-[276.57px] h-[220.07px]"
             />
           </div>
 
@@ -21,12 +23,12 @@ function TeamCards(props) {
 
           <div className="flex justify-center items-center  z-10 relative">
             <div
-              className="border-2 rounded-full p-1 absolute top-1 shadow-md shadow-[#BE894A]"
-              style={{ borderColor: "#BE894A" }}
+              className="hi border-2 rounded-full p-1 absolute top-1"
+              style={{ borderColor: "#D9D9D9" }}
             >
               <div
-                className="p-4 rounded-full"
-                style={{ backgroundColor: "#BE894A" }}
+                className="hii p-4 rounded-full"
+                style={{ backgroundColor: "#D9D9D9" }}
               ></div>
             </div>
           </div>

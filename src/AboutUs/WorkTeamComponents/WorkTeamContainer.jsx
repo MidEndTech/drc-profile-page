@@ -19,9 +19,6 @@ function WorkTeamContainer() {
     setC(currentSlide);
   }, []);
 
-  // console.log(currentSlide)
-
-
   const NextArrow = ({ onClick, disabled }) => (
     <div
       onClick={onClick}
@@ -81,8 +78,8 @@ function WorkTeamContainer() {
           })}
         </Slider>
 
-        <div className="flex justify-between relative bottom-[390px]">
-          <div className=""> 
+        <div className="flex justify-between">
+          <div className="relative bottom-[390px]"> 
             <NextArrow
               onClick={() => {
                 sliderRef.current.slickNext();
@@ -90,12 +87,12 @@ function WorkTeamContainer() {
             />
           </div>
 
-          <div>
+          <div className="relative bottom-[390px]">
             <PrevArrow onClick={() => sliderRef.current.slickPrev()} />
           </div>
         </div>
               
-              <div className="absolute right-0 bottom-[160px] z-0"><img src={BackgroundBlue} alt="" /></div>
+              {/* <div className="absolute right-0 bottom-[160px] z-0"><img src={BackgroundBlue} alt="" /></div> */}
       </div>
     </div>
   );

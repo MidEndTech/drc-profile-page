@@ -1,6 +1,33 @@
-.center .slick-center {
-    transform: scale(1.1);
+.center .slick-center img{
+    transform: scale(1.4);
     transition: all 400ms ease-in-out;
     pointer-events: all;
     opacity: 1;
 }
+
+    .center .slick-center .hi{
+        border-color:#BE894A !important; 
+        box-shadow: #BE894A;
+        transition: all 400ms ease-in-out;
+        pointer-events: all;
+        opacity: 1;
+    } 
+
+
+ .center .slick-center .hii{
+  background-color:#BE894A !important; 
+    transition: all 400ms ease-in-out;
+    pointer-events: all;
+    opacity: 1;
+} 
+
+  
+.center .slick-slide > img {
+    display: grid;
+    place-items: center;
+    width: 80%;
+    margin-top: 50px;
+    margin: auto;
+    height: 500px;
+    padding: 0px;
+  }

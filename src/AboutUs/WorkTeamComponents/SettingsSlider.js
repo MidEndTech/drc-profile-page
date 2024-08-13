@@ -1,12 +1,13 @@
 export function SettingsSlider(onChange = () => {}) {
     return {
       className: "center",
-      centerMode: false,
+      centerMode: true,
       dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
       arrows: false,
+      rtl:true,
       afterChange: (current) => onChange(current),  // Call the onChange function with the current slide
       responsive: [
         {
