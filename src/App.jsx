@@ -5,6 +5,7 @@ import NavBar from "./SharedComponents/NavBar";
 import Footer from "./SharedComponents/Footer";
 import AboutUsPage from "./Pages/AboutUsPage";
 import ProjectsPage from "./Pages/ProjectsPage";
+import ServicesPage from "./Pages/ServicesPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="aboutus" element={<AboutUsPage />} />
+        <Route path="services" element={<ServicesPage />} />
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
