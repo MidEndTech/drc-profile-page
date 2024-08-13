@@ -1,17 +1,17 @@
 import React from "react";
+import Heading from "../../SharedComponents/Heading";
+import Paragraph from "../../SharedComponents/Paragraph";
 
-function ProjectDetail({ image, heading, text }) {
+function NetworkDetails({ image, heading, text }) {
   return (
-    <div className="p-4">
-      <img
-        src={image}
-        alt={heading}
-        className="w-1/2 h-auto mx-auto rounded-lg"
-      />
-      <h2 className=" text-primary text-2xl font-bold mb-2">{heading}</h2>
-      <p className="text-dark-green text-lg">{text}</p>
+    <div className="p-10 flex flex-col text-center items-center">
+      <img src={image} alt={heading} className="w-[100px]}" />
+      <Heading className=" text-primary p-10  ">{heading}</Heading>
+      <Paragraph className="text-dark-green text-lg text-justify ">
+        {text}
+      </Paragraph>
     </div>
   );
 }
 
-export default ProjectDetail;
+export default NetworkDetails;

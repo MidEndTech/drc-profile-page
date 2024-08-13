@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import NetworkDetails from "./NetworkDetails";
-import data from './data.json'
+import data from "./data.json";
+import "./style.css";
 
 function ProjectGrid() {
   const [selected, setSelected] = useState(null);
 
-  const handleClick = (e) => {
-    setSelected(data(e));
+  const handleClick = (key) => {
+    setSelected(data[key]);
   };
 
   return (
@@ -19,41 +20,49 @@ function ProjectGrid() {
           text={selected.text}
         />
       ) : (
-        <div className="grid grid-cols-3  gap-4 p-4">
+        <div className="grid grid-cols-3 gap-4 p-4">
           <img
             src={data["TopRight"].image}
-            className="w-full "
+            className="w-full img-hover-effect"
             onClick={() => handleClick("TopRight")}
+            alt={data["TopRight"].heading}
           />
 
           <img
-            src="/assets/Projects/NetworkSection/TopMiddle.svg "
-            className="w-full"
+            src={data["TopMiddle"].image}
+            className="w-full "
+            onClick={() => handleClick("TopMiddle")}
           />
           <img
-            src="/assets/Projects/NetworkSection/TopLeft.svg"
+            src={data["TopLeft"].image}
             className="w-full row-start-1 col-start-3 row-end-3"
+            onClick={() => handleClick("TopLeft")}
           />
 
           <img
-            src="/assets/Projects/NetworkSection/Center.svg"
+            src={data["Center"].image}
             className="col-span-2 w-full row-start-2 row-end-4"
+            onClick={() => handleClick("Center")}
           />
           <img
-            src="/assets/Projects/NetworkSection/MiddleLeft.svg"
+            src={data["MiddleLeft"].image}
             className="w-full col-start-3 row-start-3 row-end-5"
+            onClick={() => handleClick("MiddleLeft")}
           />
           <img
-            src="/assets/Projects/NetworkSection/BottomRight.svg"
+            src={data["BottomRight"].image}
             className="col-span-1 col-start-1 w-full row-start-4 row-end-6"
+            onClick={() => handleClick("BottomRight")}
           />
           <img
-            src="/assets/Projects/NetworkSection/BottomCenter.svg"
+            src={data["BottomCenter"].image}
             className="max-w-full  row-start-4 row-end-6 "
+            onClick={() => handleClick("BottomCenter")}
           />
           <img
-            src="/assets/Projects/NetworkSection/BottomLeft.svg"
+            src={data["BottomLeft"].image}
             className="w-full col-start-3 row-start-5 row-end-6 mb-20"
+            onClick={() => handleClick("BottomLeft")}
           />
         </div>
       )}
