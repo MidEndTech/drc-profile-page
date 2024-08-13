@@ -1,4 +1,4 @@
-import "./Slider.css"
+
 
 function TeamCards(props) {
 
@@ -23,11 +23,11 @@ function TeamCards(props) {
 
           <div className="flex justify-center items-center  z-10 relative">
             <div
-              className="hi border-2 rounded-full p-1 absolute top-1"
+              className="border-2 rounded-full p-1 absolute top-1"
               style={{ borderColor: "#D9D9D9" }}
             >
               <div
-                className="hii p-4 rounded-full"
+                className="p-4 rounded-full"
                 style={{ backgroundColor: "#D9D9D9" }}
               ></div>
             </div>
@@ -40,7 +40,6 @@ function TeamCards(props) {
           </div>
         </div>
       </div>
-      <hr className="bg-[#B9B9B9] h-[3px] mt-10 mb-0 w-full relative bottom-[124px]"/>
 
     </div>
   );

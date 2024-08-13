@@ -1,18 +1,21 @@
 [
   {
-    "avatarImage": "/assets/AboutUs/WorkTeamSection/image3.svg",
-    "nameOfWorker": "م. عمر عبدالله قاضي",
-    "workerTitile": "رئيس مجلس الإدارة",
-    "workerDescripe": "هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي"
-  },
-  {
+    "id":0,
     "avatarImage": "/assets/AboutUs/WorkTeamSection/image1.svg",
     "nameOfWorker": "م. عمر عبدالله قاضي",
     "workerTitile": "رئيس مجلس الإدارة",
     "workerDescripe": "هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي"
   },
   {
+    "id":1,
     "avatarImage": "/assets/AboutUs/WorkTeamSection/image2.svg",
+    "nameOfWorker": "م. عمر عبدالله قاضي",
+    "workerTitile": "رئيس مجلس الإدارة",
+    "workerDescripe": "هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي"
+  },
+  {
+    "id":2,
+    "avatarImage": "/assets/AboutUs/WorkTeamSection/image3.svg",
     "nameOfWorker": "م. عبدالله عمر قاضي",
     "workerTitile": "نائب مجلس الإدارة",
     "workerDescripe": "هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي هنا يكتب الوصف الوظيفي"
