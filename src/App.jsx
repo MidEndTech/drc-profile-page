@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     const handleLoad = () => {
-      setTimeout(() => setLoading(false), 3000);
+      setTimeout(() => setLoading(false), 4000);
     };
 
     if (document.readyState === "complete") {
@@ -33,15 +33,12 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        {/* <Route path="/Splash" element={<Splash />} /> */}
         <Route index element={<HomePage />} />
         <Route path="aboutus" element={<AboutUsPage />} />
         <Route path="services" element={<ServicesPage />} />
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="*" element={<ErrorPage />} />
-        <Route path="splash" element={<Splash />} />
       </Routes>
-
       <Footer />
     </BrowserRouter>
   );
