@@ -41,6 +41,7 @@ function App() {
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="news" element={<NewsPage />} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="founder-info" element={<FounderInfo />} />
       </Routes>
       <Footer />
     </BrowserRouter>
