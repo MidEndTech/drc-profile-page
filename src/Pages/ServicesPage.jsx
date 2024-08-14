@@ -6,6 +6,7 @@ function ServicesPage() {
     <div>
       <HeroSection />
       <ServicesSliderContainer/>
+      
     </div>
   );
 }
