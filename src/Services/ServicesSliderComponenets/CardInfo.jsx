@@ -10,15 +10,15 @@ function CardInfo(props) {
           <img
             src={props.card}
             alt=""
-            className="w-[381px] h-[492px] rounded-[30px] rotate-[3deg]"
+            className="w-[330px] h-[480px] md:w-[390px] md:h-[492px]  rounded-[30px] rotate-[3deg]"
           />
         </div>
 
-        <div className="md:w-[641.4px] md:h-[390.82px] md:relative top-[100px] mx-[55px] text-justify">
-          <h1 className="text-[#223A39] font-[700] text-[36px] w-[400px]">
+        <div className="w-[340px] h-[200px] mx-[10%] md:w-[641.4px] md:h-[390.82px] md:relative top-[100px] md:mx-[55px] text-justify">
+          <h1 className="text-[#223A39] font-[700] text-[33px] md:text-[36px]">
             {props.titleOfCard}
           </h1>
-          <p className="">{props.textOfCard}</p>
+          <p className="md:w-[597.79px]  md:h-[301.74px] font-[400] md:text-[24px] text-[20px]">{props.textOfCard}</p>
         </div>
       </>
   );

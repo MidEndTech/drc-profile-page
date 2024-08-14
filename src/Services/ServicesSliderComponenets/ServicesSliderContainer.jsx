@@ -28,7 +28,7 @@ function ServicesSliderContainer() {
         
       </div>
 
-      <div className="flex justify-between mx-2 relative hover:opacity-4 bottom-[420px] lg:justify-between lg:bottom-[360px] lg:mx-[210px]">
+      <div className="flex justify-between mx-2 relative hover:opacity-4 bottom-[460px] lg:justify-between lg:bottom-[360px] lg:mx-[5%]">
         <img
           src={right}
           alt=""
