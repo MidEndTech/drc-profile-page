@@ -1,7 +1,12 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import "./style.css";
+
 function Splash() {
+
+  useEffect(()=>{
+    document.title = "دار الرحمة للإستشارات"
+  },[])
+
   return (
     <div className="flex items-center justify-center w-screen h-screen">
       <img
