@@ -5,7 +5,7 @@ import data from "./data.json";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "./style.css";
 
-function ProjectGrid() {
+function Network() {
   const [selected, setSelected] = useState(null);
 
   const handleClick = (key) => {
@@ -146,4 +146,4 @@ function ProjectGrid() {
     </>
   );
 }
-export default ProjectGrid;
+export default Network;
