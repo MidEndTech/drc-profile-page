@@ -57,7 +57,7 @@ function Network() {
             />
             <div
               onClick={() => handleClick("TopLeft")}
-              className="absolute rounded-3xl inset-0 bg-dark-green/80 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+              className="absolute rounded-3xl cursor-pointer inset-0 bg-dark-green/80 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out"
             >
               {" "}
               <FaArrowLeft
@@ -86,7 +86,7 @@ function Network() {
             />
             <div
               onClick={() => handleClick("MiddleLeft")}
-              className="absolute inset-0 bg-dark-green/80 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out rounded-3xl"
+              className="absolute inset-0 cursor-pointer bg-dark-green/80 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out rounded-3xl"
             >
               {" "}
               <FaArrowLeft
