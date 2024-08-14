@@ -15,7 +15,7 @@ import LocationIcon from "../Icons/LocationIcon";
 function Footer() {
   return (
     <>
-      <footer className="relative text-center w-full mt-12 ">
+      <footer className="relative text-center w-full">
         <div
           style={{ backgroundImage: `url(${BackGroundGold})` }}
           className="w-full h-full absolute opacity-[13%] bg-contain"

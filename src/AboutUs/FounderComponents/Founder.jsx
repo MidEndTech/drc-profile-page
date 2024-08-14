@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import backgroundImage from "/assets/AboutUs/FounderSection/Backgournd.svg";
 import FounderImage from "/assets/AboutUs/FounderSection/Self.svg";
 import FounderInfo from "./FounderInfo";
@@ -10,9 +11,11 @@ import Paragraph from "../../SharedComponents/Paragraph";
 
 function Founder() {
   const [isExpanded, setIsExpanded] = useState(false);
-
+  const navigate = useNavigate();
   const handleExpand = () => {
     setIsExpanded(true);
+    navigate("/founder-info");
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -89,7 +92,6 @@ function Founder() {
                 >
                   <span className="text-2xl">تعرف على المزيد</span>
                   <img src={arrow} className="mr-10" alt="Arrow Icon" />
-
                 </button>
               </div>
             </div>
