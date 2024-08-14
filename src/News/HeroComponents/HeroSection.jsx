@@ -3,7 +3,7 @@ import Heading from "../../SharedComponents/Heading";
 function HeroSection() {
   return (
     <div className="overflow-hidden">
-      <div className="w-screen h-screen flex flex-col items-center justify-center bg-[url('/assets/News/HeroSection/News-Hero.svg')] bg-cover bg-center">
+      <div className="w-screen h-screen flex flex-col items-center gap-4 justify-center bg-[url('/assets/News/HeroSection/News-Hero.svg')] bg-cover bg-center">
         <Heading className="text-white">أخبار دار الرحمة</Heading>
         <input
           type="text"
