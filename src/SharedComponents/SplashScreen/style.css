@@ -1,10 +1,3 @@
-.container {
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
 
 @keyframes anim {
   0% {
@@ -26,11 +19,11 @@
 @keyframes textAnim {
   0% {
     opacity: 0;
-    transform: translate(-90%, -60%)  scale(0.5);
+    transform: translate(-95%, -60%)  scale(0.5);
   }
   100% {
     opacity: 1;
-    transform: translate(-90%, -60%) translateY(30%);
+    transform: translate(-95%, -60%) translateY(30%);
   }
 }
 
@@ -38,7 +31,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-90%, -60%);
+  transform: translate(-95%, -60%);
   z-index: 2;
   opacity: 0;
   width: 300px;

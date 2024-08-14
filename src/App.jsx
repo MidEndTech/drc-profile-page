@@ -9,16 +9,23 @@ import ProjectsPage from "./Pages/ProjectsPage";
 import ServicesPage from "./Pages/ServicesPage";
 import Splash from "./SharedComponents/SplashScreen/Splash";
 
-
-
-
-
 function App() {
   const [loading, setLoading] = useState(true);
- 
+
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3300);
+    const handleLoad = () => {
+      setTimeout(() => setLoading(false), 3000);
+    };
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
+
   if (loading) {
     return <Splash />;
   }
