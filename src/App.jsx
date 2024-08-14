@@ -10,6 +10,7 @@ import ServicesPage from "./Pages/ServicesPage";
 import Splash from "./SharedComponents/SplashScreen/Splash";
 import NewsPage from "./Pages/NewsPage";
 import FounderInfo from "./AboutUs/FounderComponents/FounderInfo";
+import ContactUsPage from "./Pages/ContactUsPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +41,7 @@ function App() {
         <Route path="services" element={<ServicesPage />} />
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="news" element={<NewsPage />} />
+        <Route path="contactus" element={<ContactUsPage/>}/>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
