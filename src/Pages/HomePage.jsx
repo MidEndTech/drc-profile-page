@@ -13,13 +13,9 @@ function HomePage() {
     document.title = "الصفحة الرئيسية"
   },[])
 
-
-
-function HomePage() {
   return (
     <div>
       <Founder />
-
       <HeroSection />
       <About />
       <Projects />

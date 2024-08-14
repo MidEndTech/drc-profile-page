@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
-import gsap from "gsap";
 import LogoUs from "/assets/Home/DistinguishesUsSection/LogoUs.svg";
 import BackgroundOrangeColor from "/assets/Home/DistinguishesUsSection/BackgroundOrangeColor.svg";
 import ButtonsTitle from "./ButtonsTitle";
 import CardsDisplay from "./CardsDisplay";
+import { motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
+
 //import JSON files
 import LensesAndDimensionObj from "./LensesAndDimension.json";
 import featuresObj from "./features.json";
@@ -18,6 +20,7 @@ function DistinguishesUs() {
   ]);
   const [features, setFeatures] = useState([...featuresObj]);
   const [internalValues, setInternalValues] = useState([...internalValuesObj]);
+  const [indexOfCard, setIndexOfCard] = useState(0);
   const size = useWindowSize();
   //imports*************************************************************************************
 
@@ -47,22 +50,6 @@ function DistinguishesUs() {
 
   const handleCardSelection = (cardType) => {
     setCards(cardType);
-
-    gsap.to(".card", {
-      duration: 1,
-      x: 0,
-      y: 0,
-      opacity: 0,
-      onComplete: () => {
-        // After the texts are in the center, change the text and animate to the target positions
-        gsap.to(".card", {
-          duration: 1,
-          x: (i, target) => gsap.getProperty(target, "data-x"),
-          y: (i, target) => gsap.getProperty(target, "data-y"),
-          opacity: 1,
-        });
-      },
-    });
   };
   //functions*********************************************************
 
@@ -74,9 +61,15 @@ function DistinguishesUs() {
         {/*nead break it *****DONE****************************************************************************************************************************************************************************************/}
 
         <ButtonsTitle
-          function1={() => handleCardSelection("LensesAnd_dimensions")}
-          function2={() => handleCardSelection("features")}
-          function3={() => handleCardSelection("Internal_values")}
+          function1={() => {
+            handleCardSelection("LensesAnd_dimensions"), setIndexOfCard(prev => prev + 1);
+          }}
+          function2={() => {
+            handleCardSelection("features"), setIndexOfCard(prev => prev + 1);
+          }}
+          function3={() => {
+            handleCardSelection("Internal_values"), setIndexOfCard(prev => prev + 1);
+          }}
         />
 
         {/*nead break it *******Done**************************************************************************************************************************************************************************************/}
@@ -93,10 +86,12 @@ function DistinguishesUs() {
         {/*nead break it *********************************************************************************************************************************************************************************************/}
 
         {cardsHandle().map((el, index) => {
+          const cardIndex = index;
+          () => setIndexOfCard(cardIndex);
           return (
-            <div className="card" data-x="243.77" data-y="122.61">
+            <div key={index} className="card">
               <CardsDisplay
-                index={index}
+                index={indexOfCard}
                 backGroundColor={el.backGroundColor}
                 funcCond={responsivePageHandle()}
                 lgTop={el.lgTop}
@@ -126,3 +121,5 @@ function DistinguishesUs() {
 }
 
 export default DistinguishesUs;
+
+
