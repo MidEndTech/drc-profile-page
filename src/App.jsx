@@ -7,6 +7,7 @@ import AboutUsPage from "./Pages/AboutUsPage";
 import ProjectsPage from "./Pages/ProjectsPage";
 import ServicesPage from "./Pages/ServicesPage";
 import NewsPage from "./Pages/NewsPage";
+import FounderInfo from "./AboutUs/FounderComponents/FounderInfo";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="news" element={<NewsPage />} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/founder-info" element={<FounderInfo/>} />
       </Routes>
 
       <Footer />
