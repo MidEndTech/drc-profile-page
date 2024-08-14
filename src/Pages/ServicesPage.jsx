@@ -1,4 +1,4 @@
-import HeroSection from "../Services/HeroComp/HeroSection";
+import HeroSection from "../Services/HeroComponents/HeroSection";
 
 function ServicesPage() {
   return (
