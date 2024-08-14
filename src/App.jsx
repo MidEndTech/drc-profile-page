@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
 import HomePage from "./Pages/HomePage";
 import ErrorPage from "./Pages/ErrorPage";
 import NavBar from "./SharedComponents/NavBar";
@@ -6,12 +7,26 @@ import Footer from "./SharedComponents/Footer";
 import AboutUsPage from "./Pages/AboutUsPage";
 import ProjectsPage from "./Pages/ProjectsPage";
 import ServicesPage from "./Pages/ServicesPage";
+import Splash from "./SharedComponents/SplashScreen/Splash";
+
+
+
+
 
 function App() {
+  const [loading, setLoading] = useState(true);
+ 
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3300);
+  }, []);
+  if (loading) {
+    return <Splash />;
+  }
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
+        {/* <Route path="/Splash" element={<Splash />} /> */}
         <Route index element={<HomePage />} />
         <Route path="aboutus" element={<AboutUsPage />} />
         <Route path="services" element={<ServicesPage />} />
