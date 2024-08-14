@@ -60,7 +60,9 @@ function HeroSection() {
   });
 
   if (!imagesLoaded) {
-    return; // Display a loading indicator while images are being preloaded
+
+    return ; 
+    // Display a loading indicator while images are being preloaded
   }
 
   return (
