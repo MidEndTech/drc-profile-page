@@ -21,7 +21,7 @@ function Network() {
           text={selected.text}
         />
       ) : (
-        <div className="grid grid-cols-5 gap-4 p-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-items-center ">
+        <div className="grid grid-cols-5  gap-2 md:gap-4 p-2 lg:grid-cols-5 justify-items-center ">
           <div className="relative w-full col-start-2">
             <img src={data["TopRight"].image} className="w-full" />
             <div
@@ -66,7 +66,7 @@ function Network() {
               />
             </div>
           </div>
-          <div className="relative w-full col-span-2 row-start-2 row-end-4 col-start-2">
+          <div className="relative w-full  col-span-2 row-start-2 row-end-4 col-start-2">
             <img src={data["Center"].image} className="w-full " />
 
             <div
