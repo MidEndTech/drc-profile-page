@@ -46,24 +46,24 @@ function NavBar() {
   return (
     <nav data-testid="browser" className="browser">
       <div
-        className={`${backgroundOpenNavBar()} backdrop-blur-sm  w-full z-20 top-0 start-0 lg:h-[126.43px]`}
+        className={`${backgroundOpenNavBar()} backdrop-blur-sm  w-full z-20 top-0 start-0 lg:h-[126.43px] absolute`}
       >
         <div className="pt-10 flex mx-auto p-4 justify-between flex-wrap lg:justify-around lg:items-start">
-          <Link to={'/'}>
+          <Link to={"/"}>
             <ul className="flex">
               <li>
-                  <img
-                    src={NavBarLogo}
-                    alt="Logo"
-                    className="w-14 lg:w-[83px] lg:h-[50px]"
-                  />
+                <img
+                  src={NavBarLogo}
+                  alt="Logo"
+                  className="w-14 lg:w-[83px] lg:h-[50px]"
+                />
               </li>
               <li>
-                  <img
-                    src={NavBarWords}
-                    alt="Words"
-                    className="w-40 lg:w-[188px] lg:h-[49.63px]"
-                  />
+                <img
+                  src={NavBarWords}
+                  alt="Words"
+                  className="w-40 lg:w-[188px] lg:h-[49.63px]"
+                />
               </li>
             </ul>
           </Link>
@@ -76,12 +76,13 @@ function NavBar() {
           </div>
 
           <ul
-            className={`${backgroundOpenNavBar()} flex flex-col justify-evenly pb-40 text-[#FFFFFF]/70 text-[30px] lg:text-[25px] font-[700] items-center ${disply}  lg:h-auto text-center  lg:flex lg:flex-row lg:justify-end lg:items-center lg:gap-[50px]`}
+            className={`${backgroundOpenNavBar()} flex flex-col justify-evenly  text-[#FFFFFF]/70 text-[30px] lg:text-[25px] font-[700] items-center ${disply}  lg:h-auto text-center  lg:flex lg:flex-row lg:justify-end lg:items-center lg:gap-[50px] bg-inherit`}
           >
             <li>
               {""}
               <Link
                 to={"/"}
+                onClick={() => displayMinuHandle()}
                 className="underline underline-offset-2 decoration-primary  lg:no-underline focus:text-primary hover:text-primary"
               >
                 الرئيسية
@@ -89,15 +90,17 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to={"/"}
+                to={"/aboutus"}
                 className="lg:no-underline focus:text-primary hover:text-primary"
+                onClick={() => displayMinuHandle()}
               >
                 من نحن{" "}
               </Link>
             </li>
             <li>
               <Link
-                to={"/"}
+                to={"/services"}
+                onClick={() => displayMinuHandle()}
                 className="lg:no-underline focus:text-primary hover:text-primary"
               >
                 خدماتنا
@@ -105,7 +108,8 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to={"/"}
+                to={"/projects"}
+                onClick={() => displayMinuHandle()}
                 className="lg:no-underline focus:text-primary hover:text-primary"
               >
                 المشاريع
@@ -113,7 +117,8 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to={"/"}
+                to={"/news"}
+                onClick={() => displayMinuHandle()}
                 className="lg:no-underline focus:text-primary hover:text-primary"
               >
                 أخبارنا
@@ -121,7 +126,8 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to={"/"}
+                to={"/contactus"}
+                onClick={() => displayMinuHandle()}
                 className="border-2 p-4 px-9 rounded-full hover:border-hidden focus:bg-primary hover:bg-primary"
               >
                 تواصل معنا

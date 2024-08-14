@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import right from "/assets/Home/AssociationSection/Variant5.svg";
 import left from "/assets/Home/AssociationSection/Variant6.svg";
 import CardInfo from "./CardInfo";
-import blueOrange from "/assets/Services/ServicesSliderSection/BackgroundOrangeS.svg"
+import blueOrange from "/assets/Services/ServicesSliderSection/BackgroundOrangeS.svg";
 
 function ServicesSliderContainer() {
   const [indexCounter, setIndexCounter] = useState(0);
@@ -18,22 +18,22 @@ function ServicesSliderContainer() {
       <div className="flex justify-between mx-2 relative hover:opacity-4 bottom-[550px] lg:justify-between lg:bottom-[360px] lg:mx-[5%]">
         <img
           onClick={() => {
-            setIndexCounter((prev) => prev + 1);
+            setIndexCounter((prev) => prev - 1);
           }}
           src={right}
           alt=""
           className={`z-10 cursor-pointer hover:opacity-4 w-12 ${
-            indexCounter === 7 && "invisible"
+            indexCounter === 0 && "invisible"
           }`}
         />
         <img
           onClick={() => {
-            setIndexCounter((prev) => prev - 1);
+            setIndexCounter((prev) => prev + 1);
           }}
           src={left}
           alt=""
           className={`z-10 cursor-pointer hover:opacity-4 w-12 lg:absolute lg:left-20 ${
-            indexCounter === 0 && "invisible"
+            indexCounter === 7 && "invisible"
           }`}
         />
       </div>
