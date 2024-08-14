@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FounderImage from "/assets/AboutUs/FounderSection/Self.svg";
 import qoute from "/assets/AboutUs/FounderSection/qoute.svg";
 import FounderHistory from "./FounderHistory";
@@ -6,8 +6,11 @@ import Paragraph from "../../SharedComponents/Paragraph";
 import Heading from "../../SharedComponents/Heading";
 
 function FounderInfo() {
+  useEffect(() => {
+    document.title = "من نحن/المؤسس والمدير العام";
+  }, []);
   return (
-    <div className="relative mx-auto px-4 md:px-8 lg:px-20">
+    <div className="relative mx-auto px-4 md:px-8 lg:px-20 mt-[60px] lg:mt-[130px]">
       <div className="relative w-full max-w-6xl mx-auto">
         <div className="absolute z-0 top-32 right-80">
           <img src={qoute} alt="Orange Background" />
