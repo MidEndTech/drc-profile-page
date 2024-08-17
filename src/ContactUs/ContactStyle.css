@@ -1,0 +1,17 @@
+#map{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+#map:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+
+@media screen and (max-width: 600px) {
+    #map{
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+}

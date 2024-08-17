@@ -1,9 +1,15 @@
+import ServicesSliderContainer from "../Services/ServicesSliderComponenets/ServicesSliderContainer";
 import HeroSection from "../Services/HeroComponents/HeroSection";
+import { useEffect } from "react";
 
 function ServicesPage() {
+  useEffect(()=>{
+    document.title = "خدماتنا"
+  },[])
   return (
-    <div>
+    <div className="mt-[115px]">
       <HeroSection />
+      <ServicesSliderContainer/>
     </div>
   );
 }
