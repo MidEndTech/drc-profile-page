@@ -9,6 +9,8 @@ import ProjectsPage from "./Pages/ProjectsPage";
 import ServicesPage from "./Pages/ServicesPage";
 import Splash from "./SharedComponents/SplashScreen/Splash";
 import NewsPage from "./Pages/NewsPage";
+import CompleteNews from "./News/NewsComponents/CompleteNews";
+import AllNews from "./News/NewsComponents/AllNews";
 import FounderInfo from "./AboutUs/FounderComponents/FounderInfo";
 import ContactUsPage from "./Pages/ContactUsPage";
 
@@ -40,7 +42,10 @@ function App() {
         <Route path="aboutus" element={<AboutUsPage />} />
         <Route path="services" element={<ServicesPage />} />
         <Route path="projects" element={<ProjectsPage />} />
-        <Route path="news" element={<NewsPage />} />
+        <Route path="news" element={<NewsPage />}>
+          <Route index element={<AllNews />} />
+          <Route path=":id" element={<CompleteNews />} />
+        </Route>
         <Route path="contactus" element={<ContactUsPage/>}/>
         <Route path="*" element={<ErrorPage />} />
         <Route path="founder-info" element={<FounderInfo />} />

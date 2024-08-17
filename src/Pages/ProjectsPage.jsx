@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from '../Projects/HeroComponents/HeroSection'
 import Network from '../Projects/NetwrokComponents/Network'
 import { useEffect } from "react";
@@ -12,7 +11,7 @@ function ProjectsPage() {
       <HeroSection/>
       <Network/>
     </div>
-  )
+  );
 }
 
-export default ProjectsPage
+export default ProjectsPage;
