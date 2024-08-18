@@ -8,7 +8,6 @@ function CardsDisplay(props) {
       <motion.div
         initial={{ y: 0, x: 0, opacity: 0 }}
         animate={{ y: 0, x: 0, opacity: 1 }}
-        // exit={{ y: 0, x: 0, opacity: 0 }}
         transition={{ delay: 0.1, duration: 0.3 }}
         key={props.index}
       >
@@ -21,7 +20,7 @@ function CardsDisplay(props) {
                 ? props.lgTop
                 : props.funcCond === "md"
                 ? props.mdTop
-                : props.mdTop
+                : props.top
             }px`,
             left: `${
               props.funcCond === "lg"
@@ -30,7 +29,7 @@ function CardsDisplay(props) {
                 ? props.mdLeft
                 : props.left
             }px`,
-            right: `${props.funcCond === "phone" ? props.right : null}`,
+            right: `${props.funcCond === "phone" ? props.right : null}px`,
             rotate: `${props.rotation}`,
             animationDuration: `${props.duration}s`,
           }}
