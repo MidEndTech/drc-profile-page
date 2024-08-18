@@ -14,7 +14,7 @@ function Founder() {
   const navigate = useNavigate();
   const handleExpand = () => {
     setIsExpanded(true);
-    navigate("/founder-info");
+    navigate("/founder");
     window.scrollTo(0, 0);
   };
 

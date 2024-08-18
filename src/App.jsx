@@ -48,7 +48,7 @@ function App() {
         </Route>
         <Route path="contactus" element={<ContactUsPage />} />
         <Route path="*" element={<ErrorPage />} />
-        <Route path="founder-info" element={<FounderInfo />} />
+        <Route path="founder" element={<FounderInfo />} />
       </Routes>
       <Footer />
     </BrowserRouter>
