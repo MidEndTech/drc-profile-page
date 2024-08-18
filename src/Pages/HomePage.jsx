@@ -7,15 +7,13 @@ import Founder from "../AboutUs/FounderComponents/Founder";
 import DistinguishesUs from "../Home/DistinguishesUsComponents/DistinguishesUs";
 import { useEffect } from "react";
 
-
 function HomePage() {
-
-  useEffect(()=>{
-    document.title = "الصفحة الرئيسية"
-  },[])
+  useEffect(() => {
+    document.title = "الصفحة الرئيسية";
+  }, []);
 
   return (
-    <div>
+    <div className="pb-36">
       <HeroSection />
       <About />
       <DistinguishesUs />
