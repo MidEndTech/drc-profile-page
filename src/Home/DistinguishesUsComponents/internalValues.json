@@ -25,7 +25,7 @@
     "top": "140",
     "left": "0",
     "right":"",
-    "duration":"4"
+    "duration":"5"
   },
   {
     "text": "النزاهة",
@@ -50,10 +50,10 @@
     "lgLeft": "368.57",
     "mdTop": "480",
     "mdLeft": "200",
-    "top": "260",
-    "left": "0",
+    "top": "280",
+    "left": "60",
     "right":"",
-    "duration":"4"
+    "duration":"5"
   },
   {
     "text": "تعظيم قدر الصلاة",
@@ -81,7 +81,7 @@
     "top": "140",
     "left": "",
     "right":"0",
-    "duration":"4"
+    "duration":"5"
   },
   {
     "text": "الإخلاص",
@@ -106,9 +106,9 @@
     "lgLeft":"888.68",
     "mdTop": "200",
     "mdLeft": "660",
-    "top": "260",
+    "top": "280",
     "left": "",
-    "right":"0",
-    "duration":"4"
+    "right":"60",
+    "duration":"5"
   }
 ]

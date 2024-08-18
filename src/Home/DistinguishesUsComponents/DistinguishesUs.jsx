@@ -4,8 +4,7 @@ import LogoUs from "/assets/Home/DistinguishesUsSection/LogoUs.svg";
 import BackgroundOrangeColor from "/assets/Home/DistinguishesUsSection/BackgroundOrangeColor.svg";
 import ButtonsTitle from "./ButtonsTitle";
 import CardsDisplay from "./CardsDisplay";
-import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
+
 
 //import JSON files
 import LensesAndDimensionObj from "./LensesAndDimension.json";
@@ -121,5 +120,3 @@ function DistinguishesUs() {
 }
 
 export default DistinguishesUs;
-
-
