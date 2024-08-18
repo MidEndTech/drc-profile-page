@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
 
 // import {displayMinuHandle} from './NavBar/displayMinuHandle'
 // import {backgroundOpenNavBar} from './NavBar/backgroundOpenNavBar'
 
-import LinesIcon from "../Icons/LinesIcon";
-import CloseIcon from "../Icons/CloseIcon";
-import LogoNavBar from "./NavBar/LogoNavBar";
+import LinesIcon from "../../Icons/LinesIcon";
+import CloseIcon from "../../Icons/CloseIcon";
+import LogoNavBar from "./LogoNavBar";
 
 function NavBar() {
   const [minu, setMinu] = useState(false);
@@ -16,15 +16,22 @@ function NavBar() {
   const [updateComp, setUpdateComp] = useState(0);
 
   const [item, setItem] = useState([
-    { nameOfItem: "الرئيسية", linkOfItem: "/" },
-    { nameOfItem: "من نحن", linkOfItem: "/aboutus" },
-    { nameOfItem: "خدماتنا", linkOfItem: "/services" },
-    { nameOfItem: "المشاريع", linkOfItem: "/projects" },
-    { nameOfItem: "أخبارنا", linkOfItem: "/news" },
-    {nameOfItem: "تواصل معنا",linkOfItem: "/contactus"},
+    { nameOfItem: "الرئيسية", linkOfItem: "/", path: "" },
+    { nameOfItem: "من نحن", linkOfItem: "/aboutus", path: "aboutus" },
+    { nameOfItem: "خدماتنا", linkOfItem: "/services", path: "services" },
+    { nameOfItem: "المشاريع", linkOfItem: "/projects", path: "projects" },
+    { nameOfItem: "أخبارنا", linkOfItem: "/news", path: "news" },
+    { nameOfItem: "تواصل معنا", linkOfItem: "/contactus", path: "contactus" },
   ]);
 
   const size = useWindowSize();
+
+  const { pathname } = useLocation();
+  const [currentLocation, setCurrentLocation] = useState("");
+
+  useEffect(() => {
+    setCurrentLocation(pathname.split("/")[1]);
+  }, [currentLocation, pathname]);
 
   //this hokkes for update a width of page to toggle a minu whene return the size ofa page
   useEffect(() => {
@@ -65,12 +72,15 @@ function NavBar() {
   const borderDisplay = () => {
     if (
       (window.location.pathname === "/aboutus" ||
-      window.location.pathname === "/services" ||
-      window.location.pathname === "/founder-info") && size.width >= 1024
+        window.location.pathname === "/services" ||
+        window.location.pathname === "/founder-info") &&
+      size.width >= 1024
     ) {
-      return "border-2 p-4 px-9 rounded-full border-[#BE894A] text-[#BE894A] hover:border-hidden focus:bg-primary hover:bg-primary hover:text-[#cccccc]";
+      return `border-2 p-4 px-9 rounded-full border-[#BE894A] text-[#BE894A] hover:border-hidden hover:bg-primary hover:text-[#cccccc]`;
     } else {
-      return "border-2 p-4 px-9 rounded-full hover:border-hidden focus:bg-primary hover:bg-primary";
+      return `border-2 p-4 px-9 rounded-full hover:border-hidden ${
+        currentLocation === "contactus" ? "bg-primary border-none" : ""
+      } hover:bg-primary`;
     }
   };
 
@@ -110,7 +120,11 @@ function NavBar() {
                     className={
                       index === 5
                         ? borderDisplay()
-                        : "underline underline-offset-2 decoration-primary lg:no-underline focus:text-primary hover:text-primary"
+                        : `${
+                            currentLocation === el.path
+                              ? "underline lg:text-primary"
+                              : ""
+                          } underline-offset-2 decoration-primary lg:no-underline hover:text-primary`
                     }
                   >
                     {el.nameOfItem}
