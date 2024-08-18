@@ -5,11 +5,11 @@ import ContactAndMap from "../ContactUs/ContactAndMap";
 import { useEffect } from "react";
 
 function ContactUsPage() {
-  useEffect(()=>{
-    document.title = "تواصل معنا"
-  },[])
+  useEffect(() => {
+    document.title = "تواصل معنا";
+  }, []);
   return (
-    <div>
+    <div className="pb-36">
       <HeroContact />
       <div className="lg:flex justify-around">
         <ContactAndMap />
