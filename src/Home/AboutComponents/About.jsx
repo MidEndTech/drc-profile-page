@@ -1,6 +1,14 @@
+import { useNavigate } from "react-router";
 import cool from "/assets/Home/AboutSection/Artboard 1 copy 9PNG.png";
 
 function About() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/aboutus');
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="relative flex justify-center items-center min-h-screen px-10 ">
       <div className="relative w-full max-w-2xl mx-4">
@@ -29,7 +37,7 @@ function About() {
             عميق للسياق المحلي مكنته من صياغة رؤى استراتيجية وتنفيذ مشروعات
             نوعية في مجالات التخطيط والتصميم العمراني والإدارة الهندسية
           </p>
-          <button className="text-[#BE894A] hover:text-amber-400 relative z-10">
+          <button onClick={handleClick} className="text-[#BE894A] hover:text-amber-400 relative z-10">
             ← تعرف على المزيد
           </button>
         </div>
