@@ -49,7 +49,6 @@ function App() {
         <Route path="contactus" element={<ContactUsPage />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="founder" element={<FounderInfo />} />
-        <Route path="splash" element={<Splash />} />
       </Routes>
       <Footer />
     </BrowserRouter>
