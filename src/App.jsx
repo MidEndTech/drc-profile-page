@@ -47,8 +47,8 @@ function App() {
           <Route path=":id" element={<CompleteNews />} />
         </Route>
         <Route path="contactus" element={<ContactUsPage />} />
-        <Route path="*" element={<ErrorPage />} />
         <Route path="founder" element={<FounderInfo />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
