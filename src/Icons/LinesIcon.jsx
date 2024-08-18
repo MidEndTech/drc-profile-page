@@ -12,7 +12,7 @@ function LinesIcon() {
         >
 
         <path
-          stroke="#ffffff"
+          stroke="#cccccc"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
