@@ -60,8 +60,7 @@ function HeroSection() {
   });
 
   if (!imagesLoaded) {
-
-    return ; 
+    return;
     // Display a loading indicator while images are being preloaded
   }
 
@@ -70,7 +69,7 @@ function HeroSection() {
       <HeroContainer currentIndex={currentIndex}>
         <div className="flex flex-col lg:flex-row gap-4 xl:gap-0 justify-between items-center w-full">
           <HeroInfo currentIndex={currentIndex} isNext={isNext} />
-          <div className="flex flex-col w-1/3">
+          <div className="flex flex-col pr-4 sm:p-0 w-full sm:w-1/3">
             <HeroCarousel sliderRef={sliderRef} />
             <Arrows
               sliderRef={sliderRef}
