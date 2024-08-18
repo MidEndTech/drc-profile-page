@@ -5,15 +5,19 @@ import ContactAndMap from "../ContactUs/ContactAndMap";
 import { useEffect } from "react";
 
 function ContactUsPage() {
-  useEffect(()=>{
-    document.title = "تواصل معنا"
-  },[])
+  useEffect(() => {
+    document.title = "تواصل معنا";
+  }, []);
   return (
-    <div>
+    <div className="bg-[#F5F5F5]">
       <HeroContact />
-      <div className="lg:flex justify-around">
-        <ContactAndMap />
-        <ContactForm />
+      <div className="lg:flex lg:flex-row-reverse justify-around ">
+        <div>
+          <ContactForm />
+        </div>
+        <div>
+          <ContactAndMap />
+        </div>
       </div>
     </div>
   );
