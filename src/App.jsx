@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import HomePage from "./Pages/HomePage";
 import ErrorPage from "./Pages/ErrorPage";
-import NavBar from "./SharedComponents/NavBar";
+import NavBar from "./SharedComponents/NavBar/NavBar";
 import Footer from "./SharedComponents/Footer";
 import AboutUsPage from "./Pages/AboutUsPage";
 import ProjectsPage from "./Pages/ProjectsPage";
@@ -46,7 +46,7 @@ function App() {
           <Route index element={<AllNews />} />
           <Route path=":id" element={<CompleteNews />} />
         </Route>
-        <Route path="contactus" element={<ContactUsPage/>}/>
+        <Route path="contactus" element={<ContactUsPage />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="founder-info" element={<FounderInfo />} />
       </Routes>
