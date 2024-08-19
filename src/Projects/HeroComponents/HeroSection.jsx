@@ -9,7 +9,7 @@ function HeroSection() {
       className="relative overflow-hidden  bg-cover bg-no-repeat p-12"
       style={{
         backgroundImage: `url(${BackHero})`,
-        height: "400px",
+        height: "643px",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
