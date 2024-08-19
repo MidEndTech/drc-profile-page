@@ -9,7 +9,7 @@ function ContactUsPage() {
     document.title = "تواصل معنا";
   }, []);
   return (
-    <div className="bg-[#F5F5F5]">
+    <div className="bg-[#F5F5F5] pb-36">
       <HeroContact />
       <div className="lg:flex lg:flex-row-reverse justify-around ">
         <div>
