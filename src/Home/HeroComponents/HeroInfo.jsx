@@ -14,7 +14,7 @@ function HeroInfo({ currentIndex, isNext }) {
     exit: { opacity: 0, y: 150, transition: { duration: 0.3 } },
   };
   return (
-    <section className="flex flex-col z-10 gap-2 w-full lg:w-3/5 xl:w-1/2 overflow-y-hidden">
+    <section className="flex flex-col z-10 gap-2 w-full lg:w-3/5 xl:w-1/2 2xl:w-2/3 overflow-y-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={`title-${currentIndex}`}
