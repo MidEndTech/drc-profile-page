@@ -25,7 +25,7 @@
     "top": "140",
     "left": "0",
     "right":"",
-    "duration":"4"
+    "duration":"5"
   },
   {
     "text": "الأنظمة والقوانين",
@@ -53,7 +53,7 @@
     "top": "260",
     "left": "0",
     "right":"",
-    "duration":"4"
+    "duration":"5"
   },
   {
     "text": "إحتياجات سوق العمل",
@@ -64,9 +64,9 @@
     "lgLeft": "368.57",
     "mdTop": "520",
     "mdLeft": "320",
-    "top": "300",
+    "top": "330",
     "left": "",
-    "right":"",
+    "right":"110",
     "duration":"4"
   },
   {
@@ -81,7 +81,7 @@
     "top": "80",
     "left": "",
     "right":"0",
-    "duration":"4"
+    "duration":"5"
   },
   {
     "text": "القدرة والإمكانيات",
@@ -109,7 +109,7 @@
     "top": "200",
     "left": "",
     "right":"0",
-    "duration":"4"
+    "duration":"5"
   },
   {
     "text": "القيم الداخلية",
