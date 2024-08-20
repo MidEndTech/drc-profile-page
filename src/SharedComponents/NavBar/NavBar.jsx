@@ -87,7 +87,7 @@ function NavBar() {
   return (
     <nav data-testid="browser" className="browser">
       <div
-        className={`${backgroundOpenNavBar()} backdrop-blur-sm  w-full z-20 top-0 start-0 lg:h-[126.43px] ${
+        className={`${backgroundOpenNavBar()}  backdrop-blur-sm  w-full z-20 top-0 start-0 lg:h-[126.43px] ${
           !minu && "absolute"
         }`}
       >
@@ -106,7 +106,7 @@ function NavBar() {
           </div>
 
           <ul
-            className={`${backgroundOpenNavBar()} border-none flex flex-col justify-evenly text-[#cccccc] text-[30px] lg:text-[25px] font-[700] items-center ${disply} lg:h-auto text-center lg:flex lg:flex-row lg:justify-end lg:items-center lg:gap-[50px] lg:bg-inherit`}
+            className={`${backgroundOpenNavBar()} border-none flex flex-col justify-start gap-14 lg:mt-0 mt-[50px] text-[#cccccc] text-[30px] lg:text-[25px] font-[700] items-center ${disply} lg:h-auto text-center lg:flex lg:flex-row lg:justify-end lg:items-center lg:gap-[50px] lg:bg-inherit`}
           >
             {item.map((el, index) => {
               return (
