@@ -67,7 +67,7 @@ function HeroSection() {
   return (
     <main className="overflow-hidden">
       <HeroContainer currentIndex={currentIndex}>
-        <div className="flex flex-col lg:flex-row gap-4 xl:gap-0 justify-between items-center w-full">
+        <div className="flex flex-col justify-end lg:flex-row gap-4 xl:gap-0 lg:justify-between items-center w-full">
           <HeroInfo currentIndex={currentIndex} isNext={isNext} />
           <div className="flex flex-col pr-4 sm:p-0 w-full sm:w-1/2 2xl:w-1/3">
             <HeroCarousel sliderRef={sliderRef} />
