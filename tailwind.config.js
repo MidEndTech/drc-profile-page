@@ -13,6 +13,9 @@ export default {
         green: "#2C4D51",
         "dark-green": "#223A39",
       },
+      translate: {
+        '-0.25em': '-0.25em',
+      },
       fontFamily: {
         Bolds: ["TheYearofTheCamel-Bold"],
       },

@@ -50,7 +50,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="lg:ml-[2%] pt-5 lg:pt-0">
+    <div className="lg:ml-[2%] md:pt-1 pt-0">
       <ToastContainer  className={"mt-5 text-end w-[90%] md:w-1/5 font-bold"}/>
 
       <form ref={form} onSubmit={handleSubmit}>
