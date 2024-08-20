@@ -53,7 +53,7 @@ function ContactForm() {
 
     emailjs
       .sendForm("service_yry6fox", "template_s4uawbj", form.current, {
-        publicKey: "bPbqjyFjfjDLvLNQ",
+        publicKey: "bPbqjyFjfjDLvLNQZ",
       })
       .then(
         () => {
@@ -80,6 +80,7 @@ function ContactForm() {
             value={state.user_name}
             onChange={handleChange}
             placeholder="الإسم الكامل"
+            required
           />
         </div>
 
@@ -93,6 +94,7 @@ function ContactForm() {
             value={state.user_email}
             onChange={handleChange}
             placeholder="البريد الإلكتروني"
+            required
           />
         </div>
 
@@ -106,6 +108,7 @@ function ContactForm() {
             value={state.user_message_title}
             onChange={handleChange}
             placeholder="عنوان الرسالة"
+            required
           />
         </div>
 
@@ -117,6 +120,7 @@ function ContactForm() {
             value={state.user_message}
             onChange={handleChange}
             placeholder="الرسالة..."
+            required
           ></textarea>
         </div>
 
