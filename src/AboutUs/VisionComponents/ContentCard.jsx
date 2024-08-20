@@ -11,7 +11,7 @@ function ContentCard({ activeSection }) {
     else setIndex(2);
   }, [activeSection]);
   return (
-    <div className="w-[70%] md:w-[80%] lg:w-[60%] 2xl:w-[53%] bg-white flex justify-between items-center gap-12 p-8 rounded-2xl mt-8">
+    <div className="bg-white flex flex-col-reverse justify-end sm:flex-row sm:justify-between items-center gap-12 py-8 px-12 rounded-2xl mt-8 w-full h-[450px] sm:h-[350px] lg:h-[400px]">
       <section className="flex-col gap-4">
         <AnimatePresence mode="popLayout">
           <motion.div
@@ -36,7 +36,7 @@ function ContentCard({ activeSection }) {
           </motion.div>
         </AnimatePresence>
       </section>
-      <div className="w-10/12 xl:w-auto flex justify-end">
+      <section className="w-1/2 lg:w-1/3 lg:mr-8 flex justify-end">
         <AnimatePresence mode="popLayout">
           <motion.img
             key={index}
@@ -47,7 +47,7 @@ function ContentCard({ activeSection }) {
             src={data[index].picture}
           />
         </AnimatePresence>
-      </div>
+      </section>
     </div>
   );
 }

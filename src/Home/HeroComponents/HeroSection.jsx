@@ -5,21 +5,7 @@ import HeroInfo from "./HeroInfo";
 import HeroCarousel from "./HeroCarousel";
 import Arrows from "./Arrows";
 
-const preloadImages = (imageUrls) => {
-  return Promise.all(
-    imageUrls.map((url) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = url;
-        img.onload = resolve;
-        img.onerror = reject;
-      });
-    })
-  );
-};
-
 function HeroSection() {
-  const [imagesLoaded, setImagesLoaded] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isNext, setIsNext] = useState(true);
 
@@ -40,16 +26,6 @@ function HeroSection() {
   };
 
   useEffect(() => {
-    const imageUrls = data.flatMap((item) => [
-      item.smallPicture,
-      item.bigPicture,
-    ]);
-    preloadImages(imageUrls).then(() => {
-      setImagesLoaded(true);
-    });
-  });
-
-  useEffect(() => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
     }
@@ -59,17 +35,12 @@ function HeroSection() {
     return () => clearTimeout(timerRef.current);
   });
 
-  if (!imagesLoaded) {
-    return;
-    // Display a loading indicator while images are being preloaded
-  }
-
   return (
     <main className="overflow-hidden">
       <HeroContainer currentIndex={currentIndex}>
-        <div className="flex flex-col lg:flex-row gap-4 xl:gap-0 justify-between items-center w-full">
+        <div className="flex flex-col justify-end lg:flex-row gap-4 xl:gap-0 lg:justify-between items-center w-full">
           <HeroInfo currentIndex={currentIndex} isNext={isNext} />
-          <div className="flex flex-col pr-4 sm:p-0 w-full sm:w-1/3">
+          <div className="flex flex-col pr-4 sm:p-0 w-full sm:w-1/2 2xl:w-1/3">
             <HeroCarousel sliderRef={sliderRef} />
             <Arrows
               sliderRef={sliderRef}
