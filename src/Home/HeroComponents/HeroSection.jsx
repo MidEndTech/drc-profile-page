@@ -5,21 +5,7 @@ import HeroInfo from "./HeroInfo";
 import HeroCarousel from "./HeroCarousel";
 import Arrows from "./Arrows";
 
-const preloadImages = (imageUrls) => {
-  return Promise.all(
-    imageUrls.map((url) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = url;
-        img.onload = resolve;
-        img.onerror = reject;
-      });
-    })
-  );
-};
-
 function HeroSection() {
-  const [imagesLoaded, setImagesLoaded] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isNext, setIsNext] = useState(true);
 
@@ -40,16 +26,6 @@ function HeroSection() {
   };
 
   useEffect(() => {
-    const imageUrls = data.flatMap((item) => [
-      item.smallPicture,
-      item.bigPicture,
-    ]);
-    preloadImages(imageUrls).then(() => {
-      setImagesLoaded(true);
-    });
-  });
-
-  useEffect(() => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
     }
@@ -58,11 +34,6 @@ function HeroSection() {
     }, 4000);
     return () => clearTimeout(timerRef.current);
   });
-
-  if (!imagesLoaded) {
-    return;
-    // Display a loading indicator while images are being preloaded
-  }
 
   return (
     <main className="overflow-hidden">
