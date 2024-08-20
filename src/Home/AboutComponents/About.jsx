@@ -1,3 +1,5 @@
+import Paragraph from "../../SharedComponents/Paragraph";
+import { FaArrowLeft } from "react-icons/fa";
 import cool from "/assets/Home/AboutSection/Artboard 1 copy 9PNG.png";
 
 function About() {
@@ -16,11 +18,11 @@ function About() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <h1 className="text-[#9D6636] font-bold mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="text-[#9D6636] font-bold mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl pb-5">
             عن دار الرحمة للاستشارات
           </h1>
-          <p
-            className="mb-6 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl text-justify w-full sm:w-5/6 md:w-4/6 lg:w-3/4"
+          <Paragraph
+            className="mb-6 leading-relaxed  text-justify w-full sm:w-5/6 md:w-4/6 lg:w-3/4 font-bold"
             style={{
               textAlign: "right",
             }}
@@ -28,9 +30,13 @@ function About() {
             كيان استشاري هندسي يحظى بخبرة تراكمية تتجاوز الـ50 عاماً مقرونة بفهم
             عميق للسياق المحلي مكنته من صياغة رؤى استراتيجية وتنفيذ مشروعات
             نوعية في مجالات التخطيط والتصميم العمراني والإدارة الهندسية
-          </p>
-          <button className="text-[#BE894A] hover:text-amber-400 text-base sm:text-lg md:text-xl lg:text-2xl">
-            ← تعرف على المزيد
+          </Paragraph>
+          <button className="text-[#BE894A] flex gap-2 items-center hover:text-amber-400 text-base sm:text-lg md:text-xl lg:text-2xl">
+            <p>
+
+            تعرف على المزيد
+            </p>
+            <FaArrowLeft/>
           </button>
         </div>
       </div>
