@@ -39,7 +39,7 @@ function HeroSection() {
 
         <img
           src="/assets/Services/HeroSection/Designing.svg"
-          className="w-1/3 sm:w-1/3 xl:w-auto absolute right-16 bottom-24 md:bottom-2 lg:right-36 lg:bottom-8 z-0 "
+          className="w-1/3 sm:w-1/3 xl:w-auto absolute right-16 bottom-36 md:bottom-2 lg:right-36 lg:bottom-8 z-0 "
         />
         <section className="rotate-[15deg] w-[30%] md:w-1/4 xl:w-auto absolute left-10 top-24 lg:left-24 lg:top-28 z-0">
           {isText && (
@@ -57,7 +57,7 @@ function HeroSection() {
 
         <img
           src="/assets/Services/HeroSection/Development.svg"
-          className="w-1/3 sm:w-1/3 xl:w-auto absolute left-16 bottom-4 md:bottom-2 lg:left-36 lg:-bottom-4 z-0 "
+          className="w-1/3 sm:w-1/3 xl:w-auto absolute left-14 bottom-32 md:bottom-2 lg:left-36 lg:-bottom-4 z-0 "
         />
       </div>
     </div>

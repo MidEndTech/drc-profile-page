@@ -23,7 +23,7 @@ function HeroCarousel({ sliderRef }) {
     mobile: {
       breakpoint: { max: 600, min: 0 },
       items: 2,
-      partialVisibilityGutter: 18,
+      partialVisibilityGutter: 30,
     },
   };
 

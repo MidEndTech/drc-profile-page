@@ -1,0 +1,95 @@
+/* Base animation for cube */
+@keyframes anim {
+  0% {
+    transform: translateY(400px) translateX(-50px) scale(0.1);
+  }
+  50% {
+    transform: translateY(0) translateX(-50px) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) translateX(120px) scale(0.8);
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes anim {
+    0% {
+      transform: translateY(400px) translateX(-50px) scale(0.1);
+    }
+    50% {
+      transform: translateY(0) translateX(-50px) scale(1.2);
+    }
+    100% {
+      transform: translateY(0) translateX(200px) scale(0.8);
+    }
+  }
+}
+
+
+.cube {
+  animation: anim 1.2s ease;
+  animation-fill-mode: forwards;
+}
+
+/* Default animation for text */
+@keyframes textAnim {
+  0% {
+    opacity: 0;
+    transform: translate(-90%, -60%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-90%, -60%) translateY(10%);
+  }
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -60%);
+  z-index: 2;
+  opacity: 0;
+  animation: textAnim 2s ease;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Animation for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+  @keyframes textAnim {
+    0% {
+      opacity: 0;
+      transform: translate(-95%, -75%) scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-95%, -75%) translateY(30%);
+    }
+  }
+
+  .text {
+    transform: translate(-95%, -60%);
+  }
+}
+
+/* Animation for smaller screens (e.g., iPhones and small smartphones) */
+@media (max-width: 480px) {
+  @keyframes textAnimSmall {
+    0% {
+      opacity: 0;
+      transform: translate(-85%, -50%) scale(0.4);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-85%, -50%) translateY(5%);
+    }
+  }
+
+  .text {
+    transform: translate(-80%, -50%);
+    animation: textAnimSmall 2s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+}

@@ -103,10 +103,9 @@ function WorkTeamContainer() {
         </Swiper>
 
         <hr className="bg-[#B9B9B9] h-[3px] mt-10 w-full absolute lg:bottom-[120px] bottom-[120px]" />
-      </div>
-
-      <div className="absolute right-0 top-[630px]">
-        <img src={BackgroundBlue} alt="" />
+        <div className="absolute right-0 bottom-[100px] -top-40">
+          <img src={BackgroundBlue} alt="" />
+        </div>
       </div>
     </div>
   );

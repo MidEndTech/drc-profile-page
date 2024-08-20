@@ -1,8 +1,16 @@
 import Paragraph from "../../SharedComponents/Paragraph";
 import { FaArrowLeft } from "react-icons/fa";
+import { useNavigate } from "react-router";
 import cool from "/assets/Home/AboutSection/Artboard 1 copy 9PNG.png";
 
 function About() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/aboutus');
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="relative flex justify-center items-center min-h-screen px-4 sm:px-8 lg:px-16">
       <div className="relative w-full max-w-[1440px] mx-auto">
@@ -37,6 +45,8 @@ function About() {
             تعرف على المزيد
             </p>
             <FaArrowLeft/>
+          </p>
+            ← تعرف على المزيد
           </button>
         </div>
       </div>
