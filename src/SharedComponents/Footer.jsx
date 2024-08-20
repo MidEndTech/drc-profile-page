@@ -15,7 +15,7 @@ import LocationIcon from "../Icons/LocationIcon";
 function Footer() {
   return (
     <>
-      <footer className="relative text-center w-full">
+      <footer className="relative text-center w-full z-0">
         <div
           style={{ backgroundImage: `url(${BackGroundGold})` }}
           className="w-full h-full absolute opacity-[13%] bg-contain"
@@ -26,7 +26,7 @@ function Footer() {
             <img src={FooterLogo} alt="" className="w-[267px] h-[47px]" />
           </div>
 
-          <div className="lg:flex lg:flex-row lg:items-start lg:col-span-2">
+          <div className="lg:flex lg:flex-row lg:items-start lg:col-span-2 z-10">
             <div className="mt-8 mx-5 lg:flex lg:flex-col lg:justify-center">
               <h1 className="text-center mb-2 text-[30px] font-[700] text-[#223A39] lg:text-start lg:mb-2 ">
                 العنوان
@@ -74,10 +74,16 @@ function Footer() {
               <img src={Barcode} alt="" />
             </div>
 
-            <div className="flex justify-center mr-[120px] mb-2">
-              <WhatsAppIcon />
-              <InstagramIcon />
-              <LinkedInIcon />
+            <div className="flex justify-center mr-[120px] mb-2 z-10">
+              <a href="#" className="hover:transform hover:-translate-y-1 duration-500">
+                <WhatsAppIcon />
+              </a>
+              <a href="#" className="hover:transform hover:-translate-y-1 duration-500">
+                <InstagramIcon />
+              </a>
+              <a href="#" className="hover:transform hover:-translate-y-1 duration-500">
+                <LinkedInIcon />
+              </a>
             </div>
           </div>
         </div>
