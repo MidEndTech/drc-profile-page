@@ -12,7 +12,7 @@ function FounderInfo() {
     <div className="relative mx-auto px-4 md:px-8 lg:px-20 mt-[60px] lg:mt-[130px]">
       <div className="relative w-full max-w-6xl mx-auto">
         <div className="relative rounded-[30px] flex flex-col md:flex-row justify-between items-center p-8">
-          <div className="mb-6 md:mb-0 ml-10">
+          <div className="mb-6 md:mb-0 md:ml-10">
             <div className="w-72 h-72">
               <img src={FounderImage} alt="Profile" className="" />
             </div>
@@ -84,7 +84,7 @@ function FounderInfo() {
       <div className="relative w-full max-w-6xl mx-auto mt-10">
         <FounderHistory />
       </div>
-      <div className="absolute z-0  top-[500px] right-[200px] md:right-[350px] md:top-32">
+      <div className="absolute z-0  top-[480px] right-[20px] md:right-[350px] md:top-32">
         <img src={qoute} alt="Orange Background" />
       </div>
       <div className="absolute left-0 top-56 ">
