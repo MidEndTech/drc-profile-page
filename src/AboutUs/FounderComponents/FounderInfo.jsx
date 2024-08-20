@@ -4,21 +4,17 @@ import qoute from "/assets/AboutUs/FounderSection/qoute.svg";
 import FounderHistory from "./FounderHistory";
 import Paragraph from "../../SharedComponents/Paragraph";
 import Heading from "../../SharedComponents/Heading";
+import orange from "/assets/AboutUs/FounderSection/orange.svg";
+import purple from "/assets/AboutUs/FounderSection/Purple.svg";
 
 function FounderInfo() {
-  useEffect(() => {
-    document.title = "من نحن/المؤسس والمدير العام";
-  }, []);
   return (
     <div className="relative mx-auto px-4 md:px-8 lg:px-20 mt-[60px] lg:mt-[130px]">
       <div className="relative w-full max-w-6xl mx-auto">
-        <div className="absolute z-0 top-32 right-80">
-          <img src={qoute} alt="Orange Background" />
-        </div>
         <div className="relative rounded-[30px] flex flex-col md:flex-row justify-between items-center p-8">
-          <div className="mb-6 md:mb-0 ml-10">
-            <div className="w-52 h-52">
-              <img src={FounderImage} alt="Profile" className="relative" />
+          <div className="mb-6 md:mb-0 md:ml-10">
+            <div className="w-72 h-72">
+              <img src={FounderImage} alt="Profile" className="" />
             </div>
           </div>
 
@@ -87,6 +83,18 @@ function FounderInfo() {
 
       <div className="relative w-full max-w-6xl mx-auto mt-10">
         <FounderHistory />
+      </div>
+      <div className="absolute z-0  top-[480px] right-[20px] md:right-[350px] md:top-32">
+        <img src={qoute} alt="Orange Background" />
+      </div>
+      <div className="absolute left-0 top-56 ">
+        <img src={purple} alt="" />
+      </div>
+      <div className="absolute left-0 top-2/4">
+        <img src={purple} alt="" />
+      </div>
+      <div className="absolute right-0 -top-20">
+        <img src={orange} alt="" />
       </div>
     </div>
   );
