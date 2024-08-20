@@ -20,7 +20,7 @@ function Founder() {
   };
 
   return (
-    <div className="relative flex justify-center items-center min-h-screen ">
+    <div className="relative flex items-center min-h-screen w-full ">
       <div
         className={`absolute top-0 right-0 transition-opacity duration-700 ${
           isExpanded ? "opacity-100" : "opacity-0"
@@ -32,26 +32,8 @@ function Founder() {
           className="w-[367px] h-[494px]"
         />
       </div>
-      <div
-        className={`absolute top-0 left-0 transition-opacity duration-700 ${
-          isExpanded ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <img
-          src={TopCorner}
-          alt="Orange Background"
-          className="w-[367px] h-[494px]"
-        />
-      </div>
-      <div
-        className={`absolute   left-0 bottom-[40%] transform translate-y-[50%]  transition-opacity duration-700 ${
-          isExpanded ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <img src={blue} alt="Blue Background" className="w-[367px] h-[494px]" />
-      </div>
 
-      <div className="relative w-full max-w-7xl min-h-[600px]  ">
+      <div className="relative w-full    min-h-[600px]  ">
         {!isExpanded ? (
           <>
             <div className="absolute inset-0 rounded-[30px] overflow-hidden z-0">
