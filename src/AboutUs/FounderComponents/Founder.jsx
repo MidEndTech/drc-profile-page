@@ -8,6 +8,7 @@ import TopCorner from "/assets/AboutUs/FounderSection/topcorner1.png";
 import blue from "/assets/AboutUs/FounderSection/blue.svg";
 import arrow from "/assets/AboutUs/FounderSection/arrow.svg";
 import Paragraph from "../../SharedComponents/Paragraph";
+import Heading from "../../SharedComponents/Heading";
 
 function Founder() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -19,7 +20,7 @@ function Founder() {
   };
 
   return (
-    <div className="relative flex justify-center items-center min-h-screen px-10">
+    <div className="relative flex justify-center items-center min-h-screen ">
       <div
         className={`absolute top-0 right-0 transition-opacity duration-700 ${
           isExpanded ? "opacity-100" : "opacity-0"
@@ -63,18 +64,18 @@ function Founder() {
 
             <div className="relative bg-dark-green/10 rounded-[30px] flex flex-col md:flex-row-reverse justify-between  items-center min-h-[600px] p-8">
               <div className="mb-6 md:mb-0 ml-10">
-                <div className="w-52 h-52">
-                  <img src={FounderImage} alt="Profile" className="relative" />
+                <div className="">
+                  <img src={FounderImage} alt="Profile" className="relative " />
                 </div>
               </div>
 
-              <div className="ml-0 md:ml-8 text-center md:text-right">
-                <h2 className="text-xl font-bold text-gray-700 mb-2">
+              <div className="ml-0 md:ml-8 text-center md:text-right w-2/3">
+                <Heading className="text-xl font-bold text-gray-700 mb-2">
                   المؤسس والمدير العام
-                </h2>
-                <p className="text-lg text-[#BE894A] mb-4">
+                </Heading>
+                <Paragraph className="text-lg text-[#BE894A] mb-4 font-bold">
                   معالي المهندس / عمر عبد الله قاضي
-                </p>
+                </Paragraph>
                 <Paragraph className="text-[#1E1E1E] mb-4 text-justify">
                   الحمد لله الذي خلق الإنسان وعلمه البيان وكرمه وسخر المخلوقات
                   لعمارة الأرض، وجعل الإخلاص في العمل وإتقانه منهجا لبناء
