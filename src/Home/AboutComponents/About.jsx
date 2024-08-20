@@ -4,13 +4,13 @@ import { useNavigate } from "react-router";
 import cool from "/assets/Home/AboutSection/Artboard 1 copy 9PNG.png";
 
 function About() {
-
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate('/aboutus');
     window.scrollTo(0, 0);
   };
+
   return (
     <div className="relative flex justify-center items-center min-h-screen px-4 sm:px-8 lg:px-16">
       <div className="relative w-full max-w-[1440px] mx-auto">
@@ -30,7 +30,7 @@ function About() {
             عن دار الرحمة للاستشارات
           </h1>
           <Paragraph
-            className="mb-6 leading-relaxed  text-justify w-full sm:w-5/6 md:w-4/6 lg:w-3/4 font-bold"
+            className="mb-6 leading-relaxed text-justify w-full sm:w-5/6 md:w-4/6 lg:w-3/4 font-bold"
             style={{
               textAlign: "right",
             }}
@@ -39,14 +39,12 @@ function About() {
             عميق للسياق المحلي مكنته من صياغة رؤى استراتيجية وتنفيذ مشروعات
             نوعية في مجالات التخطيط والتصميم العمراني والإدارة الهندسية
           </Paragraph>
-          <button className="text-[#BE894A] flex gap-2 items-center hover:text-amber-400 text-base sm:text-lg md:text-xl lg:text-2xl">
-            <p>
-
-            تعرف على المزيد
-            </p>
-            <FaArrowLeft/>
-          </p>
-            ← تعرف على المزيد
+          <button
+            className="text-[#BE894A] flex gap-2 items-center hover:text-amber-400 text-base sm:text-lg md:text-xl lg:text-2xl"
+            onClick={handleClick}
+          >
+            <p>تعرف على المزيد</p>
+            <FaArrowLeft />
           </button>
         </div>
       </div>
