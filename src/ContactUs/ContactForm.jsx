@@ -1,29 +1,29 @@
 import React, { useReducer, useRef } from "react";
-import emailjs from "@emailjs/browser";
 import Label from "../SharedComponents/Label";
-
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ValidateField from "./Functions/ValidateField"; 
+import SendEmail from "./Functions/SendEmail";  
 
 function ContactForm() {
-  // THIS FORM FOR THE EMAIL.JS PUACKIG
   const form = useRef();
 
-  //THE INITIAL VALUES OF FORMS INPUT
   const initialState = {
     user_name: "",
     user_email: "",
     user_message_title: "",
     user_message: "",
+    errors: {},
   };
 
-  //REDUCER FUNCTIONS FOR REDUCER HOOK
   const reducer = (state, action) => {
     switch (action.type) {
       case "input":
         return { ...state, [action.field]: action.value };
       case "reset":
         return initialState;
+      case "setErrors":
+        return { ...state, errors: action.errors };
       default:
         return state;
     }
@@ -31,47 +31,30 @@ function ContactForm() {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  //THIS HANDLE TO MAKE TYPE IN THE INPUT
   const handleChange = (e) => {
+    const { name, value } = e.target;
+    const newErrors = ValidateField(name, value);
     dispatch({
       type: "input",
-      field: e.target.name,
-      value: e.target.value,
+      field: name,
+      value: value,
+    });
+    dispatch({
+      type: "setErrors",
+      errors: newErrors,
     });
   };
 
-  //THIS FUNCTIONS FOR ON SUBMINT THE INPUT REST AND RETURN INITIAL VALUE
-  const handleReset = () => {
-    dispatch({ type: "reset" }); // Use the correct function name to reset the form state
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    const notifySuccess = () => toast.success("Success!");
-    const notifyErorr = () => toast.error("Somthing went wrong... ");
-
-    emailjs
-      .sendForm("service_yry6fox", "template_s4uawbj", form.current, {
-        publicKey: "bPbqjyFjfjDLvLNQZ",
-      })
-      .then(
-        () => {
-          notifySuccess();
-          handleReset();
-        },
-        () => {
-          notifyErorr();
-        }
-      );
+  const handleSubmit = (e) => {
+    SendEmail(e, form, state, dispatch);
   };
 
   return (
     <div className="lg:ml-[2%] pt-5 lg:pt-0">
-        <ToastContainer className={"w-[290px]"} />
+      <ToastContainer  className={"mt-5 text-end w-[90%] md:w-1/5 font-bold"}/>
 
-      <form ref={form} onSubmit={sendEmail}>
-        <div className="flex flex-col justify ">
+      <form ref={form} onSubmit={handleSubmit}>
+        <div className="flex flex-col">
           <Label>* الإسم الكامل</Label>
           <input
             className="font-[400] text-[18px] mx-[2%] h-[55px] md:mx-0 md:w-[742px] md:h-[71px] rounded-[32px] shadow-lg shadow-[#00000026] border-none pr-5"
@@ -84,12 +67,11 @@ function ContactForm() {
           />
         </div>
 
-        <div className=" flex flex-col">
+        <div className="flex flex-col">
           <Label>* البريد الإلكتروني</Label>
-
           <input
-            className="font-[400] text-[18px] mx-[2%] h-[55px] md:mx-0  md:w-[742px] md:h-[71px] rounded-[32px] shadow-md shadow-[#00000026] border-none pr-5"
-            type="text"
+            className="font-[400] text-[18px] mx-[2%] h-[55px] md:mx-0 md:w-[742px] md:h-[71px] rounded-[32px] shadow-md shadow-[#00000026] border-none pr-5"
+            type="email"
             name="user_email"
             value={state.user_email}
             onChange={handleChange}
@@ -97,12 +79,19 @@ function ContactForm() {
             required
           />
         </div>
+        {state.errors.user_email && (
+          <p
+            className="mr-[2%] mt-[2%] text-lg font-bol"
+            style={{ color: "red", textAlign: "start" }}
+          >
+            {state.errors.user_email}
+          </p>
+        )}
 
-        <div className=" flex flex-col">
+        <div className="flex flex-col">
           <Label>* عنوان الرسالة</Label>
-
           <input
-            className="font-[400] text-[18px] mx-[2%] h-[55px] md:mx-0  md:w-[742px] md:h-[71px] rounded-[32px] shadow-md shadow-[#00000026] border-none pr-5"
+            className="font-[400] text-[18px] mx-[2%] h-[55px] md:mx-0 md:w-[742px] md:h-[71px] rounded-[32px] shadow-md shadow-[#00000026] border-none pr-5"
             type="text"
             name="user_message_title"
             value={state.user_message_title}
@@ -112,7 +101,7 @@ function ContactForm() {
           />
         </div>
 
-        <div className=" flex flex-col">
+        <div className="flex flex-col">
           <Label>* الرسالة</Label>
           <textarea
             className="pt-3 font-[400] text-[18px] mx-[2%] md:mx-0 h-[190px] md:w-[742px] md:h-[254px] rounded-[32px] shadow-md shadow-[#00000026] border-none pr-5"
