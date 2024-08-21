@@ -8,7 +8,8 @@ function CardsDisplay(props) {
       <motion.div
         initial={{ y: 0, x: 0, opacity: 0 }}
         animate={{ y: 0, x: 0, opacity: 1 }}
-        transition={{ delay: 0.1, duration: 0.3 }}
+        exit={{ y: 0, x: 0, opacity: 0 }}
+        transition={{duration: 1 }}
         key={props.index}
       >
         <div
