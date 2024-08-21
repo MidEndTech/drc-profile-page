@@ -13,7 +13,7 @@ import internalValuesObj from "./internalValues.json";
 
 function DistinguishesUs() {
   //imports*************************************************************************************
-  const [cards, setCards] = useState(null);
+  const [cards, setCards] = useState("LensesAnd_dimensions");
   const [lensesAndDimension, setLensesAndDimension] = useState([
     ...LensesAndDimensionObj,
   ]);
@@ -60,6 +60,7 @@ function DistinguishesUs() {
         {/*nead break it *****DONE****************************************************************************************************************************************************************************************/}
 
         <ButtonsTitle
+          activeBtn = {cards}
           function1={() => {
             handleCardSelection("LensesAnd_dimensions"), setIndexOfCard(prev => prev + 1);
           }}
