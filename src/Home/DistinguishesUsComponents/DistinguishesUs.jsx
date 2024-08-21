@@ -13,7 +13,7 @@ import internalValuesObj from "./internalValues.json";
 
 function DistinguishesUs() {
   //imports*************************************************************************************
-  const [cards, setCards] = useState(null);
+  const [cards, setCards] = useState("LensesAnd_dimensions");
   const [lensesAndDimension, setLensesAndDimension] = useState([
     ...LensesAndDimensionObj,
   ]);
@@ -53,13 +53,14 @@ function DistinguishesUs() {
   //functions*********************************************************
 
   return (
-    <div className="flex flex-col h-screen justify-center items-center">
+    <div className="flex flex-col md:h-screen mb-[150px] justify-center items-center">
       <h1 className="font-[700] text-[36px] text-[#9D6636] mb-10">مايميزنا</h1>
 
       <div className="lg:h-[718.51px] lg:w-[1142.89px] h-full flex flex-col justify-start lg:justify-center items-center relative lg:mt-[-90px] md:w-full w-[95%]">
         {/*nead break it *****DONE****************************************************************************************************************************************************************************************/}
 
         <ButtonsTitle
+          activeBtn = {cards}
           function1={() => {
             handleCardSelection("LensesAnd_dimensions"), setIndexOfCard(prev => prev + 1);
           }}
@@ -88,7 +89,7 @@ function DistinguishesUs() {
           const cardIndex = index;
           () => setIndexOfCard(cardIndex);
           return (
-            <div key={index} className="card">
+            <div key={index} className="">
               <CardsDisplay
                 index={indexOfCard}
                 backGroundColor={el.backGroundColor}

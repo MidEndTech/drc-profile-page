@@ -1,6 +1,6 @@
 import React from "react";
-import ContactEmail from "../Icons/ContactEmail";
-import ContactNumber from "../Icons/ContactNumber";
+import ContactEmail from "../SharedComponents/Icons/ContactEmail";
+import ContactNumber from "../SharedComponents/Icons/ContactNumber";
 import drcMap from "/assets/ContactUs/drcMap.svg";
 import "./ContactStyle.css";
 import ContactMsg from "./ContactMsg";

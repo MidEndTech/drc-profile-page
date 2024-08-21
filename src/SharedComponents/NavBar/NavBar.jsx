@@ -1,13 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-
 import { useEffect, useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
 
-// import {displayMinuHandle} from './NavBar/displayMinuHandle'
-// import {backgroundOpenNavBar} from './NavBar/backgroundOpenNavBar'
-
-import LinesIcon from "../../Icons/LinesIcon";
-import CloseIcon from "../../Icons/CloseIcon";
+import LinesIcon from "../Icons/LinesIcon";
+import CloseIcon from "../Icons/CloseIcon";
 import LogoNavBar from "./LogoNavBar";
 
 function NavBar() {
