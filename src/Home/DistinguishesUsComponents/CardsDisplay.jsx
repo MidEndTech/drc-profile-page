@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
 function CardsDisplay(props) {
-  const [placeT, setPlaceT] = useState([-70]);
-  const [placeL, setPlaceL] = useState([550]);
+  const [placeT, setPlaceT] = useState([-280]);
+  const [placeL, setPlaceL] = useState([490]);
 
   return (
     <AnimatePresence mode="popLyout">
@@ -17,7 +17,7 @@ function CardsDisplay(props) {
         key={props.index}
       >
         <div
-          className={`animate-bounce w-[270px] shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute z-0`}
+          className={`animate-bounce shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute z-0`}
           style={{
             backgroundColor: `${props.backGroundColor}`,
             // top: `${
@@ -35,11 +35,12 @@ function CardsDisplay(props) {
             //     : props.left
             // }px`,
             // right: `${props.funcCond === "phone" ? props.right : null}px`,
+            width:`${props.width}px`,
             rotate: `${props.rotation}`,
             animationDuration: `${props.duration}s`,
           }}
         >
-          <p style={{ color: `${props.textColor}` }}>{props.text}</p>
+          <p  style={{ color: `${props.textColor}` }}>{props.text}</p>
         </div>
       </motion.div>
     </AnimatePresence>

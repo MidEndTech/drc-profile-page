@@ -24,7 +24,8 @@
     "top": "140",
     "left": "0",
     "right":"",
-    "duration":"5"
+    "duration":"5",
+    "width":"122"
   },
   {
     "text": "النزاهة",
@@ -52,7 +53,8 @@
     "top": "280",
     "left": "60",
     "right":"",
-    "duration":"5"
+    "duration":"5",
+    "width":"111"
   },
   {
     "text": "تعظيم قدر الصلاة",
@@ -66,7 +68,8 @@
     "top": "80",
     "left": "",
     "right":"0",
-    "duration":"4"
+    "duration":"4",
+    "width":"129"
   },{
     "text": "المساندة المالية الطارئة",
     "rotation": "7.68deg",
@@ -79,7 +82,35 @@
     "top": "140",
     "left": "",
     "right":"0",
+    "duration":"5",
+    "width":"155"
+  },
+  {
+    "text": "الإخلاص",
+    "rotation": "-4.89deg",
+    "textColor": "#BE894A",
+    "backGroundColor": "#BE894A1A",
+    "lgTop":-180 ,
+    "lgLeft": 550,
+    "mdTop": "330",
+    "mdLeft": "630",
+    "top": "200",
+    "left": "",
+    "right":"0",
+    "duration":"4"
+  },
+  {
+    "text": "الإحترام",
+    "rotation": "-6.89deg",
+    "textColor": "#2C4D51",
+    "backGroundColor": "#2C4D511A",
+    "lgTop":-280,
+    "lgLeft":490,
+    "mdTop": "200",
+    "mdLeft": "660",
+    "top": "280",
+    "left": "",
+    "right":"60",
     "duration":"5"
   }
-
 ]

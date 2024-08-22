@@ -93,6 +93,7 @@ function DistinguishesUs() {
                 index={indexOfCard}
                 backGroundColor={el.backGroundColor}
                 funcCond={responsivePageHandle()}
+                width={el.width}
                 lgTop={el.lgTop}
                 mdTop={el.mdTop}
                 top={el.top}
