@@ -1,9 +1,9 @@
 import data from "./field.json";
 import { useRef, useState, useEffect } from "react";
-import HeroContainer from "./HeroContainer";
 import HeroInfo from "./HeroInfo";
 import HeroCarousel from "./HeroCarousel";
 import Arrows from "./Arrows";
+import HeroContainer from "./HeroContainer";
 
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
