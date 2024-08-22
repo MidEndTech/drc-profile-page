@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
 function CardsDisplay(props) {
+  const [placeT, setPlaceT] = useState([-280]);
+  const [placeY, setPlaceY] = useState([-350])
 
   return (
     <AnimatePresence>
       <motion.div
         initial={{ y: -200, x: 50, opacity: 0 }}
-        animate={{ y: props.lgTop, x:props.lgLeft, opacity: 1 }}
+        animate={{ y: props.lgTop, x: props.lgLeft, opacity: 1 }}
         exit={{ y: -200, x: 50, opacity: 0 }}
-        transition={{duration: 1 }}
+        transition={{ duration: 1 }}
         key={props.index}
       >
         <div
-          className={`animate-bounce z-10 shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute`}
+          className={`animate-bounce w-[190px] shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute z-0`}
           style={{
             backgroundColor: `${props.backGroundColor}`,
             // top: `${
@@ -44,5 +46,3 @@ function CardsDisplay(props) {
 }
 
 export default CardsDisplay;
-
-

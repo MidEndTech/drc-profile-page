@@ -1,18 +1,18 @@
 [
-    {
+  {
     "text": "الفهم العميق للسياق المحلي",
     "rotation": "-6.47deg",
     "textColor": "#BE894A",
     "backGroundColor": "#BE894A1A",
-    "lgTop": -480,
-    "lgLeft": -562,
+    "lgTop": -280,
+    "lgLeft": -350,
     "mdTop": "230",
     "mdLeft": "30",
     "top": "80",
     "left": "0",
-    "right":"",
-    "duration":"5",
-    "delay":"1"
+    "right": "",
+    "duration": "5",
+    "delay": "1"
   },
   {
     "text": "تعظيم أثر المخرجات (خدمات إضافية للعميل)",
@@ -25,9 +25,9 @@
     "mdLeft": "20",
     "top": "200",
     "left": "0",
-    "right":"",
-    "duration":"4",
-    "delay":"2"
+    "right": "",
+    "duration": "4",
+    "delay": "2"
   },
   {
     "text": "خبرة نوعية تراكمية",
@@ -40,9 +40,9 @@
     "mdLeft": "500",
     "top": "280",
     "left": "0",
-    "right":"",
-    "duration":"5",
-    "delay":"1"
+    "right": "",
+    "duration": "5",
+    "delay": "1"
   },
   {
     "text": "العناية بالتفاصيل لصناعة الجودة",
@@ -55,9 +55,9 @@
     "mdLeft": "568",
     "top": "120",
     "left": "",
-    "right":"0",
-    "duration":"5",
-    "delay":"2"
+    "right": "0",
+    "duration": "5",
+    "delay": "2"
   },
   {
     "text": "التوازن (بين الأبعاد المختلفة)",
@@ -70,8 +70,8 @@
     "mdLeft": "556",
     "top": "280",
     "left": "",
-    "right":"0",
-    "duration":"4",
-    "delay":"1"
+    "right": "0",
+    "duration": "4",
+    "delay": "1"
   }
 ]
