@@ -3,20 +3,21 @@ import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
 function CardsDisplay(props) {
-  const [placeT, setPlaceT] = useState([-280]);
-  const [placeY, setPlaceY] = useState([-350])
+  const [placeT, setPlaceT] = useState([-70]);
+  const [placeL, setPlaceL] = useState([550]);
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="popLyout">
       <motion.div
         initial={{ y: -200, x: 50, opacity: 0 }}
         animate={{ y: props.lgTop, x: props.lgLeft, opacity: 1 }}
-        exit={{ y: -200, x: 50, opacity: 0 }}
+        // animate={{ y: placeT, x: placeL, opacity: 1 }}
+        exit={{ y: -200, x: 50, opacity: 0 }} 
         transition={{ duration: 1 }}
         key={props.index}
       >
         <div
-          className={`animate-bounce w-[190px] shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute z-0`}
+          className={`animate-bounce w-[270px] shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute z-0`}
           style={{
             backgroundColor: `${props.backGroundColor}`,
             // top: `${

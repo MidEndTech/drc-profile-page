@@ -13,7 +13,7 @@ import internalValuesObj from "./internalValues.json";
 
 function DistinguishesUs() {
   //imports*************************************************************************************
-  const [cards, setCards] = useState("LensesAnd_dimensions");
+  const [cards, setCards] = useState("features");
   const [lensesAndDimension, setLensesAndDimension] = useState([
     ...LensesAndDimensionObj,
   ]);
@@ -86,10 +86,9 @@ function DistinguishesUs() {
         {/*nead break it **************************************************************************************************************************************************************************************************/}
 
         {cardsHandle().map((el, index) => {
-          const cardIndex = index;
           () => setIndexOfCard(cardIndex);
           return (
-            <div key={index} className="">
+            <div key={index}>
               <CardsDisplay
                 index={indexOfCard}
                 backGroundColor={el.backGroundColor}
