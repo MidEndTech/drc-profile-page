@@ -1,9 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.splash-overlay {
+.splash-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,11 +6,7 @@ body {
   height: 100%;
   background-color: white;
   z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
 /* Base animation for cube */
 @keyframes anim {
   0% {

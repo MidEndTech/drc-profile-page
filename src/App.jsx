@@ -19,69 +19,42 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Add the no-scroll class immediately to prevent scrolling
-    document.body.style.overflow = "hidden";
-
-    const checkAllAssetsLoaded = () => {
-      return document.readyState === "complete";
+    const handleLoad = () => {
+      // Increase the timeout to give more time for the homepage to load
+      setTimeout(() => setLoading(false));
     };
 
-    const waitForImages = async () => {
-      const images = document.querySelectorAll("img");
-      const promises = Array.from(images).map((img) => {
-        if (img.complete) return Promise.resolve();
-        return new Promise((resolve, reject) => {
-          img.onload = resolve;
-          img.onerror = reject;
-        });
-      });
-      await Promise.all(promises);
-    };
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
 
-    const handleLoading = async () => {
-      if (checkAllAssetsLoaded()) {
-        try {
-          await waitForImages();
-          await new Promise((resolve) => setTimeout(resolve, 2500));
-          setLoading(false);
-          document.body.style.overflow = "auto";
-        } catch (error) {
-          console.error("Error loading images:", error);
-          setLoading(false);
-          document.body.style.overflow = "auto";
-        }
-      } else {
-        window.requestAnimationFrame(handleLoading);
-      }
-    };
-
-    window.addEventListener("load", handleLoading);
-
-    return () => {
-      document.body.style.overflow = "auto";
-      window.removeEventListener("load", handleLoading);
-    };
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
+
   return (
     <>
-      {loading && <Splash />}
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route index element={<HomePage />} />
-          <Route path="aboutus" element={<AboutUsPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="projects/:id" element={<NetworkDetails />} />
-          <Route path="news" element={<NewsPage />}>
-            <Route index element={<AllNews />} />
-            <Route path=":id" element={<CompleteNews />} />
-          </Route>
-          <Route path="contactus" element={<ContactUsPage />} />
-          <Route path="founder" element={<FounderInfo />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <Footer />
+        {loading && <Splash />}
+        <div style={{ display: loading ? 'none' : 'block' }}>
+          <NavBar />
+          <Routes>
+            <Route index element={<HomePage />} />
+            <Route path="aboutus" element={<AboutUsPage />} />
+            <Route path="services" element={<ServicesPage />} />
+            <Route path="projects" element={<ProjectsPage />} />
+            <Route path="projects/:id" element={<NetworkDetails />} />
+            <Route path="news" element={<NewsPage />}>
+              <Route index element={<AllNews />} />
+              <Route path=":id" element={<CompleteNews />} />
+            </Route>
+            <Route path="contactus" element={<ContactUsPage />} />
+            <Route path="founder" element={<FounderInfo />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+          <Footer />
+        </div>
       </BrowserRouter>
     </>
   );
