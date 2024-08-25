@@ -22,11 +22,22 @@ function WorkTeamContainer() {
 
   return (
     <div className="flex flex-col items-center mb-[71.75px]" dir="rtl">
-      <h1 className="font-[700] text-[36px] text-[#9D6636] text-center mb-8">
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once={true}
+        className="font-[700] text-[36px] text-[#9D6636] text-center mb-8"
+      >
+
         فريق العمل
       </h1>
 
-      <div className="relative w-full">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-once={true}
+        className="relative w-full"
+      >
         <Swiper
           centeredSlides={true}
           pagination={{

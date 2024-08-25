@@ -1,8 +1,15 @@
 import { Outlet } from "react-router";
 import HeroSection from "../News/HeroComponents/HeroSection";
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function NewsPage() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   useEffect(() => {
     document.title = "أخبارنا";
   }, []);

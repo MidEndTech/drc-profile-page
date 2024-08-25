@@ -1,12 +1,14 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Slider from "react-slick";
 import { Images } from "./images.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import left from "/assets/Home/AssociationSection/Variant5.svg";
 import right from "/assets/Home/AssociationSection/Variant6.svg";
-import "./style.css"; 
+import { motion } from "framer-motion";
+import "./style.css";
 
+// eslint-disable-next-line react/prop-types
 const NextArrow = ({ onClick, disabled }) => (
   <div
     onClick={onClick}
@@ -18,10 +20,10 @@ const NextArrow = ({ onClick, disabled }) => (
       src={left}
       alt="Next"
       className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 cursor-pointer opacity-60 hover:opacity-100"
-    />  
+    />
   </div>
 );
-
+// eslint-disable-next-line react/prop-types
 const PrevArrow = ({ onClick, disabled }) => (
   <div
     onClick={onClick}
@@ -80,36 +82,61 @@ function Association() {
     ],
   };
 
+  const associatesVariants = {
+    offscreen: {
+      opacity: 0,
+      y: 150,
+    },
+    onscreen: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        duration: 1,
+      },
+    },
+  };
+
   return (
-    <div className="container mx-auto px-1 py-20  mb-[71.75px]">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#9D6636] font-bold text-center my-4">
+    <div className="container mx-auto px-1 py-20 mb-[71.75px]">
+      <motion.h1
+        variants={associatesVariants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        className="text-2xl sm:text-3xl md:text-4xl text-[#9D6636] font-bold text-center my-4"
+      >
         شركاء النجاح
-      </h1>
-      <Slider ref={sliderRef} {...settings}>
-        {allImages.map((src, index) => (
-          <div key={index} className="logos">
-            <img
-              src={src}
-              alt={`Logo ${index + 1}`}
-              className="images"
+      </motion.h1>
+      <motion.section
+        variants={associatesVariants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        transition={{ delay: 0.5 }}
+      >
+        <Slider ref={sliderRef} {...settings}>
+          {allImages.map((src, index) => (
+            <div key={index} className="logos">
+              <img src={src} alt={`Logo ${index + 1}`} className="images" />
+            </div>
+          ))}
+        </Slider>
+        <div className="flex justify-center mt-8 space-x-8">
+          <div className="flex items-center justify-center">
+            <NextArrow
+              onClick={() => sliderRef.current.slickNext()}
+              disabled={currentSlide >= allImages.length - 4}
             />
           </div>
-        ))}
-      </Slider>
-      <div className="flex justify-center mt-8 space-x-8">
-        <div className="flex items-center justify-center">
-          <NextArrow
-            onClick={() => sliderRef.current.slickNext()}
-            disabled={currentSlide >= allImages.length - 4}
-          />
+          <div className="flex items-center justify-center">
+            <PrevArrow
+              onClick={() => sliderRef.current.slickPrev()}
+              disabled={currentSlide === 0}
+            />
+          </div>
         </div>
-        <div className="flex items-center justify-center">
-          <PrevArrow
-            onClick={() => sliderRef.current.slickPrev()}
-            disabled={currentSlide === 0}
-          />
-        </div>
-      </div>
+      </motion.section>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import right from "/assets/Home/AssociationSection/Variant5.svg";
 import left from "/assets/Home/AssociationSection/Variant6.svg";
 import CardInfo from "./CardInfo";
@@ -11,7 +11,13 @@ function ServicesSliderContainer() {
   const [indexCounter, setIndexCounter] = useState(0);
   return (
     <>
-      <div className=" mt-10 lg:mt-20 flex flex-col items-center lg:flex-row-reverse lg:justify-center lg:items-center overflow-hidden">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-once={true}
+        data-aos-delay="200"
+        className=" mt-10 lg:mt-20 flex flex-col items-center lg:flex-row-reverse lg:justify-center lg:items-center overflow-hidden"
+      >
         <AnimatePresence mode="popLayout">
           <motion.div
             key={indexCounter}

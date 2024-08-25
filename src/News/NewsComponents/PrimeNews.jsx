@@ -5,7 +5,12 @@ import ReadMore from "./ReadMore";
 function PrimeNews() {
   return (
     <>
-      <main className="mt-24 pb-12 flex gap-8">
+      <main
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-once={true}
+        className="mt-24 pb-12 flex gap-8"
+      >
         <img
           src={news[0].picture}
           className="w-1/4 sm:w-1/3 lg:w-auto hover:scale-110 transition-transform duration-300"

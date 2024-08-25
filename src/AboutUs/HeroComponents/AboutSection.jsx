@@ -9,7 +9,12 @@ function AboutSection() {
           src="/assets/AboutUs/HeroSection/Bubble.svg"
           className="z-0 absolute top-0 right-0"
         />
-        <section className="grid gap-2 justify-items-center m-2 md:m-4 md:mb-0 md:ml-8 lg:ml-20">
+        <section
+          data-aos="slide-up"
+          data-aos-duration="1000"
+          data-aos-once={true}
+          className="grid gap-2 justify-items-center m-2 md:m-4 md:mb-0 md:ml-8 lg:ml-20"
+        >
           <img
             src="/assets/AboutUs/HeroSection/Image-1.svg"
             className="col-span-2"
@@ -23,7 +28,12 @@ function AboutSection() {
             className="col-start-2 col-span-2"
           />
         </section>
-        <section className="flex flex-col relative w-11/12 md:w-1/3 gap-4 z-20 m-2 md:m-4 md:mb-0 md:mr-8 lg:mr-20">
+        <section
+          data-aos="slide-up"
+          data-aos-duration="1000"
+          data-aos-once={true}
+          className="flex flex-col relative w-11/12 md:w-1/3 gap-4 z-20 m-2 md:m-4 md:mb-0 md:mr-8 lg:mr-20"
+        >
           <img
             src="/assets/AboutUs/HeroSection/BackgroundLogo.svg"
             className="absolute z-0 -top-5 w-1/3 md:w-auto"
