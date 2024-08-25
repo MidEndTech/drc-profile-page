@@ -116,6 +116,7 @@
     "mdLeft": "",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   }
 ]

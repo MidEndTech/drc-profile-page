@@ -100,7 +100,7 @@ function DistinguishesUs() {
                 lgLeft={el.lgLeft}
                 mdLeft={el.mdLeft}
                 left={el.left}
-                right={el.right}
+                display= {el.display}
                 rotation={el.rotation}
                 duration={el.duration}
                 textColor={el.textColor}

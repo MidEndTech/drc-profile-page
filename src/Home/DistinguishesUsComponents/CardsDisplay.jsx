@@ -38,6 +38,7 @@ function CardsDisplay(props) {
           style={{
             backgroundColor: `${props.backGroundColor}`,
             width: `${props.width}px`,
+            display:`${props.display}`,
             rotate: `${props.rotation}`,
             animationDuration: `${props.duration}s`,
           }}

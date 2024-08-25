@@ -85,7 +85,8 @@
     "mdLeft": "660",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   },
   {
     "text": null,
@@ -98,7 +99,8 @@
     "mdLeft": "660",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   },
   {
     "text": null,
@@ -111,7 +113,8 @@
     "mdLeft": "660",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   },
   {
     "text": null,
@@ -124,6 +127,7 @@
     "mdLeft": "660",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   }
 ]
