@@ -6,10 +6,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": -280,
     "lgLeft": -350,
-
     "mdTop": -280,
     "mdLeft": -170,
-
     "top": -190,
     "left": 0,
     "duration": "5",
@@ -23,10 +21,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -100,
     "lgLeft": -350,
-
     "mdTop": -100,
     "mdLeft": -60,
-
     "top": -90,
     "left": 100,
     "duration": "4",
@@ -40,10 +36,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -30,
     "lgLeft": 490,
-
     "mdTop": -30,
     "mdLeft": 300,
-
     "top": 15,
     "left": -12,
     "duration": "5",
@@ -57,10 +51,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": -150,
     "lgLeft": 560,
-
     "mdTop": -150,
-    "mdLeft": 400,
-
+    "mdLeft": 370,
     "top": -150,
     "left": 160,
     "duration": "5",
@@ -74,10 +66,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -300,
     "lgLeft": 560,
-
     "mdTop": -300,
     "mdLeft": 300,
-
     "top": -25,
     "left": 160,
     "duration": "4",

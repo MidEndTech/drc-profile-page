@@ -6,10 +6,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -340,
     "lgLeft": -498,
-
     "mdTop": -340,
-    "mdLeft": -498,
-
+    "mdLeft": -298,
     "top": -190,
     "left": -45,
     "duration":"4"
@@ -21,10 +19,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": -260,
     "lgLeft": -325,
-
     "mdTop": -260,
-    "mdLeft": -325,
-
+    "mdLeft": -205,
     "top": -135,
     "left": -65,
     "duration":"5",
@@ -37,10 +33,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -140,
     "lgLeft": -410,
-
     "mdTop": -140,
-    "mdLeft": -410,
-
+    "mdLeft": -210,
     "top": -85,
     "left": -45,
     "duration":"4",
@@ -53,10 +47,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": 23,
     "lgLeft": -270,
-
     "mdTop": 23,
-    "mdLeft": -270,
-
+    "mdLeft": -170,
     "top": -40,
     "left": -45,
     "duration":"5",
@@ -69,10 +61,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": 116,
     "lgLeft": -65,
-
     "mdTop": 116,
-    "mdLeft": -65,
-
+    "mdLeft": -45,
     "top": 30,
     "left": 70,
     "duration":"4",
@@ -85,11 +75,9 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": 100,
     "lgLeft": 237,
-
     "mdTop": 100,
     "mdLeft": 237,
-    
-    "top": -190,
+    "top": -210,
     "left": 160,
     "duration":"5",
     "width":"132"
@@ -101,10 +89,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -30,
     "lgLeft": 397,
-
     "mdTop": -30,
-    "mdLeft": 397,
-
+    "mdLeft": 337,
     "top": -135,
     "left": 160,
     "duration":"4",
@@ -117,10 +103,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop":-140,
     "lgLeft":547,
-
     "mdTop": -140,
-    "mdLeft": 547,
-
+    "mdLeft": 347,
     "top": -85,
     "left": 160,
     "duration":"5",
@@ -133,9 +117,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -300,
     "lgLeft": 430,
-    
     "mdTop": -300,
-    "mdLeft": 430,
+    "mdLeft": 360,
     "top": -40,
     "left": 160,
     "duration":"4",

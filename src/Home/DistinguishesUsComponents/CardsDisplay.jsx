@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
 function CardsDisplay(props) {
-  const [placeT, setPlaceT] = useState([-10]);
-  const [placeL, setPlaceL] = useState([20]);
-
   return (
     <AnimatePresence>
       <motion.div
@@ -34,7 +31,16 @@ function CardsDisplay(props) {
               : props.left,
           opacity: 1,
         }}
-        exit={{ y: -120, x: 70, opacity: 0 }}
+        exit={{
+          y:
+            props.funcCond === "lg"
+              ? -200
+              : props.funcCond === "md"
+              ? -200
+              : -120,
+          x: props.funcCond === "lg" ? 50 : props.funcCond === "md" ? 50 : 70,
+          opacity: 0,
+        }}
         transition={{ duration: 1 }}
         key={props.index}
       >

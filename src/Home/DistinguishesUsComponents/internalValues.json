@@ -6,10 +6,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": -350,
     "lgLeft": -300,
-
     "mdTop": -350,
-    "mdLeft": -300,
-
+    "mdLeft": -230,
     "top": -190,
     "left": -40,
     "duration":"4"
@@ -20,10 +18,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop":-180,
     "lgLeft": -360,
-
     "mdTop": -180,
-    "mdLeft": -360,
-
+    "mdLeft": -200,
     "top": -135,
     "left": -40,
     "duration":"5",
@@ -36,10 +32,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -60,
     "lgLeft":-290,
-
     "mdTop": -60,
-    "mdLeft": -290,
-
+    "mdLeft": -210,
     "top": -85,
     "left": -40,
     "duration":"4"
@@ -51,10 +45,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": 85,
     "lgLeft": -30,
-
     "mdTop": 85,
     "mdLeft": -30,
-
     "top": -25,
     "left": 2,
     "duration":"5",
@@ -67,10 +59,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": 70,
     "lgLeft":250,
-
     "mdTop":70,
     "mdLeft": 250,
-
     "top": -190,
     "left":  160,
     "duration":"4",
@@ -82,10 +72,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -70,
     "lgLeft": 440,
-
     "mdTop": -70,
-    "mdLeft": 440,
-
+    "mdLeft": 340,
     "top": -135,
     "left":  160,
     "duration":"5",
@@ -98,10 +86,8 @@
     "backGroundColor": "#BE894A1A",
     "lgTop":-180 ,
     "lgLeft": 490,
-
     "mdTop": -180,
-    "mdLeft": 490,
-
+    "mdLeft": 340,
     "top": -85,
     "left": 160,
     "duration":"4"
@@ -113,10 +99,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop":-280,
     "lgLeft":430,
-
     "mdTop": -280,
-    "mdLeft": 430,
-
+    "mdLeft": 280,
     "top": -25,
     "left": 100,
     "duration":"5"
