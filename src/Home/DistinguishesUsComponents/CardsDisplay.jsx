@@ -10,22 +10,27 @@ function CardsDisplay(props) {
     <AnimatePresence>
       <motion.div
         initial={{
-          y: props.funcCond === "lg" ? -200 : -120,
-          x: props.funcCond === "lg" ? 50 : 70,
+          y:
+            props.funcCond === "lg"
+              ? -200
+              : props.funcCond === "md"
+              ? -200
+              : -120,
+          x: props.funcCond === "lg" ? 50 : props.funcCond === "md" ? 50 : 70,
           opacity: 0,
         }}
         animate={{
           y:
             props.funcCond === "lg"
               ? props.lgTop
-              // : props.funcCond === "md"
-              // ? props.mdTop
+              : props.funcCond === "md"
+              ? props.mdTop
               : props.top,
           x:
             props.funcCond === "lg"
               ? props.lgLeft
-              // : props.funcCond === "md"
-              // ? props.mdLeft
+              : props.funcCond === "md"
+              ? props.mdLeft
               : props.left,
           opacity: 1,
         }}
@@ -38,7 +43,7 @@ function CardsDisplay(props) {
           style={{
             backgroundColor: `${props.backGroundColor}`,
             width: `${props.width}px`,
-            display:`${props.display}`,
+            display: `${props.display}`,
             rotate: `${props.rotation}`,
             animationDuration: `${props.duration}s`,
           }}

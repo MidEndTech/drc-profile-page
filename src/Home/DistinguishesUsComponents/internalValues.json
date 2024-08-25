@@ -6,8 +6,10 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": -350,
     "lgLeft": -300,
-    "mdTop": "150",
-    "mdLeft": "40",
+
+    "mdTop": -350,
+    "mdLeft": -300,
+
     "top": -190,
     "left": -40,
     "duration":"4"
@@ -18,12 +20,14 @@
     "backGroundColor": "#2C4D511A",
     "lgTop":-180,
     "lgLeft": -360,
-    "mdTop": "270",
-    "mdLeft": "60",
+
+    "mdTop": -180,
+    "mdLeft": -360,
+
     "top": -135,
     "left": -40,
     "duration":"5",
-    "width":"122"
+    "width":"133"
   },
   {
     "text": "النزاهة",
@@ -32,8 +36,10 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -60,
     "lgLeft":-290,
-    "mdTop": "370",
-    "mdLeft": "150",
+
+    "mdTop": -60,
+    "mdLeft": -290,
+
     "top": -85,
     "left": -40,
     "duration":"4"
@@ -45,12 +51,14 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": 85,
     "lgLeft": -30,
-    "mdTop": "480",
-    "mdLeft": "200",
+
+    "mdTop": 85,
+    "mdLeft": -30,
+
     "top": -25,
     "left": 2,
     "duration":"5",
-    "width":"111"
+    "width":"119"
   },
   {
     "text": "تعظيم قدر الصلاة",
@@ -59,12 +67,14 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": 70,
     "lgLeft":250,
-    "mdTop": "500",
-    "mdLeft": "400",
+
+    "mdTop":70,
+    "mdLeft": 250,
+
     "top": -190,
     "left":  160,
     "duration":"4",
-    "width":"129"
+    "width":"140"
   },{
     "text": "المساندة المالية الطارئة",
     "rotation": "7.68deg",
@@ -72,12 +82,14 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -70,
     "lgLeft": 440,
-    "mdTop": "440",
-    "mdLeft": "580",
+
+    "mdTop": -70,
+    "mdLeft": 440,
+
     "top": -135,
     "left":  160,
     "duration":"5",
-    "width":"155"
+    "width":"169"
   },
   {
     "text": "الإخلاص",
@@ -86,8 +98,10 @@
     "backGroundColor": "#BE894A1A",
     "lgTop":-180 ,
     "lgLeft": 490,
-    "mdTop": "330",
-    "mdLeft": "630",
+
+    "mdTop": -180,
+    "mdLeft": 490,
+
     "top": -85,
     "left": 160,
     "duration":"4"
@@ -99,8 +113,10 @@
     "backGroundColor": "#2C4D511A",
     "lgTop":-280,
     "lgLeft":430,
-    "mdTop": "200",
-    "mdLeft": "660",
+
+    "mdTop": -280,
+    "mdLeft": 430,
+
     "top": -25,
     "left": 100,
     "duration":"5"
