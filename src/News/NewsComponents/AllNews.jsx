@@ -6,7 +6,12 @@ function AllNews() {
   return (
     <div>
       <PrimeNews />
-      <section className="flex flex-col md:flex-row gap-16 md:gap-8">
+      <section
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-once={true}
+        className="flex flex-col md:flex-row gap-16 md:gap-8"
+      >
         {news.map((news, index) => {
           if (index === 0) return;
           else {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import right from "/assets/Home/AssociationSection/Variant5.svg";
 import left from "/assets/Home/AssociationSection/Variant6.svg";
 import CardInfo from "./CardInfo";
