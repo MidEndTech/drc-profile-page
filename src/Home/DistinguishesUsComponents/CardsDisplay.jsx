@@ -34,7 +34,7 @@ function CardsDisplay(props) {
         key={props.index}
       >
         <div
-          className={`animate-bounce shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute`}
+          className={`text-[18px] animate-bounce shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute`}
           style={{
             backgroundColor: `${props.backGroundColor}`,
             width: `${props.width}px`,

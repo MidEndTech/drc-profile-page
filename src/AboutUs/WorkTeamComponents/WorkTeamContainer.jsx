@@ -88,7 +88,9 @@ function WorkTeamContainer() {
           })}
 
           <img
-            className="arrow-left hover:opacity-70 cursor-pointer absolute md:bottom-[280px] md:left-7 z-10 bottom-[285px] left-3 w-12 md:w-auto"
+            className={`arrow-left  ${
+              activeIndex === team.length-1  && "hidden"
+            } hover:opacity-70 cursor-pointer absolute md:bottom-[280px] md:left-7 z-10 bottom-[285px] left-3 w-12 md:w-auto`}
             src={left}
             alt=""
           />

@@ -22,11 +22,9 @@ function TeamCards(props) {
           <div className="flex justify-center items-center z-10 relative">
             <div
               className={`border-2 rounded-full p-1 absolute top-1 ${props.borderStyle}`}
-              // style={{ borderColor: "#D9D9D9" }}
             >
               <div
                 className={`p-3 rounded-full  ${props.bakgroundStyle}`}
-                // style={{ backgroundColor: "#D9D9D9" }}
               ></div>
             </div>
           </div>
