@@ -20,12 +20,12 @@ function App() {
 
   useEffect(() => {
     const checkAllAssetsLoaded = () => {
-      return document.readyState === 'complete';
+      return document.readyState === "complete";
     };
 
     const waitForImages = async () => {
-      const images = document.querySelectorAll('img');
-      const promises = Array.from(images).map(img => {
+      const images = document.querySelectorAll("img");
+      const promises = Array.from(images).map((img) => {
         if (img.complete) return Promise.resolve();
         return new Promise((resolve, reject) => {
           img.onload = resolve;
@@ -38,22 +38,25 @@ function App() {
     const handleLoading = async () => {
       if (checkAllAssetsLoaded()) {
         try {
+          document.body.classList.add("no-scroll");
           await waitForImages();
-          await new Promise(resolve => setTimeout(resolve, 2500));
+          await new Promise((resolve) => setTimeout(resolve, 2500));
           setLoading(false);
+          document.body.classList.remove("no-scroll");
         } catch (error) {
-          console.error('Error loading images:', error);
+          console.error("Error loading images:", error);
           setLoading(false);
+          document.body.classList.remove("no-scroll");
         }
       } else {
         window.requestAnimationFrame(handleLoading);
       }
     };
 
-    window.addEventListener('load', handleLoading);
+    window.addEventListener("load", handleLoading);
 
     return () => {
-      window.removeEventListener('load', handleLoading);
+      window.removeEventListener("load", handleLoading);
     };
   }, []);
 
