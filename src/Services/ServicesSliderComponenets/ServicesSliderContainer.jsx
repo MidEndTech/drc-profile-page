@@ -11,7 +11,13 @@ function ServicesSliderContainer() {
   const [indexCounter, setIndexCounter] = useState(0);
   return (
     <>
-      <div className=" mt-10 lg:mt-20 flex flex-col items-center lg:flex-row-reverse lg:justify-center lg:items-center overflow-hidden">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-once={true}
+        data-aos-delay="200"
+        className=" mt-10 lg:mt-20 flex flex-col items-center lg:flex-row-reverse lg:justify-center lg:items-center overflow-hidden"
+      >
         <AnimatePresence mode="popLayout">
           <motion.div
             key={indexCounter}
@@ -40,7 +46,13 @@ function ServicesSliderContainer() {
         </AnimatePresence>{" "}
       </div>
 
-      <div className="flex justify-between mx-2 relative bottom-[550px] lg:justify-between lg:bottom-[360px] lg:mx-[5%]">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-once={true}
+        data-aos-delay="200"
+        className="flex justify-between mx-2 relative bottom-[550px] lg:justify-between lg:bottom-[360px] lg:mx-[5%]"
+      >
         <img
           onClick={() => {
             setIndexCounter((prev) => prev - 1);

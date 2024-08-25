@@ -7,12 +7,18 @@ function About() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/aboutus');
+    navigate("/aboutus");
     window.scrollTo(0, 0);
   };
 
   return (
-    <div className="relative flex justify-center items-center min-h-screen px-4 sm:px-8 lg:px-16">
+    <div
+      data-aos="slide-up"
+      data-aos-duration="1000"
+      data-aos-offset="300"
+      data-aos-once
+      className="relative flex justify-center items-center min-h-screen px-4 sm:px-8 lg:px-16"
+    >
       <div className="relative w-full max-w-[1440px] mx-auto">
         <div className="absolute top-0 right-0 w-24 h-24 sm:w-48 sm:h-48 bg-[#ebdfcf] rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 z-0"></div>
 

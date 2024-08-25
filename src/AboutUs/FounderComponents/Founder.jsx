@@ -33,7 +33,12 @@ function Founder() {
         />
       </div>
 
-      <div className="relative w-full    min-h-[600px]  ">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-once={true}
+        className="relative w-full    min-h-[600px]  "
+      >
         {!isExpanded ? (
           <>
             <div className="absolute inset-0 rounded-[30px] overflow-hidden z-0">
