@@ -1,7 +1,7 @@
-body.no-scroll {
-  overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
 }
-
 
 .splash-overlay {
   position: fixed;
@@ -15,8 +15,6 @@ body.no-scroll {
   justify-content: center;
   align-items: center;
 }
-
-
 
 /* Base animation for cube */
 @keyframes anim {
@@ -44,7 +42,6 @@ body.no-scroll {
     }
   }
 }
-
 
 .cube {
   animation: anim 1.2s ease;
