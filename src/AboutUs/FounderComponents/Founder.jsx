@@ -45,7 +45,7 @@ function Founder() {
             </div>
 
             <div className="relative bg-dark-green/10 rounded-[30px] flex flex-col md:flex-row-reverse justify-between  items-center min-h-[600px] p-8">
-              <div className="mb-6 md:mb-0 ml-10">
+              <div className="mb-6 md:mb-0 ">
                 <div className="">
                   <img src={FounderImage} alt="Profile" className="relative " />
                 </div>

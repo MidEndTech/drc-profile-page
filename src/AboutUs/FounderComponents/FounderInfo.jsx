@@ -84,7 +84,7 @@ function FounderInfo() {
       <div className="relative w-full max-w-6xl mx-auto mt-10">
         <FounderHistory />
       </div>
-      <div className="absolute z-0  top-[480px] right-[20px] md:right-[350px] md:top-32">
+      <div className="absolute z-0  top-[480px] right-[20px] md:right-[490px] md:top-32">
         <img src={qoute} alt="Orange Background" />
       </div>
       <div className="absolute left-0 top-56 ">
