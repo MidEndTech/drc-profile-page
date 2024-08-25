@@ -19,6 +19,9 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Add the no-scroll class immediately to prevent scrolling
+    document.body.style.overflow = "hidden";
+
     const checkAllAssetsLoaded = () => {
       return document.readyState === "complete";
     };
@@ -38,15 +41,14 @@ function App() {
     const handleLoading = async () => {
       if (checkAllAssetsLoaded()) {
         try {
-          document.body.classList.add("no-scroll");
           await waitForImages();
           await new Promise((resolve) => setTimeout(resolve, 2500));
           setLoading(false);
-          document.body.classList.remove("no-scroll");
+          document.body.style.overflow = "auto";
         } catch (error) {
           console.error("Error loading images:", error);
           setLoading(false);
-          document.body.classList.remove("no-scroll");
+          document.body.style.overflow = "auto";
         }
       } else {
         window.requestAnimationFrame(handleLoading);
@@ -56,10 +58,10 @@ function App() {
     window.addEventListener("load", handleLoading);
 
     return () => {
+      document.body.style.overflow = "auto";
       window.removeEventListener("load", handleLoading);
     };
   }, []);
-
   return (
     <>
       {loading && <Splash />}
