@@ -36,7 +36,7 @@ function HeroSection() {
   });
 
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden mb-[71.75px]">
       <HeroContainer currentIndex={currentIndex}>
         <div className="flex flex-col justify-end lg:flex-row gap-4 xl:gap-0 lg:justify-between items-center w-full">
           <HeroInfo currentIndex={currentIndex} isNext={isNext} />

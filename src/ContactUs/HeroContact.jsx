@@ -4,7 +4,7 @@ import HeroContactImg from "/assets/ContactUs/HeroContactImg.svg";
 function HeroContact() {
   return (
     <div
-      className="relative overflow-hidden  bg-cover bg-no-repeat p-12"
+      className="relative overflow-hidden  bg-cover bg-no-repeat p-12 mb-[92px]"
       style={{
         backgroundImage: `url(${HeroContactImg})`,
         height: "639px",

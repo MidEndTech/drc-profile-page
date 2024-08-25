@@ -6,7 +6,7 @@ import BackHero from "/assets/Projects/HeroSection/BackHero.svg";
 function HeroSection() {
   return (
     <div
-      className="relative overflow-hidden  bg-cover bg-no-repeat p-12"
+      className="relative overflow-hidden  bg-cover bg-no-repeat p-12 mb-[54px]"
       style={{
         backgroundImage: `url(${BackHero})`,
         height: "643px",

@@ -1,5 +1,5 @@
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
 import HomePage from "./Pages/HomePage";
 import ErrorPage from "./Pages/ErrorPage";
 import NavBar from "./SharedComponents/NavBar/NavBar";
@@ -19,41 +19,66 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setTimeout(() => setLoading(false), 4000);
+    const checkAllAssetsLoaded = () => {
+      return document.readyState === 'complete';
     };
 
-    if (document.readyState === "complete") {
-      handleLoad();
-    } else {
-      window.addEventListener("load", handleLoad);
-    }
+    const waitForImages = async () => {
+      const images = document.querySelectorAll('img');
+      const promises = Array.from(images).map(img => {
+        if (img.complete) return Promise.resolve();
+        return new Promise((resolve, reject) => {
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      });
+      await Promise.all(promises);
+    };
 
-    return () => window.removeEventListener("load", handleLoad);
+    const handleLoading = async () => {
+      if (checkAllAssetsLoaded()) {
+        try {
+          await waitForImages();
+          await new Promise(resolve => setTimeout(resolve, 2500));
+          setLoading(false);
+        } catch (error) {
+          console.error('Error loading images:', error);
+          setLoading(false);
+        }
+      } else {
+        window.requestAnimationFrame(handleLoading);
+      }
+    };
+
+    window.addEventListener('load', handleLoading);
+
+    return () => {
+      window.removeEventListener('load', handleLoading);
+    };
   }, []);
 
-  if (loading) {
-    return <Splash />;
-  }
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route index element={<HomePage />} />
-        <Route path="aboutus" element={<AboutUsPage />} />
-        <Route path="services" element={<ServicesPage />} />
-        <Route path="projects" element={<ProjectsPage />} />
-        <Route path="projects/:id" element={<NetworkDetails  />} />
-        <Route path="news" element={<NewsPage />}>
-          <Route index element={<AllNews />} />
-          <Route path=":id" element={<CompleteNews />} />
-        </Route>
-        <Route path="contactus" element={<ContactUsPage />} />
-        <Route path="founder" element={<FounderInfo />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <>
+      {loading && <Splash />}
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="aboutus" element={<AboutUsPage />} />
+          <Route path="services" element={<ServicesPage />} />
+          <Route path="projects" element={<ProjectsPage />} />
+          <Route path="projects/:id" element={<NetworkDetails />} />
+          <Route path="news" element={<NewsPage />}>
+            <Route index element={<AllNews />} />
+            <Route path=":id" element={<CompleteNews />} />
+          </Route>
+          <Route path="contactus" element={<ContactUsPage />} />
+          <Route path="founder" element={<FounderInfo />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
