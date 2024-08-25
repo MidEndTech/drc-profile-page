@@ -53,7 +53,7 @@ function DistinguishesUs() {
   //functions*********************************************************
 
   return (
-    <div className="flex flex-col h-screen justify-center items-center">
+    <div className="flex flex-col h-screen justify-center items-center mb-[190px]">
       <h1 className="font-[700] text-[36px] text-[#9D6636] mb-10">مايميزنا</h1>
 
       <div className="lg:h-[718.51px] lg:w-[1142.89px] h-full flex flex-col justify-start lg:justify-center items-center relative lg:mt-[-90px] md:w-full w-[95%]">

@@ -20,7 +20,7 @@ function Founder() {
   };
 
   return (
-    <div className="relative flex items-center min-h-screen w-full ">
+    <div className="relative flex items-center min-h-screen w-full mb-[287px]">
       <div
         className={`absolute top-0 right-0 transition-opacity duration-700 ${
           isExpanded ? "opacity-100" : "opacity-0"

@@ -81,7 +81,7 @@ function Association() {
   };
 
   return (
-    <div className="container mx-auto px-1 py-20">
+    <div className="container mx-auto px-1 py-20  mb-[71.75px]">
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#9D6636] font-bold text-center my-4">
         شركاء النجاح
       </h1>

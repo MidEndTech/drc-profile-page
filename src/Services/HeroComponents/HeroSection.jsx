@@ -13,7 +13,7 @@ function HeroSection() {
     return () => clearTimeout(timerRef.current);
   });
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative mb-[287px]">
       <div className="w-screen h-screen lg:h-[900px] flex items-center justify-center ">
         <section className="text-center mb-12 z-20">
           <h1 className="text-primary text-2xl md:text-4xl lg:text-5xl font-bold">

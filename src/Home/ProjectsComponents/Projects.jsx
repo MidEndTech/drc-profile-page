@@ -14,7 +14,7 @@ const projects = [
 function Projects() {
   return (
     <>
-      <div className=" py-8 px-4 flex flex-col items-center text-right ">
+      <div className=" py-8 px-4 flex flex-col items-center text-right mb-[71.75px] ">
       <div className="w-full max-w-screen-lg">
         <h1 className="text-[#9D6636] text-right font-bold text-4xl my-5">مشاريعنا</h1>
         <p className="text-[#2C4D51] text-right my-5 text-2xl">
