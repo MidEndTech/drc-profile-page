@@ -13,7 +13,7 @@ import internalValuesObj from "./internalValues.json";
 
 function DistinguishesUs() {
   //imports*************************************************************************************
-  const [cards, setCards] = useState("features");
+  const [cards, setCards] = useState("LensesAnd_dimensions");
   const [lensesAndDimension, setLensesAndDimension] = useState([
     ...LensesAndDimensionObj,
   ]);
@@ -74,7 +74,7 @@ function DistinguishesUs() {
 
         {/*nead break it *******Done**************************************************************************************************************************************************************************************/}
         <div
-          className={` relative shadow-lg w-[190px] h-[190px] md:w-[310px] md:h-[310px]  lg:w-[415.91px] lg:h-[415.91px] border-[11px] rounded-full mt-[50px] flex justify-center items-center bg-white z-10`}
+          className={` relative shadow-lg w-[190px] h-[190px] md:w-[310px] md:h-[310px]  lg:w-[415.91px] lg:h-[415.91px] border-[11px] rounded-full mt-[50px] flex justify-center items-center bg-white z-0`}
         >
           <img
             src={LogoUs}
@@ -82,7 +82,7 @@ function DistinguishesUs() {
             className="w-[100px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[278.62px] lg:h-[172.95px] z-10"
           />
         </div>
-
+                                                                      
         {/*nead break it **************************************************************************************************************************************************************************************************/}
 
         {cardsHandle().map((el, index) => {
