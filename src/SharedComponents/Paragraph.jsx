@@ -2,7 +2,7 @@
 export default function Paragraph({ className, children }) {
   return (
     <p
-      className={`ّtext-sm md:text-md lg:text-lg xl:text-xl leading-8 xl:leading-10 ${className}`}
+      className={`ّ text-base md:text-lg lg:text-xl xl:text-2xl leading-8 xl:leading-10 ${className}`}
     >
       {children}
     </p>

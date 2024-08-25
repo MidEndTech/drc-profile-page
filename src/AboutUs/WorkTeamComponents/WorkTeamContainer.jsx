@@ -1,5 +1,5 @@
 // hooks
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -39,8 +39,8 @@ function WorkTeamContainer() {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 3,
-              spaceBetween: 30,
+              slidesPerView: 2,
+              spaceBetween: 10,
             },
             1024: {
               slidesPerView: 3,
@@ -102,7 +102,7 @@ function WorkTeamContainer() {
           />
         </Swiper>
 
-        <hr className="bg-[#B9B9B9] h-[3px] mt-10 w-full absolute lg:bottom-[120px] bottom-[120px]" />
+        <hr className="bg-[#B9B9B9] h-[3px] mt-10 w-full absolute bottom-[124px]" />
         <div className="absolute right-0 bottom-[100px] -top-40">
           <img src={BackgroundBlue} alt="" />
         </div>

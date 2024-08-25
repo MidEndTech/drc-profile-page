@@ -13,7 +13,7 @@ function HeroCarousel({ sliderRef }) {
     desktop: {
       breakpoint: { max: 1280, min: 1024 },
       items: 2,
-      partialVisibilityGutter: 40,
+      partialVisibilityGutter: 45,
     },
     taplet: {
       breakpoint: { max: 1024, min: 600 },
@@ -32,7 +32,7 @@ function HeroCarousel({ sliderRef }) {
       <Carousel
         ref={sliderRef}
         rtl
-        itemClass="md:px-2 xl:px-4"
+        itemClass="md:px-2 xl:px-0"
         infinite
         autoPlay
         autoPlaySpeed={4000}
@@ -49,7 +49,7 @@ function HeroCarousel({ sliderRef }) {
           <img
             key={index}
             src={arr[(index + 1) % arr.length].smallPicture}
-            className="h-full"
+            className="h-full sm:h-[90%] w-full sm:pt-14"
           />
         ))}
       </Carousel>
