@@ -20,7 +20,7 @@ function Founder() {
   };
 
   return (
-    <div className="relative flex items-center min-h-screen w-full ">
+    <div className="relative flex items-center min-h-screen w-full mb-[287px]">
       <div
         className={`absolute top-0 right-0 transition-opacity duration-700 ${
           isExpanded ? "opacity-100" : "opacity-0"
@@ -50,7 +50,7 @@ function Founder() {
             </div>
 
             <div className="relative bg-dark-green/10 rounded-[30px] flex flex-col md:flex-row-reverse justify-between  items-center min-h-[600px] p-8">
-              <div className="mb-6 md:mb-0 ml-10">
+              <div className="mb-6 md:mb-0 ">
                 <div className="">
                   <img src={FounderImage} alt="Profile" className="relative " />
                 </div>

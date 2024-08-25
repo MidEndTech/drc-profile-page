@@ -28,7 +28,7 @@ function Projects() {
   };
   return (
     <>
-      <div className=" py-8 px-4 flex flex-col items-center text-right ">
+      <div className=" py-8 px-4 flex flex-col items-center text-right mb-[71.75px]">
         <div className="w-full max-w-screen-lg">
           <h1
             data-aos="fade-up"

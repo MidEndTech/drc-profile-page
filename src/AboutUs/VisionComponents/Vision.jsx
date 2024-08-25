@@ -11,7 +11,7 @@ function Vision() {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden mb-[71.75px]">
       <div className="w-screen h-screen flex flex-col items-center justify-center">
         <main className="w-10/12 mx-auto flex flex-col items-center">
           <div

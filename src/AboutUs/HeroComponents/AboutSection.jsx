@@ -3,7 +3,7 @@ import Paragraph from "../../SharedComponents/Paragraph";
 
 function AboutSection() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden mb-[71.75px]">
       <main className="w-screen h-screen flex flex-col-reverse justify-center md:flex-row-reverse md:items-center md:justify-between relative">
         <img
           src="/assets/AboutUs/HeroSection/Bubble.svg"

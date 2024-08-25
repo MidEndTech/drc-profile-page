@@ -53,7 +53,8 @@ function DistinguishesUs() {
   //functions*********************************************************
 
   return (
-    <div className="flex flex-col md:h-screen mb-[150px] justify-center items-center">
+
+    <div className="flex flex-col md:h-screen mb-[190px] justify-center items-center">
       <h1 className="font-[700] text-[36px] text-[#9D6636] mb-10">مايميزنا</h1>
 
       <div className="lg:h-[718.51px] lg:w-[1142.89px] h-full flex flex-col justify-start lg:justify-center items-center relative lg:mt-[-90px] md:w-full w-[95%]">
@@ -74,26 +75,26 @@ function DistinguishesUs() {
 
         {/*nead break it *******Done**************************************************************************************************************************************************************************************/}
         <div
-          className={` relative shadow-lg w-[190px] h-[190px] md:w-[310px] md:h-[310px]  lg:w-[415.91px] lg:h-[415.91px] border-[11px] rounded-full mt-[50px] flex justify-center items-center bg-white`}
+          className={` relative shadow-lg w-[190px] h-[190px] md:w-[310px] md:h-[310px]  lg:w-[415.91px] lg:h-[415.91px] border-[11px] rounded-full mt-[50px] flex justify-center items-center bg-white z-0`}
         >
           <img
             src={LogoUs}
             alt="شعار دار الرحمة"
-            className="w-[100px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[278.62px] lg:h-[172.95px]"
+            className="w-[100px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[278.62px] lg:h-[172.95px] z-10"
           />
         </div>
-
-        {/*nead break it *********************************************************************************************************************************************************************************************/}
+                                                                      
+        {/*nead break it **************************************************************************************************************************************************************************************************/}
 
         {cardsHandle().map((el, index) => {
-          const cardIndex = index;
           () => setIndexOfCard(cardIndex);
           return (
-            <div key={index} className="">
+            <div key={index}>
               <CardsDisplay
                 index={indexOfCard}
                 backGroundColor={el.backGroundColor}
                 funcCond={responsivePageHandle()}
+                width={el.width}
                 lgTop={el.lgTop}
                 mdTop={el.mdTop}
                 top={el.top}
@@ -113,7 +114,7 @@ function DistinguishesUs() {
 
       {/*nead break it *********************************************************************************************************************************************************************************************/}
 
-      <div className="absolute left-0 z-0 md:left-0 lg:left-0">
+      <div className="absolute left-0 z-[-1] md:left-0 lg:left-0">
         <img src={BackgroundOrangeColor} alt="" />
       </div>
     </div>

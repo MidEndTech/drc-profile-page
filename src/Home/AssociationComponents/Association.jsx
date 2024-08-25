@@ -98,7 +98,7 @@ function Association() {
   };
 
   return (
-    <div className="container mx-auto px-1 py-20">
+    <div className="container mx-auto px-1 py-20 mb-[71.75px]">
       <motion.h1
         variants={associatesVariants}
         initial="offscreen"

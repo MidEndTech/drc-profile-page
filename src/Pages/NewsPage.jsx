@@ -14,7 +14,7 @@ function NewsPage() {
     document.title = "أخبارنا";
   }, []);
   return (
-    <div className="bg-[#F5F5F5] pb-36">
+    <div className="bg-[#F5F5F5] pb-[270px]">
       <HeroSection />
       <div className="w-10/12 mx-auto">
         <Outlet />

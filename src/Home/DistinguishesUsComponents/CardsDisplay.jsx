@@ -1,36 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
 function CardsDisplay(props) {
+  const [placeT, setPlaceT] = useState([-10]);
+  const [placeL, setPlaceL] = useState([20]);
+
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ y: 0, x: 0, opacity: 0 }}
-        animate={{ y: 0, x: 0, opacity: 1 }}
-        exit={{ y: 0, x: 0, opacity: 0 }}
-        transition={{duration: 1 }}
+        initial={{
+          y: props.funcCond === "lg" ? -200 : -120,
+          x: props.funcCond === "lg" ? 50 : 70,
+          opacity: 0,
+        }}
+        animate={{
+          y:
+            props.funcCond === "lg"
+              ? props.lgTop
+              // : props.funcCond === "md"
+              // ? props.mdTop
+              : props.top,
+          x:
+            props.funcCond === "lg"
+              ? props.lgLeft
+              // : props.funcCond === "md"
+              // ? props.mdLeft
+              : props.left,
+          opacity: 1,
+        }}
+        exit={{ y: -120, x: 70, opacity: 0 }}
+        transition={{ duration: 1 }}
         key={props.index}
       >
         <div
-          className={`animate-bounce z-10 shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute`}
+          className={`animate-bounce shadow-md border-1 rounded-full flex justify-center items-center py-[6px] px-[20px] absolute`}
           style={{
             backgroundColor: `${props.backGroundColor}`,
-            top: `${
-              props.funcCond === "lg"
-                ? props.lgTop
-                : props.funcCond === "md"
-                ? props.mdTop
-                : props.top
-            }px`,
-            left: `${
-              props.funcCond === "lg"
-                ? props.lgLeft
-                : props.funcCond === "md"
-                ? props.mdLeft
-                : props.left
-            }px`,
-            right: `${props.funcCond === "phone" ? props.right : null}px`,
+            width: `${props.width}px`,
             rotate: `${props.rotation}`,
             animationDuration: `${props.duration}s`,
           }}
@@ -43,5 +50,3 @@ function CardsDisplay(props) {
 }
 
 export default CardsDisplay;
-
-
