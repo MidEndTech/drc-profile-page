@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 function ButtonsTitle(props) {
 
-  const [updateBtn , setUpdateBtn ] = useState(false);
 
   return (
     <div className="z-10 font-[400] text-[22px] md:font-[400] md:text-[28px]" onChange={()=>{}}>
