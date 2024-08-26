@@ -32,10 +32,8 @@ function HeroCarousel({ sliderRef }) {
       <Carousel
         ref={sliderRef}
         rtl
-        itemClass="md:px-2 xl:px-0"
+        itemClass="md:px-2 xl:px-6 2xl:px-0 xl:pt-20 2xl:pt-0"
         infinite
-        autoPlay
-        autoPlaySpeed={4000}
         customTransition="all 1.3s ease-in-out"
         transitionDuration={1500}
         partialVisbile
