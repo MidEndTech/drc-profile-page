@@ -18,7 +18,7 @@ function LogoNavBar() {
     <ul className="flex">
       {logoHandle() === "green" ? (
         <li>
-          <img src={GreenLogo} alt="Logo" />
+          <img src={GreenLogo} className="w-[215px] lg:w-auto" alt="Logo" />
         </li>
       ) : (
         <>

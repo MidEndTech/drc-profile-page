@@ -6,13 +6,13 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": -280,
     "lgLeft": -350,
-    "mdTop": "230",
-    "mdLeft": "30",
+    "mdTop": -280,
+    "mdLeft": -170,
     "top": -190,
     "left": 0,
     "duration": "5",
     "delay": "1",
-    "width":"174"
+    "width":"190"
   },
   {
     "text": "تعظيم أثر المخرجات (خدمات إضافية للعميل)",
@@ -21,13 +21,13 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -100,
     "lgLeft": -350,
-    "mdTop": "410",
-    "mdLeft": "20",
+    "mdTop": -100,
+    "mdLeft": -60,
     "top": -90,
-    "left": 100,
+    "left": 110,
     "duration": "4",
     "delay": "2",
-    "width":"269"
+    "width":"298"
   },
   {
     "text": "خبرة نوعية تراكمية",
@@ -36,13 +36,13 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -30,
     "lgLeft": 490,
-    "mdTop": "440",
-    "mdLeft": "500",
+    "mdTop": -30,
+    "mdLeft": 300,
     "top": 15,
     "left": -12,
     "duration": "5",
     "delay": "1",
-    "width":"140"
+    "width":"152"
   },
   {
     "text": "العناية بالتفاصيل لصناعة الجودة",
@@ -51,13 +51,13 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": -150,
     "lgLeft": 560,
-    "mdTop": "300",
-    "mdLeft": "568",
+    "mdTop": -150,
+    "mdLeft": 370,
     "top": -150,
     "left": 160,
     "duration": "5",
     "delay": "2",
-    "width":"202"
+    "width":"222"
   },
   {
     "text": "التوازن (بين الأبعاد المختلفة)",
@@ -66,13 +66,13 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -300,
     "lgLeft": 560,
-    "mdTop": "150",
-    "mdLeft": "556",
+    "mdTop": -300,
+    "mdLeft": 300,
     "top": -25,
     "left": 160,
     "duration": "4",
     "delay": "1",
-    "width":"186"
+    "width":"205"
   },
   {
     "text": null,
@@ -85,7 +85,8 @@
     "mdLeft": "660",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   },
   {
     "text": null,
@@ -98,7 +99,8 @@
     "mdLeft": "660",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   },
   {
     "text": null,
@@ -111,7 +113,8 @@
     "mdLeft": "660",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   },
   {
     "text": null,
@@ -124,6 +127,7 @@
     "mdLeft": "660",
     "top": -120,
     "left": 70,
-    "duration":"5"
+    "duration":"5",
+    "display":"none"
   }
 ]

@@ -6,8 +6,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -340,
     "lgLeft": -498,
-    "mdTop": "150",
-    "mdLeft": "40",
+    "mdTop": -340,
+    "mdLeft": -298,
     "top": -190,
     "left": -45,
     "duration":"4"
@@ -19,12 +19,12 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": -260,
     "lgLeft": -325,
-    "mdTop": "270",
-    "mdLeft": "110",
+    "mdTop": -260,
+    "mdLeft": -205,
     "top": -135,
     "left": -65,
     "duration":"5",
-    "width":"90"
+    "width":"96"
   },
   {
     "text": "الأنظمة والقوانين",
@@ -33,12 +33,12 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -140,
     "lgLeft": -410,
-    "mdTop": "370",
-    "mdLeft": "50",
+    "mdTop": -140,
+    "mdLeft": -210,
     "top": -85,
     "left": -45,
     "duration":"4",
-    "width":"126"
+    "width":"137"
   },
   {
     "text": "تجربة العميل",
@@ -47,12 +47,12 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": 23,
     "lgLeft": -270,
-    "mdTop": "460",
-    "mdLeft": "180",
+    "mdTop": 23,
+    "mdLeft": -170,
     "top": -40,
     "left": -45,
     "duration":"5",
-    "width":"106"
+    "width":"114"
   },
   {
     "text": "إحتياجات سوق العمل",
@@ -61,12 +61,12 @@
     "backGroundColor": "#BE894A1A",
     "lgTop": 116,
     "lgLeft": -65,
-    "mdTop": "520",
-    "mdLeft": "320",
+    "mdTop": 116,
+    "mdLeft": -45,
     "top": 30,
     "left": 70,
     "duration":"4",
-    "width":"147"
+    "width":"161"
   },
   {
     "text": "الأحكام الشرعية",
@@ -75,12 +75,12 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": 100,
     "lgLeft": 237,
-    "mdTop": "450",
-    "mdLeft": "500",
-    "top": -190,
+    "mdTop": 100,
+    "mdLeft": 237,
+    "top": -210,
     "left": 160,
     "duration":"5",
-    "width":"122"
+    "width":"132"
   },
   {
     "text": "القدرة والإمكانيات",
@@ -89,12 +89,12 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -30,
     "lgLeft": 397,
-    "mdTop": "330",
-    "mdLeft": "580",
+    "mdTop": -30,
+    "mdLeft": 337,
     "top": -135,
     "left": 160,
     "duration":"4",
-    "width":"131"
+    "width":"142"
   },
   {
     "text": "العائد / التكلفة",
@@ -103,12 +103,12 @@
     "backGroundColor": "#BE894A1A",
     "lgTop":-140,
     "lgLeft":547,
-    "mdTop": "230",
-    "mdLeft": "660",
+    "mdTop": -140,
+    "mdLeft": 347,
     "top": -85,
     "left": 160,
     "duration":"5",
-    "width":"131"
+    "width":"118"
   },
   {
     "text": "القيم الداخلية",
@@ -117,8 +117,8 @@
     "backGroundColor": "#2C4D511A",
     "lgTop": -300,
     "lgLeft": 430,
-    "mdTop": "140",
-    "mdLeft": "570",
+    "mdTop": -300,
+    "mdLeft": 360,
     "top": -40,
     "left": 160,
     "duration":"4",
