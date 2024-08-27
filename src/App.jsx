@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./SharedComponents/NavBar/NavBar";
 import Footer from "./SharedComponents/Footer";
-import useSplashScreen from "./SharedComponents/SplashScreen/useSplashScreen";
-import Splash from "./SharedComponents/SplashScreen/Splash";
+import SplashImp from "./SharedComponents/SplashScreen/SplashImp";
 
 // Import all pages directly
 import HomePage from "./Pages/HomePage";
@@ -18,30 +17,27 @@ import ContactUsPage from "./Pages/ContactUsPage";
 import NetworkDetails from "./Projects/NetwrokComponents/NetworkDetails";
 import ErrorPage from "./Pages/ErrorPage";
 
-function App() {
-  const loading = useSplashScreen();
+// Wrap HomePage with SplashImp
+const HomePageWithSplash = SplashImp(HomePage);
 
+function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      {loading ? (
-        <Splash />
-      ) : (
-        <Routes>
-          <Route index element={<HomePage />} />
-          <Route path="aboutus" element={<AboutUsPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="projects/:id" element={<NetworkDetails />} />
-          <Route path="news" element={<NewsPage />}>
-            <Route index element={<AllNews />} />
-            <Route path=":id" element={<CompleteNews />} />
-          </Route>
-          <Route path="contactus" element={<ContactUsPage />} />
-          <Route path="founder" element={<FounderInfo />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-      )}
+      <Routes>
+        <Route index element={<HomePageWithSplash />} />
+        <Route path="aboutus" element={<AboutUsPage />} />
+        <Route path="services" element={<ServicesPage />} />
+        <Route path="projects" element={<ProjectsPage />} />
+        <Route path="projects/:id" element={<NetworkDetails />} />
+        <Route path="news" element={<NewsPage />}>
+          <Route index element={<AllNews />} />
+          <Route path=":id" element={<CompleteNews />} />
+        </Route>
+        <Route path="contactus" element={<ContactUsPage />} />
+        <Route path="founder" element={<FounderInfo />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
       <Footer />
     </BrowserRouter>
   );
