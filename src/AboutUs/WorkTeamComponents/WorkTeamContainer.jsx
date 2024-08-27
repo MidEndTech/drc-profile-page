@@ -115,7 +115,7 @@ function WorkTeamContainer() {
           />
         </Swiper>
 
-        <hr className="bg-[#B9B9B9] h-[3px] mt-10 w-full absolute bottom-[124px]" />
+        <hr className="bg-[#B9B9B9] h-[3px] mt-10 w-full absolute bottom-[124px] hidden md:block" />
         <div className="absolute right-0 bottom-[100px] -top-40">
           <img src={BackgroundBlue} alt="" />
         </div>

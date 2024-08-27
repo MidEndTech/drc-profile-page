@@ -1,9 +1,8 @@
 function TeamCards(props) {
-
   return (
     <div>
       <div key={props.index} className="z-0">
-        <div  className="flex-col justify-center items-center text-center">
+        <div className="flex-col justify-center items-center text-center">
           <div className="flex justify-center items-center mt-10 mb-10">
             <img
               src={props.avatarImage}
@@ -13,7 +12,6 @@ function TeamCards(props) {
           </div>
 
           <p className="font-[400] text-[20px] mt-5">{props.nameOfWorker}</p>
-
 
           <p className="font-[400] text-[16px] text-[#BE894A]">
             {props.workerTitile}
@@ -35,8 +33,8 @@ function TeamCards(props) {
             </p>
           </div>
         </div>
+        <hr className="bg-[#B9B9B9] h-[3px] mt-10 w-full absolute bottom-[85px] md:hidden block" />
       </div>
-
     </div>
   );
 }
