@@ -25,6 +25,8 @@ function TeamCards(props) {
                 className={`p-3 rounded-full  ${props.bakgroundStyle}`}
               ></div>
             </div>
+            <hr className="bg-[#B9B9B9] h-[3px] mt-10 w-full absolute md:hidden block z-[-1]" />
+
           </div>
 
           <div className="flex justify-center items-end mt-5">
@@ -33,7 +35,6 @@ function TeamCards(props) {
             </p>
           </div>
         </div>
-        <hr className="bg-[#B9B9B9] h-[3px] mt-10 w-full absolute bottom-[85px] md:hidden block" />
       </div>
     </div>
   );
