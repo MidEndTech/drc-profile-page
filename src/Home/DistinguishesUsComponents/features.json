@@ -9,7 +9,7 @@
     "mdTop": -280,
     "mdLeft": -170,
     "top": -190,
-    "left": 0,
+    "left": 40,
     "duration": "5",
     "delay": "1",
     "width":"220"
@@ -24,7 +24,7 @@
     "mdTop": -100,
     "mdLeft": -60,
     "top": -90,
-    "left": 110,
+    "left": 140,
     "duration": "4",
     "delay": "2",
     "width":"328"
