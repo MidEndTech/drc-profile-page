@@ -17,12 +17,14 @@ function HeroSection() {
     const isLastSlide = currentIndex === data.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
+    sliderRef.current.next();
   };
   const prevSlide = () => {
     setIsNext(false);
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? data.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
+    sliderRef.current.previous();
   };
 
   useEffect(() => {
