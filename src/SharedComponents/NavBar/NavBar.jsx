@@ -57,7 +57,7 @@ function NavBar() {
     } else if (
       window.location.pathname === "/aboutus" ||
       window.location.pathname === "/services" ||
-      window.location.pathname === "/founder-info"
+      window.location.pathname === "/founder"
     ) {
       return "border-b";
     } else {
@@ -69,7 +69,7 @@ function NavBar() {
     if (
       (window.location.pathname === "/aboutus" ||
         window.location.pathname === "/services" ||
-        window.location.pathname === "/founder-info") &&
+        window.location.pathname === "/founder") &&
       size.width >= 1024
     ) {
       return `border-2 p-4 px-9 rounded-full border-[#BE894A] text-[#BE894A] hover:border-hidden hover:bg-primary hover:text-[#cccccc]`;
@@ -89,7 +89,7 @@ function NavBar() {
       >
         <div className="lg:pt-10 flex mx-auto p-4 justify-between flex-wrap lg:justify-around lg:items-start">
           <Link to={"/"} onClick={() => setUpdateComp((prev) => prev + 1)}>
-            <LogoNavBar />
+            <LogoNavBar/>
           </Link>
 
           <div

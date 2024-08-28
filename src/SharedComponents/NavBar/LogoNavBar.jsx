@@ -8,7 +8,7 @@ function LogoNavBar() {
     if (
       window.location.pathname === "/aboutus" ||
       window.location.pathname === "/services" ||
-      window.location.pathname === "/founder-info"
+      window.location.pathname === "/founder"
     ) {
       return "green";
     }
